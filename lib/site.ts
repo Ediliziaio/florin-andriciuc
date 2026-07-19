@@ -16,7 +16,7 @@ export const site = {
   googleVerification: "",
   // Tracciamento — [DA CONFERMARE] inserire ID reali GA4 / GTM
   analytics: {
-    ga4: "", // Google Analytics 4 Measurement ID (es. G-XXXXXXX)
+    ga4: "G-XWZ0WLLBKN", // Google Analytics 4 Measurement ID
     gtm: "", // Google Tag Manager container (es. GTM-XXXXXX)
     metaPixel: "912028060826443", // Meta (Facebook) Pixel ID
   },
