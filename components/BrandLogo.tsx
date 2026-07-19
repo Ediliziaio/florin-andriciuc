@@ -1,5 +1,6 @@
-// Loghi ufficiali dei brand su "piastrella" bianca (leggibili su ogni sfondo).
-// AEDIX non ha ancora il file → hasBrandLogo() = false, si usa il fallback icona.
+// Loghi ufficiali dei brand su "piastrella" (leggibili su ogni sfondo).
+// La maggior parte dei loghi è scura su trasparente → piastrella bianca.
+// AEDIX è bianco su trasparente → piastrella navy.
 
 const WITH_LOGO = new Set([
   "edilizia-in-cloud",
@@ -8,8 +9,11 @@ const WITH_LOGO = new Set([
   "numeri-in-edilizia",
   "imprenditore-edile",
   "edilizia-io",
-  // "aedix" — in attesa del file logo
+  "aedix",
 ]);
+
+// Brand con logo chiaro → serve piastrella scura.
+const DARK_PLATE = new Set(["aedix"]);
 
 export function hasBrandLogo(slug: string): boolean {
   return WITH_LOGO.has(slug);
@@ -26,8 +30,12 @@ export function BrandLogo({
   imgClass?: string;
   plateClass?: string;
 }) {
+  const dark = DARK_PLATE.has(slug);
+  const plate = dark
+    ? "bg-navy-900 ring-1 ring-white/10"
+    : "bg-white ring-1 ring-black/5 shadow-soft";
   return (
-    <span className={`inline-flex items-center rounded-xl bg-white px-3 py-2 shadow-soft ring-1 ring-black/5 ${plateClass}`}>
+    <span className={`inline-flex items-center rounded-xl px-3 py-2 ${plate} ${plateClass}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={`/brands/${slug}.png`} alt={`${name} — logo`} className={`${imgClass} w-auto`} loading="lazy" />
     </span>

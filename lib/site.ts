@@ -20,12 +20,11 @@ export const site = {
     gtm: "", // Google Tag Manager container (es. GTM-XXXXXX)
     metaPixel: "912028060826443", // Meta (Facebook) Pixel ID
   },
-  email: "[DA CONFERMARE]@florinandriciuc.com",
+  email: "florin@florinandriciuc.com",
   phone: "+39 [DA CONFERMARE]",
-  // [DA CONFERMARE] — sostituire con i profili reali
   social: {
-    linkedin: "[DA CONFERMARE]",
-    instagram: "[DA CONFERMARE]",
+    linkedin: "https://www.linkedin.com/in/florinandriciuc/",
+    instagram: "https://www.instagram.com/florin.andriciuc/",
     youtube: "[DA CONFERMARE]",
     tiktok: "[DA CONFERMARE]",
   },
