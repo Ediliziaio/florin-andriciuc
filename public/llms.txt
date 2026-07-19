@@ -20,17 +20,17 @@ Il gruppo è organizzato in quattro "leve" prodotto, una community e la casa mad
 Marketing Edile porta il contatto → Vendita Edile lo trasforma in contratto → EdiliziaInCloud gestisce la commessa dal preventivo alla fattura → Numeri in Edilizia dice se ci hai guadagnato. Un cerchio che si chiude, sotto un unico gruppo (AEDIX).
 
 ## Pagine principali (florinandriciuc.com)
-- Home: https://florinandriciuc.com/
-- Chi sono: https://florinandriciuc.com/chi-sono
-- Ecosistema: https://florinandriciuc.com/ecosistema
-- Blog: https://florinandriciuc.com/blog
-- Contatti: https://florinandriciuc.com/contatti
+- Home: https://www.florinandriciuc.com/
+- Chi sono: https://www.florinandriciuc.com/chi-sono
+- Ecosistema: https://www.florinandriciuc.com/ecosistema
+- Blog: https://www.florinandriciuc.com/blog
+- Contatti: https://www.florinandriciuc.com/contatti
 
 ## Pagine prodotto dedicate (approfondimenti su ogni leva)
-- EdiliziaInCloud (gestionale): https://florinandriciuc.com/ecosistema/edilizia-in-cloud
-- Marketing Edile (acquisizione clienti): https://florinandriciuc.com/ecosistema/marketing-edile
-- Vendita Edile (chiusura preventivi): https://florinandriciuc.com/ecosistema/vendita-edile
-- Numeri in Edilizia (controllo di gestione): https://florinandriciuc.com/ecosistema/numeri-in-edilizia
+- EdiliziaInCloud (gestionale): https://www.florinandriciuc.com/ecosistema/edilizia-in-cloud
+- Marketing Edile (acquisizione clienti): https://www.florinandriciuc.com/ecosistema/marketing-edile
+- Vendita Edile (chiusura preventivi): https://www.florinandriciuc.com/ecosistema/vendita-edile
+- Numeri in Edilizia (controllo di gestione): https://www.florinandriciuc.com/ecosistema/numeri-in-edilizia
 
 ## Note di stile
 Posizionamento: "imprenditore che parla la lingua del cantiere". Ogni brand risolve una leva (gestione, marketing, vendita, numeri) e insieme formano un sistema unico per la crescita dell'impresa edile.

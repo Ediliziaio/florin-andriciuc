@@ -1,8 +1,8 @@
 export const site = {
   name: "Florin Andriciuc",
   legalName: "Florin Andriciuc",
-  // Dominio canonico (apex). www.florinandriciuc.com reindirizza qui via Vercel.
-  domain: "https://florinandriciuc.com",
+  // Dominio canonico = www (impostato come primario su Vercel; l'apex reindirizza qui).
+  domain: "https://www.florinandriciuc.com",
   role: "Founder & CEO di AEDIX",
   tagline: "Costruisco gli strumenti che mancano all'impresa edile",
   description:
