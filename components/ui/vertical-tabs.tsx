@@ -53,7 +53,7 @@ export function VerticalTabs() {
       <div className="order-2 flex flex-col lg:order-1 lg:col-span-5">
         <div className="mb-8">
           <span className="eyebrow">Le 4 leve</span>
-          <h2 className="mt-3 text-[2rem] sm:text-[2.4rem] font-bold leading-tight">Come ti aiuto, leva per leva</h2>
+          <h2 className="mt-3 text-[2rem] sm:text-[2.4rem] font-bold leading-tight">Le 4 leve della crescita, una per una</h2>
         </div>
 
         <div className="flex flex-col">

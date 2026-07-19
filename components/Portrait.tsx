@@ -28,8 +28,7 @@ export function Portrait({
           <span className="mx-auto grid h-20 w-20 place-items-center rounded-2xl bg-navy-900 font-display text-2xl font-extrabold text-white shadow-soft">
             FA
           </span>
-          <p className="mt-4 px-6 text-sm font-semibold text-navy-800">La tua foto qui</p>
-          <p className="mt-1 px-6 text-xs text-muted">[DA CONFERMARE] → carica <code>public{src}</code></p>
+          <p className="mt-4 px-6 text-sm font-semibold text-navy-800">Florin Andriciuc</p>
         </div>
       </div>
       {/* Foto sopra: se carica copre il placeholder, se 404 resta il placeholder */}

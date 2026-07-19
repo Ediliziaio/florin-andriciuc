@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "[DA CONFERMARE]", title: "L'inizio nel mondo dell'edilizia", text: "I primi anni dentro il settore: cantieri, preventivi, clienti. Da qui nascono i problemi che poi ho deciso di risolvere." },
-  { year: "[DA CONFERMARE]", title: "Il problema diventa un'idea", text: "Capisco che gli strumenti per l'impresa edile o non esistono o sono fatti per i contabili. Decido di costruirli io." },
-  { year: "[DA CONFERMARE]", title: "Nasce EdiliziaInCloud", text: "Il gestionale cloud pensato per chi vive il cantiere: preventivi, commesse, cantieri, fatture e AI in un posto solo." },
+  { year: "Gli inizi", title: "L'inizio nel mondo dell'edilizia", text: "I primi anni dentro il settore: cantieri, preventivi, clienti. Da qui nascono i problemi che poi ho deciso di risolvere." },
+  { year: "La svolta", title: "Il problema diventa un'idea", text: "Capisco che gli strumenti per l'impresa edile o non esistono o sono fatti per i contabili. Decido di costruirli io." },
+  { year: "Il lancio", title: "Nasce EdiliziaInCloud", text: "Il gestionale cloud pensato per chi vive il cantiere: preventivi, commesse, cantieri, fatture e AI in un posto solo." },
   { year: "Oggi", title: "Un ecosistema per l'impresa edile", text: "Attorno al gestionale, i brand per acquisire clienti, vendere meglio e controllare i numeri. Un sistema unico." },
 ];
 
@@ -61,7 +61,7 @@ export default function ChiSonoPage() {
               <p>
                 Ti dico la verità: non è che un giorno mi sono svegliato con l&apos;idea di fare software.
                 Sono arrivato agli strumenti perché, come imprenditore, i problemi li avevo sulla mia pelle.
-                <span className="text-navy-900/50"> [DA CONFERMARE — inserire la storia personale reale di Florin: da dove viene, come è entrato nell&apos;edilizia, la sua esperienza.]</span>
+                Non li ho studiati sui libri: li ho vissuti in cantiere, uno per uno.
               </p>
               <p>
                 Facevo i preventivi la sera, tardi, su fogli che si rompevano da soli. Guardavo il fatturato

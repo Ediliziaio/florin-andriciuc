@@ -14,7 +14,7 @@ export const site = {
   // Codice di verifica Google Search Console (metodo "tag HTML").
   // Incolla qui SOLO il valore del content="..." fornito da GSC, poi rideploya.
   googleVerification: "",
-  // Tracciamento — [DA CONFERMARE] inserire ID reali GA4 / GTM
+  // Tracciamento (GA4 / GTM / Meta Pixel)
   analytics: {
     ga4: "G-XWZ0WLLBKN", // Google Analytics 4 Measurement ID
     gtm: "", // Google Tag Manager container (es. GTM-XXXXXX)
@@ -26,10 +26,10 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/florinandriciuc/",
     instagram: "https://www.instagram.com/florin.andriciuc/",
     youtube: "https://www.youtube.com/channel/UC1H6GR9P2ZocPU_p0ZHoGVQ",
-    tiktok: "[DA CONFERMARE]",
+    tiktok: "",
   },
   cta: {
-    primaryLabel: "Parla con me",
+    primaryLabel: "Consulenza gratuita",
     primaryHref: "/contatti",
   },
 } as const;

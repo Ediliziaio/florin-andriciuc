@@ -9,7 +9,7 @@ import { JsonLd, ecosystemItemListSchema } from "@/components/JsonLd";
 import { BrandLogo, hasBrandLogo } from "@/components/BrandLogo";
 import {
   IconArrow, IconCheck, IconExternal, IconBuilding, IconMegaphone,
-  IconHandshake, IconChart, IconQuote, IconUsers, IconGrid,
+  IconHandshake, IconChart, IconUsers, IconGrid,
 } from "@/components/Icons";
 
 const accentMap = {
@@ -37,7 +37,6 @@ export default function HomePage() {
       <FounderNote />
       <Ecosystem />
       <Method />
-      <Testimonials />
       <LatestArticles />
       <FaqSection items={homeFaq} />
       <CtaBand secondary={{ label: "Scopri l'ecosistema", href: "/ecosistema" }} />
@@ -71,7 +70,7 @@ function Hero() {
                 {site.cta.primaryLabel}
                 <IconArrow className="arrow h-4 w-4" />
               </Link>
-              <Link href="/ecosistema" className="btn btn-ghost">Vedi come ti aiuto</Link>
+              <Link href="/ecosistema" className="btn btn-ghost">Scopri l&apos;ecosistema</Link>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted">
               <span className="inline-flex items-center gap-2"><IconCheck className="h-4 w-4 text-accent-600" /> Pensati per chi è in cantiere</span>
@@ -105,13 +104,12 @@ function Hero() {
         <div className="mt-16 border-t border-line pt-12">
           <StatRow
             items={[
-              { value: "4", label: "brand nell'ecosistema, un solo obiettivo" },
-              { value: "1.000+*", label: "imprese edili raggiunte dai progetti" },
-              { value: "10+*", label: "anni dentro il mondo dell'edilizia" },
+              { value: "7", label: "brand nell'ecosistema, un solo obiettivo" },
+              { value: "4", label: "leve: gestire, trovare clienti, vendere, guadagnare" },
+              { value: "1", label: "focus: l'impresa edile italiana" },
               { value: "100%", label: "pensato per chi vive il cantiere" },
             ]}
           />
-          <p className="mt-6 text-xs text-muted/70">* Dati indicativi — [DA CONFERMARE] con i numeri reali.</p>
         </div>
       </div>
     </section>
@@ -367,48 +365,6 @@ function Method() {
             { n: "03", title: "La mettiamo a terra sul tuo lavoro", text: "Attiviamo lo strumento che serve e lo facciamo girare sul modo in cui lavori tu. Non il contrario." },
           ]}
         />
-      </div>
-    </section>
-  );
-}
-
-/* ---------------- TESTIMONIALS ---------------- */
-const testimonials = [
-  { quote: "Finalmente qualcuno che parla come noi in cantiere e non come un venditore di software.", name: "[DA CONFERMARE]", role: "Titolare impresa di costruzioni" },
-  { quote: "Ho capito per la prima volta su quali lavori guadagnavo davvero. Cambia tutto.", name: "[DA CONFERMARE]", role: "Imprenditore edile" },
-  { quote: "Le richieste hanno smesso di dipendere solo dal passaparola. Ora arrivano ogni settimana.", name: "[DA CONFERMARE]", role: "Serramentista" },
-];
-
-function Testimonials() {
-  return (
-    <section className="bg-bg-soft py-20 sm:py-28">
-      <div className="container-fa">
-        <SectionHeading
-          eyebrow="Dicono di me"
-          title="Le parole degli imprenditori edili"
-          intro="Testimonianze da inserire con nome, cognome e impresa reali."
-        />
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <Reveal key={i} delay={i * 90}>
-              <figure className="card-lift h-full rounded-2xl border border-line bg-white p-6 sm:p-7">
-                <IconQuote className="h-8 w-8 text-gold-500" />
-                <blockquote className="mt-3 font-serif text-lg italic leading-snug text-navy-900">
-                  {t.quote}
-                </blockquote>
-                <figcaption className="mt-5 flex items-center gap-3 border-t border-line pt-4">
-                  <span className="grid h-10 w-10 place-items-center rounded-full bg-brand-100 font-display text-sm font-bold text-brand-700">
-                    {t.name.startsWith("[") ? "?" : t.name.charAt(0)}
-                  </span>
-                  <div className="leading-tight">
-                    <p className="font-display text-sm font-bold text-navy-900">{t.name}</p>
-                    <p className="text-xs text-muted">{t.role}</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );

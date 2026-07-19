@@ -104,7 +104,7 @@ export const projects: Project[] = [
     kicker: "La community",
     role: "Founder",
     tagline: "Contenuti e community per chi fa impresa in edilizia",
-    // [DA CONFERMARE] — descrizione da allineare all'effettivo posizionamento del progetto
+    // descrizione allineabile all'effettivo posizionamento del progetto
     description:
       "Il punto di riferimento editoriale per l'imprenditore edile: guide pratiche, casi reali e strumenti per crescere. La porta d'ingresso all'ecosistema, dove tutto parte dai problemi veri del cantiere.",
     bullets: [
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     kicker: "L'AI",
     role: "Founder",
     tagline: "L'intelligenza artificiale al servizio dell'edilizia",
-    // [DA CONFERMARE] — allineare alla descrizione precisa dei servizi di edilizia.io
+    // descrizione allineabile ai servizi precisi di edilizia.io
     description:
       "Strumenti di intelligenza artificiale pensati per l'impresa edile: automatizzano il lavoro ripetitivo e aiutano a decidere più in fretta, così tu resti sul cantiere. Costruiamo il futuro dell'edilizia con l'AI e le persone.",
     bullets: [

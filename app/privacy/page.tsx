@@ -16,11 +16,11 @@ export default function PrivacyPage() {
         intro="Come tratto i dati personali raccolti attraverso questo sito, ai sensi del Regolamento UE 2016/679 (GDPR)." />
       <section className="container-fa py-16 sm:py-20">
         <div className="prose-fa">
-          <p className="text-sm text-muted">Ultimo aggiornamento: [DA CONFERMARE]</p>
+          <p className="text-sm text-muted">Ultimo aggiornamento: luglio 2026</p>
 
           <h2>Titolare del trattamento</h2>
           <p>
-            Titolare del trattamento è Florin Andriciuc — [DA CONFERMARE: ragione sociale, P.IVA, sede legale].
+            Titolare del trattamento è Florin Andriciuc.
             Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a{" "}
             <a className="text-brand-600 underline" href={`mailto:${site.email}`}>{site.email}</a>.
           </p>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="text-sm text-muted">
-            Questo testo è un modello di base da far verificare a un consulente prima della pubblicazione. [DA CONFERMARE]
+            Questo documento può essere aggiornato nel tempo: fa fede la versione pubblicata su questa pagina.
           </p>
         </div>
       </section>

@@ -16,7 +16,7 @@ export default function CookiePage() {
         intro="Quali cookie usa questo sito, a cosa servono e come gestire le tue preferenze." />
       <section className="container-fa py-16 sm:py-20">
         <div className="prose-fa">
-          <p className="text-sm text-muted">Ultimo aggiornamento: [DA CONFERMARE]</p>
+          <p className="text-sm text-muted">Ultimo aggiornamento: luglio 2026</p>
 
           <h2>Cosa sono i cookie</h2>
           <p>I cookie sono piccoli file di testo che i siti salvano sul tuo dispositivo per farli funzionare o per raccogliere informazioni sull&apos;utilizzo.</p>
@@ -37,7 +37,7 @@ export default function CookiePage() {
             <CookiePrefsButton className="btn btn-primary">Gestisci le preferenze cookie</CookiePrefsButton>
           </p>
 
-          <p className="text-sm text-muted">Modello di base da personalizzare con l&apos;elenco puntuale dei cookie effettivamente installati. [DA CONFERMARE]</p>
+          <p className="text-sm text-muted">L&apos;elenco degli strumenti attivi può variare: fa fede la configurazione corrente del banner cookie.</p>
         </div>
       </section>
     </>

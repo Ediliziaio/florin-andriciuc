@@ -6,7 +6,7 @@ import { TextHoverEffect, FooterBackgroundGradient } from "./ui/hover-footer";
 import { nav, site } from "@/lib/site";
 import { projects } from "@/lib/projects";
 
-// Mostra i social solo se configurati (esclude i placeholder [DA CONFERMARE])
+// Mostra i social solo se configurati (URL http); i placeholder vengono esclusi
 const socials = (
   [
     ["LinkedIn", site.social.linkedin],
