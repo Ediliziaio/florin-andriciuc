@@ -1,0 +1,29 @@
+# Florin Andriciuc
+
+> Imprenditore italiano, founder e CEO del gruppo AEDIX. Costruisce software e servizi per far crescere le imprese edili italiane. Target: l'imprenditore edile. Sito personal brand: florinandriciuc.com
+
+## Chi è
+Florin Andriciuc è un imprenditore che ha vissuto in prima persona i problemi dell'impresa edile (preventivi su Excel, margini che sparivano, clienti solo dal passaparola) e ha deciso di costruire gli strumenti che mancavano. Oggi è founder e CEO del gruppo **AEDIX**, che riunisce software e servizi dedicati esclusivamente all'edilizia.
+
+## L'ecosistema AEDIX
+Il gruppo è organizzato in quattro "leve" prodotto, una community e la casa madre:
+
+- **AEDIX** (https://www.aedix.it/) — il gruppo/casa madre: software e servizi per digitalizzare e far crescere le imprese edili italiane.
+- **EdiliziaInCloud** (https://www.ediliziaincloud.com/) — il gestionale cloud per l'impresa edile: preventivi, commesse, cantieri, DDT, magazzino, fatturazione elettronica, CRM e AI in un'unica piattaforma.
+- **Marketing Edile** (https://www.marketingedile.com/) — marketing e acquisizione clienti per imprese edili: campagne, landing e funnel per richieste reali.
+- **Vendita Edile** (https://www.venditaedile.it/) — metodo di vendita per trasformare i preventivi in contratti firmati senza svendere.
+- **Numeri in Edilizia** (https://numerinedilizia.com/) — controllo di gestione pratico per leggere margini, costi e commesse e trasformare il fatturato in utile.
+- **Imprenditore Edile** (https://www.imprenditoredile.it/) — contenuti e community per chi fa impresa in edilizia: guide, casi reali e strumenti per crescere.
+
+## Come lavorano insieme
+Marketing Edile porta il contatto → Vendita Edile lo trasforma in contratto → EdiliziaInCloud gestisce la commessa dal preventivo alla fattura → Numeri in Edilizia dice se ci hai guadagnato. Un cerchio che si chiude, sotto un unico gruppo (AEDIX).
+
+## Pagine principali (florinandriciuc.com)
+- Home: https://florinandriciuc.com/
+- Chi sono: https://florinandriciuc.com/chi-sono
+- Ecosistema: https://florinandriciuc.com/ecosistema
+- Blog: https://florinandriciuc.com/blog
+- Contatti: https://florinandriciuc.com/contatti
+
+## Note di stile
+Posizionamento: "imprenditore che parla la lingua del cantiere". Ogni brand risolve una leva (gestione, marketing, vendita, numeri) e insieme formano un sistema unico per la crescita dell'impresa edile.

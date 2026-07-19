@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Florin Andriciuc — Personal Brand
+   Design tokens: fondo bianco · blu (autorità) · arancione (energia) · oro (valore)
+   ========================================================================== */
+@theme {
+  /* Blu — autorità / fiducia */
+  --color-navy-900: #0d1f3c;
+  --color-navy-800: #122a4f;
+  --color-navy-700: #183763;
+  --color-brand-700: #1e478a;
+  --color-brand-600: #2560ad;
+  --color-brand-500: #3576c9;
+  --color-brand-400: #5f97dd;
+  --color-brand-300: #93b8ec;
+  --color-brand-100: #dbe8f9;
+  --color-brand-50: #eff5fd;
+
+  /* Arancione — energia / CTA */
+  --color-accent-700: #c2410c;
+  --color-accent-600: #e35709;
+  --color-accent-500: #f97316;
+  --color-accent-400: #fb9a4b;
+  --color-accent-200: #fdd3ab;
+  --color-accent-100: #ffe9d5;
+
+  /* Oro — valore / premium */
+  --color-gold-700: #a9781f;
+  --color-gold-600: #c69a2e;
+  --color-gold-500: #d9b04a;
+  --color-gold-400: #e4c470;
+  --color-gold-200: #f2e0af;
+  --color-gold-100: #f9f0d6;
+
+  /* Neutri */
+  --color-ink: #0d1f3c;
+  --color-muted: #566581;
+  --color-line: #e6ecf5;
+  --color-bg-soft: #f5f8fd;
+  --color-bg-softer: #eef3fb;
+
+  /* Font */
+  --font-display: var(--font-wix-display), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-wix-text), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+
+  /* Raggi + ombre */
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --shadow-soft: 0 1px 2px rgba(13, 31, 60, 0.04), 0 12px 32px -12px rgba(13, 31, 60, 0.16);
+  --shadow-card: 0 1px 3px rgba(13, 31, 60, 0.06), 0 20px 40px -24px rgba(13, 31, 60, 0.24);
+  --shadow-glow: 0 18px 50px -20px rgba(249, 115, 22, 0.45);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    /* clip evita lo scroll orizzontale SENZA trasformare body/html in scroll-container
+       (overflow-x:hidden forzerebbe overflow-y:auto e bloccherebbe lo scroll verticale). */
+    overflow-x: clip;
+  }
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    color: var(--color-navy-900);
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--color-accent-200); color: var(--color-navy-900); }
+}
+
+/* ------- Layout ------- */
+.container-fa {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 640px) { .container-fa { padding-inline: 2rem; } }
+
+/* ------- Eyebrow ------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent-600);
+}
+.eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-accent-500), var(--color-gold-500));
+}
+.eyebrow-light { color: var(--color-gold-400); }
+.eyebrow-light::before { background: linear-gradient(90deg, var(--color-gold-400), var(--color-accent-400)); }
+
+/* ------- Bottoni ------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.975rem;
+  line-height: 1;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary {
+  background: linear-gradient(180deg, var(--color-accent-500), var(--color-accent-600));
+  color: #fff;
+  box-shadow: var(--shadow-glow);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 22px 55px -18px rgba(249, 115, 22, 0.6); }
+.btn-dark { background: var(--color-navy-900); color: #fff; }
+.btn-dark:hover { background: var(--color-navy-800); transform: translateY(-2px); }
+.btn-ghost {
+  background: transparent;
+  color: var(--color-navy-900);
+  border: 1.5px solid var(--color-line);
+}
+.btn-ghost:hover { border-color: var(--color-brand-400); background: var(--color-brand-50); }
+.btn .arrow { transition: transform 0.2s ease; }
+.btn:hover .arrow { transform: translateX(3px); }
+
+/* ------- Nav ------- */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px; right: 12px; bottom: 4px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-accent-500), var(--color-gold-500));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+.nav-link:hover::after { transform: scaleX(1); }
+
+/* ------- Numero grande in serif ------- */
+.stat-num {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-brand-600), var(--color-accent-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ------- Testo evidenziato ------- */
+.hl {
+  background: linear-gradient(180deg, transparent 62%, var(--color-accent-200) 62%);
+  padding-inline: 0.1em;
+}
+.hl-gold { background: linear-gradient(180deg, transparent 62%, var(--color-gold-200) 62%); }
+.text-gradient {
+  background: linear-gradient(120deg, var(--color-brand-600) 10%, var(--color-accent-500) 55%, var(--color-gold-500) 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ------- Sfondi decorativi ------- */
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(13, 31, 60, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 31, 60, 0.05) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 75%);
+}
+
+/* ------- Reveal on scroll ------- */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-item.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item { opacity: 1; transform: none; transition: none; }
+}
+
+/* ------- Marquee (nastro brand) ------- */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { display: inline-flex; gap: 3.5rem; animation: marquee 26s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* ------- Float + glow ------- */
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.floaty { animation: floaty 6s ease-in-out infinite; }
+@keyframes pulseGlow { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+.pulse-glow { animation: pulseGlow 5s ease-in-out infinite; }
+
+/* ------- Card hover ------- */
+.card-lift { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.card-lift:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+
+/* ------- Vertical tabs (ecosistema) ------- */
+@keyframes progressFill { from { height: 0%; } to { height: 100%; } }
+.fa-progress { animation: progressFill 5s linear forwards; }
+@keyframes tabPanelIn { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+.tab-panel-in { animation: tabPanelIn 0.55s cubic-bezier(0.22, 1, 0.36, 1); }
+@media (prefers-reduced-motion: reduce) {
+  .fa-progress, .tab-panel-in { animation: none; }
+}
+
+/* ------- Wordmark hover (footer) ------- */
+@keyframes faDraw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+.fa-draw { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: faDraw 3.5s ease-in-out forwards; }
+@media (prefers-reduced-motion: reduce) { .fa-draw { animation: none; stroke-dashoffset: 0; } }
+
+/* ------- Volano / schema animato ------- */
+@keyframes spin360 { to { transform: rotate(360deg); } }
+@keyframes spin360r { to { transform: rotate(-360deg); } }
+.spin-slow { animation: spin360 40s linear infinite; }
+.orbit-slow { animation: spin360 14s linear infinite; }
+.orbit-med { animation: spin360 9s linear infinite; }
+.orbit-rev { animation: spin360r 18s linear infinite; }
+@keyframes dashflow { to { stroke-dashoffset: -1000; } }
+.dash-flow { animation: dashflow 14s linear infinite; }
+@keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes auroraShift {
+  0% { transform: translate3d(-8%, -4%, 0) scale(1); }
+  50% { transform: translate3d(8%, 6%, 0) scale(1.12); }
+  100% { transform: translate3d(-8%, -4%, 0) scale(1); }
+}
+.aurora { animation: auroraShift 18s ease-in-out infinite; }
+@keyframes ringPulse { 0%, 100% { opacity: 0.35; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.04); } }
+.ring-pulse { animation: ringPulse 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .spin-slow, .orbit-slow, .orbit-med, .orbit-rev, .dash-flow, .aurora, .ring-pulse { animation: none; }
+}
+
+/* ------- Link sottolineato animato ------- */
+.link-u {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.25s ease;
+}
+.link-u:hover { background-size: 100% 1.5px; }
+
+/* ------- Prose (articoli) ------- */
+.prose-fa { max-width: 44rem; }
+.prose-fa p { margin-top: 1.35rem; font-size: 1.075rem; line-height: 1.75; color: #33415c; }
+.prose-fa h2 {
+  margin-top: 2.75rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.prose-fa ul { margin-top: 1.35rem; display: grid; gap: 0.7rem; }
+.prose-fa li {
+  position: relative;
+  padding-left: 1.85rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #33415c;
+}
+.prose-fa li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55rem;
+  width: 0.9rem; height: 0.9rem;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at center, #fff 0 34%, transparent 35%),
+    linear-gradient(135deg, var(--color-accent-500), var(--color-gold-500));
+}
