@@ -6,6 +6,8 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
+import { StickyCta } from "@/components/StickyCta";
+import { MetaPixel } from "@/components/MetaPixel";
 import { JsonLd, personSchema, organizationSchema, websiteSchema } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
@@ -88,6 +90,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const gtm = site.analytics.gtm;
   const ga4 = site.analytics.ga4;
+  const metaPixel = site.analytics.metaPixel;
   return (
     <html lang="it" className={`${wixDisplay.variable} ${wixText.variable} ${lora.variable}`}>
       <body>
@@ -108,8 +111,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <StickyCta />
         <CookieBanner />
         {ga4 && <GoogleAnalytics gaId={ga4} />}
+        <MetaPixel />
+        {metaPixel && (
+          <noscript>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              alt=""
+              src={`https://www.facebook.com/tr?id=${metaPixel}&ev=PageView&noscript=1`}
+            />
+          </noscript>
+        )}
       </body>
     </html>
   );

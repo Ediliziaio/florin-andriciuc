@@ -14,6 +14,7 @@ Il gruppo è organizzato in quattro "leve" prodotto, una community e la casa mad
 - **Vendita Edile** (https://www.venditaedile.it/) — metodo di vendita per trasformare i preventivi in contratti firmati senza svendere.
 - **Numeri in Edilizia** (https://numerinedilizia.com/) — controllo di gestione pratico per leggere margini, costi e commesse e trasformare il fatturato in utile.
 - **Imprenditore Edile** (https://www.imprenditoredile.it/) — contenuti e community per chi fa impresa in edilizia: guide, casi reali e strumenti per crescere.
+- **edilizia.io** (https://edilizia.io/) — l'intelligenza artificiale al servizio dell'edilizia: strumenti AI per automatizzare il lavoro ripetitivo dell'impresa edile.
 
 ## Come lavorano insieme
 Marketing Edile porta il contatto → Vendita Edile lo trasforma in contratto → EdiliziaInCloud gestisce la commessa dal preventivo alla fattura → Numeri in Edilizia dice se ci hai guadagnato. Un cerchio che si chiude, sotto un unico gruppo (AEDIX).
@@ -24,6 +25,12 @@ Marketing Edile porta il contatto → Vendita Edile lo trasforma in contratto �
 - Ecosistema: https://florinandriciuc.com/ecosistema
 - Blog: https://florinandriciuc.com/blog
 - Contatti: https://florinandriciuc.com/contatti
+
+## Pagine prodotto dedicate (approfondimenti su ogni leva)
+- EdiliziaInCloud (gestionale): https://florinandriciuc.com/ecosistema/edilizia-in-cloud
+- Marketing Edile (acquisizione clienti): https://florinandriciuc.com/ecosistema/marketing-edile
+- Vendita Edile (chiusura preventivi): https://florinandriciuc.com/ecosistema/vendita-edile
+- Numeri in Edilizia (controllo di gestione): https://florinandriciuc.com/ecosistema/numeri-in-edilizia
 
 ## Note di stile
 Posizionamento: "imprenditore che parla la lingua del cantiere". Ogni brand risolve una leva (gestione, marketing, vendita, numeri) e insieme formano un sistema unico per la crescita dell'impresa edile.

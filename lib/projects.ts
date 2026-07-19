@@ -1,4 +1,4 @@
-export type BrandGroup = "prodotto" | "community" | "gruppo";
+export type BrandGroup = "prodotto" | "community" | "gruppo" | "ai";
 
 export type Project = {
   slug: string;
@@ -115,6 +115,26 @@ export const projects: Project[] = [
     accent: "accent",
     group: "community",
     knowsAbout: ["community imprenditori edili", "formazione impresa edile", "contenuti per imprese di costruzioni"],
+  },
+  {
+    slug: "edilizia-io",
+    name: "edilizia.io",
+    url: "https://edilizia.io/",
+    domain: "edilizia.io",
+    kicker: "L'AI",
+    role: "Founder",
+    tagline: "L'intelligenza artificiale al servizio dell'edilizia",
+    // [DA CONFERMARE] — allineare alla descrizione precisa dei servizi di edilizia.io
+    description:
+      "Strumenti di intelligenza artificiale pensati per l'impresa edile: automatizzano il lavoro ripetitivo e aiutano a decidere più in fretta, così tu resti sul cantiere. Costruiamo il futuro dell'edilizia con l'AI e le persone.",
+    bullets: [
+      "AI applicata ai problemi reali del cantiere",
+      "Meno lavoro ripetitivo, più tempo per costruire",
+      "Tecnologia al servizio delle persone",
+    ],
+    accent: "brand",
+    group: "ai",
+    knowsAbout: ["intelligenza artificiale edilizia", "AI per imprese edili", "automazione settore costruzioni"],
   },
   {
     slug: "aedix",

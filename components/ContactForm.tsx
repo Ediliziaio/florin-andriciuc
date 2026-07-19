@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { IconArrow } from "./Icons";
+import { mpTrack } from "@/lib/meta-pixel";
 
 // [DA CONFERMARE] — endpoint reale del form (Formspree, EdiliziaInCloud Form Builder,
 // o edge function). Finché è vuoto, il form simula l'invio e porta alla pagina "Grazie".
@@ -39,6 +40,11 @@ export function ContactForm() {
         // Nessun endpoint configurato: piccola pausa per simulare l'invio.
         await new Promise((r) => setTimeout(r, 500));
       }
+      // Conversione Meta: Lead (solo se c'è consenso marketing).
+      mpTrack("Lead", {
+        content_name: "Richiesta contatto",
+        content_category: String(data.interesse ?? ""),
+      });
       router.push("/grazie");
     } catch {
       setError("Qualcosa è andato storto. Riprova o scrivimi direttamente via email.");

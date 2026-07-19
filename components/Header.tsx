@@ -23,9 +23,9 @@ export function Header() {
         scrolled ? "bg-white/90 backdrop-blur-md border-b border-line" : "bg-transparent"
       }`}
     >
-      <div className="container-fa flex items-center justify-between h-[72px]">
+      <div className="container-fa flex items-center justify-between h-[84px]">
         <Link href="/" className="shrink-0" aria-label="Florin Andriciuc — home">
-          <Logo />
+          <Logo className="h-11 w-auto sm:h-14" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

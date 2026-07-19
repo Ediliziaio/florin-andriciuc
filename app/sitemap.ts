@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { articles } from "@/lib/articles";
+import { productSlugs } from "@/lib/productPageData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.domain;
@@ -14,6 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contatti`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
   ];
 
+  const productRoutes: MetadataRoute.Sitemap = productSlugs.map((slug) => ({
+    url: `${base}/ecosistema/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   const articleRoutes: MetadataRoute.Sitemap = articles.map((a) => ({
     url: `${base}/blog/${a.slug}`,
     lastModified: new Date(a.date),
@@ -21,5 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...articleRoutes];
+  return [...staticRoutes, ...productRoutes, ...articleRoutes];
 }

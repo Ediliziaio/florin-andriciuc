@@ -57,6 +57,8 @@ export function CookieBanner() {
       /* ignore */
     }
     updateGtag(c);
+    // Notifica gli altri script (es. Meta Pixel) del consenso aggiornato.
+    window.dispatchEvent(new CustomEvent("fa:consent-updated", { detail: c }));
     setOpen(false);
     setShowPrefs(false);
   }

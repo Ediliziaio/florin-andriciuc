@@ -6,6 +6,7 @@ import { JsonLd, breadcrumbSchema, ecosystemItemListSchema } from "@/components/
 import { IconExternal, IconBuilding, IconMegaphone, IconHandshake, IconChart, IconCheck, IconUsers, IconGrid } from "@/components/Icons";
 import { Flywheel } from "@/components/Flywheel";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
+import { BrandLogo, hasBrandLogo } from "@/components/BrandLogo";
 import { extraBrands } from "@/lib/projects";
 import { site } from "@/lib/site";
 
@@ -64,27 +65,32 @@ export default function EcosistemaPage() {
         <div className="mt-20 border-t border-line pt-16">
           <div className="mb-10">
             <span className="eyebrow">Oltre le 4 leve</span>
-            <h2 className="mt-3 text-[2rem] sm:text-[2.4rem] font-bold leading-tight">La community e la casa madre</h2>
+            <h2 className="mt-3 text-[2rem] sm:text-[2.4rem] font-bold leading-tight">La community, l&apos;AI e la casa madre</h2>
           </div>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-3">
             {extraBrands.map((p, i) => {
-              const Icon = brandIcon[p.slug as keyof typeof brandIcon];
+              const Icon = brandIcon[p.slug as keyof typeof brandIcon] ?? IconGrid;
               const a = accentMap[p.accent];
               return (
                 <Reveal key={p.slug} delay={i * 80}>
                   <article className={`group card-lift flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-line bg-white ${a.ring}`}>
                     <div className={`h-1.5 w-full bg-gradient-to-r ${a.bar}`} />
                     <div className="flex flex-1 flex-col p-6 sm:p-8">
-                      <div className="flex items-center gap-3">
-                        <span className={`grid h-12 w-12 place-items-center rounded-xl ${a.chip}`}>
-                          <Icon className="h-6 w-6" />
-                        </span>
+                      <div className="flex items-start gap-3">
+                        {hasBrandLogo(p.slug) ? (
+                          <BrandLogo slug={p.slug} name={p.name} imgClass="h-6 sm:h-7" />
+                        ) : (
+                          <span className={`grid h-12 w-12 place-items-center rounded-xl ${a.chip}`}>
+                            <Icon className="h-6 w-6" />
+                          </span>
+                        )}
                         <div>
                           <div className="flex flex-wrap items-center gap-2">
                             <span className="text-xs font-semibold uppercase tracking-wider text-accent-600">{p.kicker}</span>
                             {p.slug === "aedix" && <span className="rounded-full bg-gold-500 px-2 py-0.5 text-[0.65rem] font-bold uppercase text-white">La casa madre</span>}
                           </div>
-                          <h3 className="font-display text-xl font-bold text-navy-900">{p.name}</h3>
+                          {!hasBrandLogo(p.slug) && <h3 className="font-display text-xl font-bold text-navy-900">{p.name}</h3>}
+                          <h3 className="sr-only">{p.name}</h3>
                           <p className="text-sm font-medium text-muted">{p.domain}</p>
                         </div>
                       </div>

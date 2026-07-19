@@ -18,6 +18,7 @@ export const site = {
   analytics: {
     ga4: "", // Google Analytics 4 Measurement ID (es. G-XXXXXXX)
     gtm: "", // Google Tag Manager container (es. GTM-XXXXXX)
+    metaPixel: "912028060826443", // Meta (Facebook) Pixel ID
   },
   email: "[DA CONFERMARE]@florinandriciuc.com",
   phone: "+39 [DA CONFERMARE]",

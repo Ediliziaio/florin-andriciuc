@@ -6,6 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { Portrait } from "@/components/Portrait";
 import { SectionHeading, StatRow, CtaBand, FaqSection, ProcessSteps, Pill } from "@/components/ui";
 import { JsonLd, ecosystemItemListSchema } from "@/components/JsonLd";
+import { BrandLogo, hasBrandLogo } from "@/components/BrandLogo";
 import {
   IconArrow, IconCheck, IconExternal, IconBuilding, IconMegaphone,
   IconHandshake, IconChart, IconQuote, IconUsers, IconGrid,
@@ -269,17 +270,24 @@ function Ecosystem() {
                   className={`group card-lift block h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:p-8 ${p.featured ? "md:col-span-2" : ""}`}
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                      <span className={`grid h-12 w-12 place-items-center rounded-xl ${a.chip}`}>
-                        <Icon className="h-6 w-6" />
-                      </span>
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <p className="text-xs font-semibold uppercase tracking-wider text-gold-400">{p.kicker}</p>
-                          {p.featured && <span className="rounded-full bg-accent-500 px-2 py-0.5 text-[0.65rem] font-bold uppercase text-white">In primo piano</span>}
-                        </div>
-                        <h3 className="mt-0.5 font-display text-xl font-bold text-white">{p.name}</h3>
+                    <div>
+                      <div className="mb-3 flex items-center gap-2">
+                        <p className="text-xs font-semibold uppercase tracking-wider text-gold-400">{p.kicker}</p>
+                        {p.featured && <span className="rounded-full bg-accent-500 px-2 py-0.5 text-[0.65rem] font-bold uppercase text-white">In primo piano</span>}
                       </div>
+                      {hasBrandLogo(p.slug) ? (
+                        <>
+                          <BrandLogo slug={p.slug} name={p.name} imgClass="h-7 sm:h-8" />
+                          <h3 className="sr-only">{p.name}</h3>
+                        </>
+                      ) : (
+                        <div className="flex items-center gap-3">
+                          <span className={`grid h-11 w-11 place-items-center rounded-xl ${a.chip}`}>
+                            <Icon className="h-6 w-6" />
+                          </span>
+                          <h3 className="font-display text-xl font-bold text-white">{p.name}</h3>
+                        </div>
+                      )}
                     </div>
                     <IconExternal className="h-5 w-5 text-brand-300 transition group-hover:text-white" />
                   </div>
@@ -302,10 +310,10 @@ function Ecosystem() {
           })}
         </div>
 
-        {/* Gruppo (AEDIX) + Community (Imprenditore Edile) */}
-        <div className="mt-5 grid gap-5 md:grid-cols-2">
+        {/* Community · AI · Gruppo */}
+        <div className="mt-5 grid gap-5 md:grid-cols-3">
           {extraBrands.map((p, i) => {
-            const Icon = brandIcon[p.slug as keyof typeof brandIcon];
+            const Icon = brandIcon[p.slug as keyof typeof brandIcon] ?? IconGrid;
             const a = accentMap[p.accent];
             return (
               <Reveal key={p.slug} delay={i * 90}>
@@ -314,17 +322,24 @@ function Ecosystem() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title={`${p.name} — ${p.tagline}`}
-                  className="group card-lift flex h-full items-center gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.06] to-transparent p-6"
+                  className="group card-lift flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.06] to-transparent p-6"
                 >
-                  <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-xl ${a.chip}`}>
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-gold-400">{p.kicker}</p>
-                    <h3 className="font-display text-lg font-bold text-white">{p.name}</h3>
-                    <p className="mt-0.5 truncate text-sm text-brand-100/75">{p.tagline}</p>
+                  <div className="flex items-center justify-between gap-3">
+                    {hasBrandLogo(p.slug) ? (
+                      <BrandLogo slug={p.slug} name={p.name} imgClass="h-6" />
+                    ) : (
+                      <span className={`grid h-11 w-11 place-items-center rounded-xl ${a.chip}`}>
+                        <Icon className="h-6 w-6" />
+                      </span>
+                    )}
+                    <IconExternal className="h-5 w-5 shrink-0 text-brand-300 transition group-hover:text-white" />
                   </div>
-                  <IconExternal className="ml-auto h-5 w-5 shrink-0 text-brand-300 transition group-hover:text-white" />
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gold-400">{p.kicker}</p>
+                    {!hasBrandLogo(p.slug) && <h3 className="font-display text-lg font-bold text-white">{p.name}</h3>}
+                    <h3 className="sr-only">{p.name}</h3>
+                    <p className="mt-1 text-sm text-brand-100/75">{p.tagline}</p>
+                  </div>
                 </a>
               </Reveal>
             );

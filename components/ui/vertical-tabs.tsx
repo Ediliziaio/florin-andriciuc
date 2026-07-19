@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import Link from "next/link";
 import { IconArrow, IconExternal, IconBuilding, IconMegaphone, IconHandshake, IconChart } from "@/components/Icons";
+import { BrandLogo, hasBrandLogo } from "@/components/BrandLogo";
 import { products } from "@/lib/projects";
 
 function cn(...classes: (string | undefined | false)[]) {
@@ -122,9 +124,12 @@ export function VerticalTabs() {
 
                   {isActive && (
                     <div className="tab-panel-in relative flex h-full flex-col">
-                      <span className="inline-flex w-fit rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
-                        {s.kicker}
-                      </span>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <span className="inline-flex w-fit rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                          {s.kicker}
+                        </span>
+                        {hasBrandLogo(s.slug) && <BrandLogo slug={s.slug} name={s.name} imgClass="h-6" />}
+                      </div>
 
                       <div className="mt-auto">
                         <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white">{s.name}</h3>
@@ -135,12 +140,19 @@ export function VerticalTabs() {
                           <span className="text-sm font-medium text-white">{result[s.slug]}</span>
                         </div>
 
-                        <div className="mt-6">
+                        <div className="mt-6 flex flex-wrap items-center gap-3">
+                          <Link
+                            href={`/ecosistema/${s.slug}`}
+                            className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-display text-sm font-bold text-navy-900 transition hover:gap-3"
+                          >
+                            Scheda completa
+                            <IconArrow className="h-4 w-4" />
+                          </Link>
                           <a
                             href={s.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-display text-sm font-bold text-navy-900 transition hover:gap-3"
+                            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 font-display text-sm font-bold text-white transition hover:bg-white/10"
                           >
                             Visita {s.domain}
                             <IconExternal className="h-4 w-4" />

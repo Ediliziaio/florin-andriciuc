@@ -1,23 +1,13 @@
-export type Block =
-  | { type: "p"; text: string }
-  | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] }
-  | { type: "quote"; text: string };
+import type { Article } from "./article-types";
+import { articleEdiliziaInCloud } from "./articles/edilizia-in-cloud";
+import { articleMarketingEdile } from "./articles/marketing-edile";
+import { articleVenditaEdile } from "./articles/vendita-edile";
+import { articleNumeriInEdilizia } from "./articles/numeri-in-edilizia";
 
-export type Article = {
-  slug: string;
-  title: string;
-  excerpt: string;
-  date: string; // ISO
-  readingTime: string;
-  category: string;
-  // Brand dell'ecosistema a cui l'articolo rimanda (slug in lib/projects.ts)
-  relatedProject?: string;
-  body: Block[];
-  faq?: { q: string; a: string }[];
-};
+export type { Article, Block } from "./article-types";
 
-export const articles: Article[] = [
+// Articoli "brevi" storici + 4 articoli SEO lunghi (uno per prodotto).
+const baseArticles: Article[] = [
   {
     slug: "preventivo-edile-excel-perche-ho-smesso",
     title: "Perché ho smesso di fare il preventivo su Excel (e cosa uso oggi)",
@@ -203,6 +193,15 @@ export const articles: Article[] = [
     ],
   },
 ];
+
+// Articoli lunghi SEO (uno per prodotto) + storici, ordinati per data (più recenti prima).
+export const articles: Article[] = [
+  articleEdiliziaInCloud,
+  articleMarketingEdile,
+  articleVenditaEdile,
+  articleNumeriInEdilizia,
+  ...baseArticles,
+].sort((a, b) => (a.date < b.date ? 1 : -1));
 
 export function getArticle(slug: string) {
   return articles.find((a) => a.slug === slug);

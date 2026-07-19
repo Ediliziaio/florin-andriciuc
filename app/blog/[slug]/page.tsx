@@ -4,9 +4,13 @@ import { notFound } from "next/navigation";
 import { articles, getArticle } from "@/lib/articles";
 import { projects } from "@/lib/projects";
 import { ArticleBody } from "@/components/ArticleBody";
+import { ArticleIllustration, kindFromProject } from "@/components/ArticleIllustration";
+import { ShareButtons } from "@/components/ShareButtons";
+import { ReadingProgress } from "@/components/ReadingProgress";
+import { TrackView } from "@/components/TrackView";
 import { Reveal } from "@/components/Reveal";
 import { FaqSection, Pill } from "@/components/ui";
-import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
+import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { IconArrow, IconExternal } from "@/components/Icons";
 import { site } from "@/lib/site";
 
@@ -47,6 +51,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
+      <ReadingProgress />
+      <TrackView event="ViewContent" name={a.title} category={a.category} />
       <JsonLd
         data={[
           articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date }),
@@ -55,7 +61,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             { name: "Blog", url: `${site.domain}/blog` },
             { name: a.title, url },
           ]),
-          ...(a.faq ? [faqSchema(a.faq)] : []),
+          // FAQPage lo emette già <FaqSection> in fondo alla pagina (evita duplicati).
         ]}
       />
 
@@ -70,17 +76,35 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <span className="mx-2">/</span>
             <span className="text-navy-900">{a.category}</span>
           </nav>
-          <div className="flex items-center gap-3 text-sm">
-            <Pill>{a.category}</Pill>
-            <span className="text-muted">{formatDate(a.date)} · {a.readingTime} di lettura</span>
-          </div>
-          <h1 className="mt-5 max-w-3xl text-[2.2rem] sm:text-[3rem] font-extrabold leading-[1.06]">{a.title}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-muted leading-relaxed">{a.excerpt}</p>
-          <div className="mt-6 flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-full bg-navy-900 font-display text-sm font-extrabold text-white">FA</span>
-            <div className="leading-tight">
-              <p className="font-display text-sm font-bold text-navy-900">Florin Andriciuc</p>
-              <p className="text-xs text-muted">{site.role}</p>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+            <div>
+              <div className="flex items-center gap-3 text-sm">
+                <Pill>{a.category}</Pill>
+                <span className="text-muted">{formatDate(a.date)} · {a.readingTime} di lettura</span>
+              </div>
+              <h1 className="mt-5 text-[2.2rem] sm:text-[3rem] font-extrabold leading-[1.06]">{a.title}</h1>
+              <p className="mt-5 text-lg text-muted leading-relaxed">{a.excerpt}</p>
+              <div className="mt-6 flex items-center gap-3">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-navy-900 font-display text-sm font-extrabold text-white">FA</span>
+                <div className="leading-tight">
+                  <p className="font-display text-sm font-bold text-navy-900">Florin Andriciuc</p>
+                  <p className="text-xs text-muted">{site.role}</p>
+                </div>
+              </div>
+              <div className="mt-6 border-t border-line pt-5">
+                <ShareButtons url={url} title={a.title} />
+              </div>
+            </div>
+
+            {/* Cover illustrata */}
+            <div className="hidden lg:block">
+              <div className="relative overflow-hidden rounded-[1.75rem] border border-line bg-white p-6 shadow-card">
+                <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
+                <div className="relative">
+                  <ArticleIllustration kind={kindFromProject(a.relatedProject)} className="block h-auto w-full" />
+                  <p className="mt-4 text-center text-xs font-semibold uppercase tracking-[0.15em] text-accent-600">{a.category}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -88,7 +112,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {/* Corpo */}
       <article className="container-fa py-16 sm:py-20">
-        <ArticleBody blocks={a.body} />
+        <ArticleBody blocks={a.body} projectSlug={a.relatedProject} />
 
         {/* CTA brand collegato */}
         {related && (
@@ -107,6 +131,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </div>
           </Reveal>
         )}
+
+        {/* Condivisione a fine articolo */}
+        <div className="prose-fa mt-12 border-t border-line pt-8">
+          <p className="mb-4 font-display text-lg font-bold text-navy-900">Ti è stato utile? Passa parola.</p>
+          <ShareButtons url={url} title={a.title} />
+        </div>
       </article>
 
       {a.faq && a.faq.length > 0 && <FaqSection title="Domande frequenti" intro="" items={a.faq} />}

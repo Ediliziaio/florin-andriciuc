@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
+import { TrackView } from "@/components/TrackView";
 import { IconMail, IconCheck, IconExternal } from "@/components/Icons";
 import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function ContattiPage() {
   return (
     <>
+      <TrackView event="Contact" name="Contatti" />
       <PageHero
         eyebrow="Contatti"
         crumb="Contatti"

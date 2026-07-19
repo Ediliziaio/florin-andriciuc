@@ -4,6 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { Pill, CtaBand } from "@/components/ui";
 import { IconArrow } from "@/components/Icons";
+import { ArticleIllustration, kindFromProject } from "@/components/ArticleIllustration";
 import { articles } from "@/lib/articles";
 
 export const metadata: Metadata = {
@@ -37,12 +38,10 @@ export default function BlogPage() {
             href={`/blog/${featured.slug}`}
             className="card-lift group grid overflow-hidden rounded-[1.75rem] border border-line bg-white md:grid-cols-2 hover:border-brand-400"
           >
-            <div className="relative min-h-[220px] bg-gradient-to-br from-brand-600 via-brand-500 to-accent-500 p-8">
-              <div aria-hidden className="absolute inset-0 bg-dots opacity-40" />
-              <div className="relative flex h-full flex-col justify-between">
-                <span className="inline-flex w-fit rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">In evidenza</span>
-                <span className="font-serif text-2xl italic text-white/95">{featured.category}</span>
-              </div>
+            <div className="relative flex min-h-[220px] items-center justify-center bg-gradient-to-br from-brand-50 to-accent-100 p-8">
+              <div aria-hidden className="absolute inset-0 bg-grid opacity-60" />
+              <span className="absolute left-6 top-6 inline-flex w-fit rounded-full bg-navy-900 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">In evidenza</span>
+              <ArticleIllustration kind={kindFromProject(featured.relatedProject)} className="relative block h-auto w-full max-w-[280px]" />
             </div>
             <div className="p-8">
               <div className="flex items-center gap-2 text-xs text-muted">
