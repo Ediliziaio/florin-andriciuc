@@ -25,7 +25,7 @@ export const site = {
   social: {
     linkedin: "https://www.linkedin.com/in/florinandriciuc/",
     instagram: "https://www.instagram.com/florin.andriciuc/",
-    youtube: "[DA CONFERMARE]",
+    youtube: "https://www.youtube.com/channel/UC1H6GR9P2ZocPU_p0ZHoGVQ",
     tiktok: "[DA CONFERMARE]",
   },
   cta: {
