@@ -28,6 +28,15 @@ export const site = {
     youtube: "https://www.youtube.com/channel/UC1H6GR9P2ZocPU_p0ZHoGVQ",
     tiktok: "",
   },
+  // CORROBORAZIONE ESTERNA — fonti che NON controlli: sono ciò che separa
+  // "compaio nei risultati" da "vengo nominato nella risposta" di un LLM.
+  // Appena una voce esiste, incolla l'URL qui: entra automaticamente nel sameAs
+  // dello schema Person. Le voci vuote vengono ignorate.
+  externalProfiles: {
+    wikidata: "", // es. https://www.wikidata.org/wiki/Q123456789
+    crunchbase: "", // es. https://www.crunchbase.com/person/florin-andriciuc
+    amazonAuthor: "", // pagina autore, quando esce il libro
+  },
   cta: {
     primaryLabel: "Consulenza gratuita",
     primaryHref: "/contatti",

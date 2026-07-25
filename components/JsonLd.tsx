@@ -15,6 +15,8 @@ export function JsonLd({ data }: { data: Json | Json[] }) {
 // URL "sameAs" dell'entità Florin: social reali (esclusi i placeholder) + i brand di proprietà.
 // Collegare le proprietà possedute rafforza l'entità agli occhi di Google e delle AI (GEO).
 const socialSameAs = Object.values(site.social).filter((u) => u.startsWith("http"));
+// Fonti terze (Wikidata, Crunchbase, …): pesano più dei social perché non le controlli.
+const externalSameAs = Object.values(site.externalProfiles).filter((u) => u.startsWith("http"));
 const AEDIX = projects.find((p) => p.slug === "aedix")!;
 
 export const personSchema: Json = {
@@ -34,7 +36,7 @@ export const personSchema: Json = {
   ],
   worksFor: { "@id": `${AEDIX.url}#organization` },
   founder: projects.map((p) => ({ "@type": "Organization", name: p.name, url: p.url })),
-  sameAs: [...socialSameAs, ...projects.map((p) => p.url)],
+  sameAs: [...externalSameAs, ...socialSameAs, ...projects.map((p) => p.url)],
 };
 
 // Organizzazione principale: AEDIX (casa madre). I brand sono subOrganization/brand.
