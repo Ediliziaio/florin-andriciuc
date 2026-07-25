@@ -122,6 +122,6 @@ export const productPageVenditaEdile: ProductPage = {
       a: "Alcuni cercano solo il prezzo, è vero. Impari a riconoscerli in cinque minuti e a non sprecarci una domenica di preventivi.",
     },
   ],
-  relatedArticles: ["vendere-preventivi-edili-guida"],
+  relatedArticles: ["tre-preventivi-persi"],
   relatedProducts: ["marketing-edile", "edilizia-in-cloud", "numeri-in-edilizia"],
 };

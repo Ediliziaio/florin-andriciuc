@@ -46,6 +46,9 @@ export function Footer() {
               <li>
                 <Link href="/" className="text-brand-100/80 hover:text-white transition-colors">Home</Link>
               </li>
+              <li>
+                <Link href="/media" className="text-brand-100/80 hover:text-white transition-colors">Press kit</Link>
+              </li>
             </ul>
           </div>
 

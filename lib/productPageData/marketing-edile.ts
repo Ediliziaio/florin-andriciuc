@@ -136,8 +136,7 @@ export const productPageMarketingEdile: ProductPage = {
     },
   ],
   relatedArticles: [
-    "trovare-clienti-impresa-edile-guida",
-    "impresa-edile-trovare-clienti-2026",
+    "come-trovavo-i-clienti",
   ],
   relatedProducts: ["vendita-edile", "edilizia-in-cloud", "numeri-in-edilizia"],
 };

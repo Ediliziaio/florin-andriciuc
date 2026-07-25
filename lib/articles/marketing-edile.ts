@@ -1,208 +1,211 @@
 import type { Article } from "../article-types";
 
 export const articleMarketingEdile: Article = {
-  slug: "trovare-clienti-impresa-edile-guida",
-  title:
-    "Trovare clienti per l'impresa edile: la guida pratica (senza dipendere dal passaparola)",
+  slug: "come-trovavo-i-clienti",
+  title: "Come trovavo i clienti quando avevo l'impresa (e cosa non rifarei)",
   excerpt:
-    "Come un'impresa edile trova clienti oggi senza vivere di sola fortuna: offerta chiara, farsi trovare online, landing e CRM, lead qualificati, numeri veri. Te lo spiego da imprenditore a imprenditore.",
-  date: "2026-07-18",
-  readingTime: "9 min",
-  category: "Marketing",
+    "Undici giorni di febbraio senza una chiamata. Gli operai fermi, i mezzi in cortile, le fatture uguali. Ti racconto come trovavo davvero i clienti ai tempi dell'impresa: passaparola, volantini, il cartello in cantiere, le prime campagne. E cosa oggi non rifarei.",
+  date: "2026-07-17",
+  readingTime: "8 min",
+  category: "Storia",
   relatedProject: "marketing-edile",
   body: [
     {
       type: "p",
-      text: "Te lo dico da imprenditore edile, non da guru del marketing. Per anni ho preso i clienti come li prendi tu adesso: col passaparola. Uno chiamava l'altro, il cugino mandava il vicino, e il lavoro girava. Poi arrivava il mese morto. Zero richieste. Gli operai in cassa, i mezzi fermi, le fatture da pagare lo stesso.",
+      text: "Undici giorni. Tanto è durato il silenzio, quel febbraio. Undici giorni senza una richiesta vera. Il telefono lo avevo pure controllato due volte, per sicurezza. Funzionava. Non chiamava nessuno.",
     },
     {
       type: "p",
-      text: "Lì ho capito una cosa scomoda. Il passaparola non è un canale. È fortuna. E la fortuna, come sistema per far girare un'impresa, è terribile. Se non decidi tu quando arrivano le richieste, non stai guidando l'azienda: la stai subendo.",
+      text: "Fuori c'erano il furgone fermo e il ponteggio smontato in cortile. Dentro c'erano tre buste paga e un finanziamento sul mezzo nuovo. Quei costi non si fermavano con il telefono. Chi mi conosce sa che ho fatto il muratore prima di fare altro: se vuoi il contesto, l'ho scritto in [chi sono](/chi-sono).",
     },
     {
       type: "p",
-      text: "Questa guida è su come [trovare clienti per l'impresa edile](/ecosistema/marketing-edile) oggi, nel concreto. Niente marketese. Solo i pezzi che servono e nell'ordine giusto.",
+      text: "Questo non è un manuale. È il racconto di come trovavo i clienti quando avevo l'impresa. Cosa funzionava davvero, cosa mi ero raccontato che funzionasse, e cosa oggi non rifarei per nessun motivo.",
     },
-    { type: "h2", text: "Il vero problema non è il lavoro. È il flusso" },
+    { type: "h2", text: "All'inizio erano solo conoscenze" },
     {
       type: "p",
-      text: "Quasi nessuna impresa edile ha un problema di quantità di lavoro nell'arco dell'anno. Il problema è che il lavoro arriva a ondate. Tre mesi pieni, due mesi vuoti. E nei due vuoti bruci quello che hai messo da parte nei tre pieni.",
+      text: "Il primo cantiere me lo diede il fratello di un amico. Un bagno. Ottocento euro di manodopera e la sensazione di avercela fatta. Il secondo arrivò dal cognato di quel cliente. Il terzo dal vicino di casa del cognato.",
     },
     {
       type: "p",
-      text: "L'acquisizione clienti in edilizia serve esattamente a questo: rendere prevedibile il flusso di richieste. Non a diventare famoso. Non a fare i video su TikTok. A far arrivare, ogni settimana, qualche richiesta di persone della tua zona che hanno davvero un lavoro da farti fare.",
+      text: "Per due anni ho lavorato così. Uno chiama l'altro. Nessuna strategia, nessun piano. Solo lavorare bene e sperare che qualcuno lo raccontasse in giro. E per un po' è bastato davvero.",
+    },
+    {
+      type: "p",
+      text: "Il passaparola ha una cosa che nessun annuncio avrà mai: chi arriva raccomandato si fida già prima di vederti. Non discute il prezzo allo stesso modo. Non ti mette in gara con altri quattro. Arriva quasi convinto.",
+    },
+    { type: "h3", text: "Il problema che non vedevo" },
+    {
+      type: "p",
+      text: "Il passaparola però non lo comandi tu. Arriva quando arriva. Io non sapevo dire, a gennaio, quanti cantieri avrei avuto a marzo. Non lo sapevo e me ne vantavo pure. Dicevo: da me si viene per il lavoro fatto bene.",
     },
     {
       type: "quote",
-      text: "Non ti serve piacere a tutti. Ti serve farti trovare dalle poche persone che, in questo momento, hanno un cantiere per te.",
+      text: "Il passaparola non è un canale. È fortuna con il vestito buono. E la fortuna, come sistema per pagare gli stipendi, è pessima.",
     },
-    { type: "h2", text: "Prima di tutto: un'offerta chiara" },
+    { type: "h2", text: "Volantini, cartello e furgone scritto" },
     {
       type: "p",
-      text: "Qui casca il 90% delle imprese. Prima di spendere un euro in pubblicità, devi sapere rispondere a tre domande in una riga: cosa fai, per chi, e perché con te invece che con l'impresa a due paesi di distanza.",
+      text: "Quando ho iniziato a sentire i mesi vuoti, ho fatto la cosa più ovvia. Duemila volantini. Li ho pagati centosettanta euro e li ho distribuiti io, di sabato, quartiere per quartiere. Tre chiamate in tutto. Un lavoro da novecento euro.",
     },
     {
       type: "p",
-      text: "Se la risposta è \"faccio un po' di tutto, per tutti\", non hai un'offerta. Hai un problema. Il cliente che deve rifare il bagno non cerca \"un'impresa edile\". Cerca chi rifà i bagni chiavi in mano, nella sua città, con date certe.",
+      text: "In pratica ci ho rimesso i sabati e ci ho guadagnato una giornata di lavoro. Non è un disastro. Ma non è un sistema. E soprattutto non si ripete: al secondo giro di volantini le chiamate furono zero.",
     },
-    { type: "h3", text: "Come rendi l'offerta concreta" },
+    {
+      type: "p",
+      text: "Poi c'era il cartello in cantiere. Quello sì che qualcosa portava. Non tanto, ma buono. Chi passava davanti al ponteggio vedeva il lavoro in corso, non una promessa. Due o tre richieste all'anno arrivavano da lì, e quasi sempre gente della via.",
+    },
+    { type: "h3", text: "Cosa portava qualcosa e cosa no" },
     {
       type: "ul",
       items: [
-        "Scegli un lavoro che sai fare bene e che margina: ristrutturazioni complete, cappotti, bagni, nuove costruzioni. Uno, non dieci.",
-        "Definisci la zona: il tuo raggio d'azione reale, quello dove arrivi col furgone senza rimetterci la giornata.",
-        "Metti nero su bianco cosa ti rende diverso: date rispettate, cantiere pulito, un preventivo che poi non cambia a metà lavoro.",
+        "Cartello in cantiere: poche richieste ma calde, gente della zona che vedeva il lavoro vero.",
+        "Furgone scritto con numero grande: qualche chiamata l'anno, quasi tutta da lavori piccoli.",
+        "Volantini nelle cassette: costo basso, resa bassa, e alla seconda volta scende a zero.",
+        "Biglietti da visita lasciati dai fornitori: mai arrivato niente in sei anni, mai.",
+        "Amici geometri e architetti: i lavori migliori, ma dipendevo da loro e dai loro tempi.",
       ],
     },
     {
       type: "p",
-      text: "Un'offerta chiara fa metà del lavoro da sola. Perché filtra. Chi non è in target scorre oltre, e tu non paghi per parlargli.",
+      text: "Sui geometri ho fatto l'errore più costoso. Per un periodo il settanta per cento dei miei cantieri passava da due professionisti. Andava benissimo. Finché uno dei due ha cambiato impresa di fiducia. In due mesi mi mancava metà del fatturato.",
     },
-    { type: "h2", text: "Farti trovare online: Meta e Google, in locale" },
+    { type: "h2", text: "Gennaio e febbraio, ogni anno uguali" },
     {
       type: "p",
-      text: "Oggi chi deve ristrutturare cerca online prima ancora di chiedere in giro. Guarda, confronta, si fa un'idea. Se online non ci sei, o ci sei con una pagina Facebook ferma al 2019, hai perso il confronto prima di aprire bocca.",
-    },
-    {
-      type: "p",
-      text: "I due canali che funzionano per un'impresa edile sono due, e bastano. Non serve esserci ovunque.",
-    },
-    { type: "h3", text: "Meta (Facebook e Instagram)" },
-    {
-      type: "p",
-      text: "Qui intercetti chi non ti sta ancora cercando ma è nella tua zona e nella fase giusta della vita: ha comprato casa, sta per ristrutturare, ci pensa. Fai vedere lavori veri, cantieri finiti, prima e dopo. Foto vere, non foto stock. La gente compra da chi vede lavorare.",
-    },
-    { type: "h3", text: "Google" },
-    {
-      type: "p",
-      text: "Qui intercetti chi ti sta già cercando adesso. Uno che digita \"ristrutturazione appartamento\" più il nome della tua città ha già il problema in testa. Quella è la richiesta più calda che esista. Farsi trovare lì vale oro.",
+      text: "C'è una cosa che in edilizia sanno tutti e nessuno dice ad alta voce. Dopo Natale il telefono muore. La gente ha speso, ha freddo, rimanda. E tu hai i costi fissi identici a settembre.",
     },
     {
       type: "p",
-      text: "La regola è una: campagne locali, targettizzate sulla tua zona. Non annunci sparati a caso su mezza Italia sperando nel like. Il like non paga le fatture. La richiesta di preventivo sì.",
+      text: "Io quei due mesi li passavo a fare manutenzione ai mezzi e a rifare i preventivi vecchi. Mi raccontavo che stavo sistemando l'azienda. Stavo solo aspettando. Aspettare non è una strategia, è ansia con l'agenda aperta.",
     },
-    { type: "h2", text: "Dove atterrano le richieste: landing e CRM" },
     {
       type: "p",
-      text: "Puoi fare le campagne migliori del mondo, ma se il contatto atterra su una pagina confusa o finisce in mezzo ai messaggi di WhatsApp, l'hai perso. Ti serve un posto dove il contatto arriva e un posto dove lo tieni.",
+      text: "La verità è che a febbraio io ero disponibile e nessuno lo sapeva. Non ero introvabile per scelta. Ero invisibile per abitudine. Nessuno in zona sapeva che avevo la squadra libera.",
+    },
+    { type: "h2", text: "I primi tentativi online (e i lead spazzatura)" },
+    {
+      type: "p",
+      text: "Il primo tentativo serio è stato una pagina Facebook. Foto di cantieri fatte male, con la luce sbagliata e il ponteggio storto. Trentadue like, quasi tutti parenti. Zero richieste in otto mesi.",
+    },
+    {
+      type: "p",
+      text: "Poi ho messo mano al portafoglio. Seicento euro in tre settimane. Una campagna impostata da un ragazzo bravo con i computer. Ventidue contatti. Sembrava una festa. Poi li ho chiamati uno per uno.",
     },
     {
       type: "ul",
       items: [
-        "La landing: una pagina sola, con l'offerta chiara, i lavori fatti e un form semplice. Nome, telefono, tipo di lavoro. Niente questionari da venti campi.",
-        "Il CRM: dove finiscono tutti i contatti, in ordine, con lo stato di ciascuno. Da richiamare, preventivo mandato, in attesa, chiuso. Così non perdi più nessuno tra le chat.",
+        "Otto non hanno mai risposto al telefono, nemmeno dopo tre tentativi.",
+        "Sei erano fuori zona: uno stava a centoventi chilometri.",
+        "Quattro volevano un preventivo per curiosità, senza data e senza soldi.",
+        "Due cercavano un altro mestiere: uno voleva un elettricista.",
+        "Due erano reali. Di quei due, uno ha firmato.",
       ],
+    },
+    {
+      type: "p",
+      text: "Un cliente su ventidue contatti. La conclusione che ho tirato allora è stata sbagliatissima: la pubblicità non funziona per l'edilizia. Ci ho creduto per due anni buoni. Ho perso due anni.",
+    },
+    {
+      type: "p",
+      text: "Non era la pubblicità. Ero io. Dicevo di fare tutto per tutti. Senza zona, senza tipo di lavoro, senza un prezzo di partenza. Chi arrivava non poteva capire se ero l'impresa giusta. Quindi arrivavano tutti. E tutti vuol dire nessuno.",
+    },
+    { type: "h2", text: "Il tizio del preventivo gratis" },
+    {
+      type: "p",
+      text: "Un episodio non me lo dimentico. Chiama un signore, molto gentile. Vuole rifare casa intera. Fisso il sopralluogo di sabato mattina, perché in settimana ero in cantiere. Ci passo due ore, con il metro laser e il quaderno.",
+    },
+    {
+      type: "p",
+      text: "Preparo il preventivo la domenica sera. Voci dettagliate, tempi, fasi. Lo mando. Silenzio. Richiamo dopo dieci giorni. E lui, tranquillo: guardi, mi serviva solo per capire se il preventivo dell'altra impresa era gonfiato.",
+    },
+    {
+      type: "p",
+      text: "Mi ero fatto usare come metro di paragone. Gratis, di sabato, con la domenica sera sopra. Quel mese avevo fatto nove sopralluoghi. Ne erano diventati lavoro due. Sette giornate buttate, più il carburante.",
     },
     {
       type: "quote",
-      text: "Il lead che non richiami entro un'ora è un lead che chiama il tuo concorrente. La velocità di risposta è metà della vendita.",
+      text: "Non mi mancavano i contatti. Mi mancava il coraggio di dire di no a quelli sbagliati prima di salire in furgone.",
     },
+    { type: "h2", text: "Cosa non rifarei" },
     {
       type: "p",
-      text: "Questo pezzo è quello che le imprese saltano sempre. Spendono in pubblicità e poi lasciano morire i contatti perché nessuno li richiama in tempo. È come riempire d'acqua un secchio bucato.",
-    },
-    { type: "h2", text: "Qualificare i lead: no ai perditempo" },
-    {
-      type: "p",
-      text: "Attento, perché qui c'è la trappola. Fai due campagne, arrivano venti richieste, e ti gasi. Poi le apri: quindici vogliono \"solo un preventivo gratis\" per curiosità, tre hanno un lavoro da 300 euro, e uno voleva un altro mestiere. Venti lead spazzatura non valgono un solo cliente giusto.",
-    },
-    {
-      type: "p",
-      text: "Il marketing senza filtro ti riempie l'agenda di sopralluoghi inutili. Ti fa perdere le giornate. Qualificare vuol dire parlare solo con chi ha il lavoro e il budget che vuoi tu. Si fa a monte, con l'offerta e il messaggio giusti, e a valle, con due domande veloci prima del sopralluogo.",
-    },
-    { type: "h3", text: "Le domande che filtrano" },
-    {
-      type: "ul",
-      items: [
-        "Che lavoro deve fare, di preciso? Se non lo sa spiegare, spesso non è pronto.",
-        "Per quando lo vuole fatto? Chi ha una data ha un'intenzione vera.",
-        "Ha già un'idea di budget? Non per fargli lo sconto, per capire se siete sullo stesso pianeta.",
-      ],
-    },
-    {
-      type: "p",
-      text: "Tre domande. Ti risparmiano dieci sopralluoghi a vuoto al mese. E dieci sopralluoghi sono una settimana di lavoro che ti torna in tasca.",
-    },
-    { type: "h2", text: "Misurare: senza numeri stai tirando a indovinare" },
-    {
-      type: "p",
-      text: "L'ultimo pezzo, e il più ignorato. Se non misuri, non sai cosa funziona, e continui a buttare soldi nel canale sbagliato. Non ti servono venti metriche. Te ne bastano quattro.",
+      text: "Se tornassi indietro, cambierei poche cose. Ma le cambierei subito, non dopo sei anni.",
     },
     {
       type: "ul",
       items: [
-        "Quanti contatti arrivano ogni settimana e da quale canale.",
-        "Quanti di questi sono in target, non curiosi.",
-        "Quanti diventano un sopralluogo e poi un preventivo.",
-        "Quanto ti costa un cliente vero, chiuso, contro quanto ti rende.",
+        "Non dipenderei mai più da due professionisti per la metà del fatturato. Mai più.",
+        "Non andrei a un sopralluogo senza sapere tipo di lavoro, zona e tempi. Tre domande al telefono.",
+        "Non giudicherei un canale dopo tre settimane e seicento euro. Troppo poco per capire qualcosa.",
+        "Non direi più che faccio un po' di tutto. Chi fa tutto non se lo ricorda nessuno.",
+        "Non lascerei i contatti nelle chat. Li ho persi lì dentro, tra foto di cantiere e vocali.",
+        "Non aspetterei febbraio per farmi vivo. Le richieste di febbraio si preparano a novembre.",
       ],
     },
     {
       type: "p",
-      text: "Quando conosci questi quattro numeri, il marketing smette di essere una scommessa. Diventa un rubinetto: apri, chiudi, regoli. Investi di più dove chiude, tagli dove porta solo perditempo.",
+      text: "L'ultima è quella che mi brucia di più. Il flusso di richieste ha un ritardo. Quello che semini oggi lo raccogli fra sei o otto settimane. Io mi muovevo sempre quando il telefono era già muto. Cioè sempre tardi.",
     },
-    { type: "h2", text: "Gli errori che vedo più spesso" },
+    { type: "h2", text: "Cosa ho capito dopo" },
     {
-      type: "ul",
-      items: [
-        "Partire dalla pubblicità senza un'offerta chiara: paghi per parlare con tutti e non chiudi nessuno.",
-        "Rincorrere i like invece delle richieste: bello il post virale, ma se non porta il telefono non serve.",
-        "Non richiamare i contatti in tempo: il lead è caldo per un'ora, poi si raffredda.",
-        "Trattare ogni richiesta come oro: qualificare non è arroganza, è rispetto per il tuo tempo.",
-        "Non misurare niente: senza numeri reinvesti a sentimento e il sentimento in impresa costa caro.",
-      ],
+      type: "p",
+      text: "Ho capito che il problema non era trovare clienti. Era decidere quali. Finché li prendevo tutti, il calendario si riempiva di curiosi. Gente che voleva solo un numero da confrontare.",
     },
     {
       type: "p",
-      text: "Questi cinque errori, da soli, spiegano perché tante imprese dicono \"la pubblicità non funziona\". Non è la pubblicità. È il sistema attorno che manca.",
-    },
-    { type: "h2", text: "Perché ho creato Marketing Edile" },
-    {
-      type: "p",
-      text: "Ho messo insieme questi pezzi perché li ho sbagliati tutti prima di farli funzionare. Ho buttato soldi in campagne senza offerta. Ho lasciato morire contatti nelle chat. Ho fatto sopralluoghi a perditempo per mesi.",
+      text: "Ho capito anche una cosa scomoda sul passaparola. Ti fa sentire bravo. Ti dice che il lavoro parla per te. Ma ti toglie la mano dal volante. Se le richieste dipendono dagli altri, la tua impresa la guidano gli altri.",
     },
     {
       type: "p",
-      text: "Quando ho rimesso in fila offerta, campagne locali, landing, CRM e numeri, le richieste hanno smesso di essere fortuna e sono diventate un flusso che decidevo io. È da lì che è nato [Marketing Edile](https://www.marketingedile.com/): portare all'impresa edile richieste di clienti reali e in target, non numeri di vanità.",
+      text: "E ho capito che le richieste sono solo metà del mestiere. L'altra metà è cosa succede dopo: come rispondi, quanto ci metti, che preventivo mandi. Su quello ho sbagliato per anni, e l'ho raccontato in un altro pezzo.",
     },
     {
       type: "p",
-      text: "Non ti sto vendendo un sogno. Ti sto dicendo di smettere di dipendere dal caso. Che tu lo faccia con noi o da solo, il salto è quello: dal telefono che squilla per fortuna al telefono che squilla perché hai costruito il sistema per farlo squillare. Se vuoi partire, guarda [Marketing Edile nell'ecosistema AEDIX](/ecosistema/marketing-edile) o [scrivimi due righe](/contatti).",
+      text: "Da tutta questa roba imparata a mie spese è poi nato un lavoro. Oggi mi occupo di far arrivare richieste vere alle imprese edili, e lo faccio con [Marketing Edile](/ecosistema/marketing-edile). Non perché mi piaccia la pubblicità. Perché ricordo bene quei undici giorni di febbraio.",
+    },
+    {
+      type: "p",
+      text: "Se stai leggendo questo articolo a gennaio, con il telefono fermo, non prendertela con la stagione. Prenditela con novembre. Poi rimettiti in piedi e comincia da lì. Se ti va di vedere come lavoriamo oggi, il sito è [marketingedile.com](https://www.marketingedile.com/).",
     },
     {
       type: "links",
-      title: "Approfondisci",
+      title: "Continua a leggere",
       items: [
-        { label: "Marketing Edile", href: "https://www.marketingedile.com/" },
         {
-          label: "Marketing Edile: come funziona",
-          href: "/ecosistema/marketing-edile",
+          label: "Perché ho smesso di fare il preventivo su Excel",
+          href: "/blog/preventivo-edile-excel-perche-ho-smesso",
         },
         {
-          label: "Il passaparola non basta più: come l'impresa edile trova clienti",
-          href: "/blog/impresa-edile-trovare-clienti-2026",
+          label: "Non hai un problema di lavoro, hai un problema di margine",
+          href: "/blog/impresa-edile-problema-di-margine-non-di-lavoro",
         },
-        { label: "Vendita Edile: chiudere i preventivi", href: "/ecosistema/vendita-edile" },
-        { label: "Tutto l'ecosistema AEDIX", href: "/ecosistema" },
+        {
+          label: "Vendita Edile: cosa succede dopo la richiesta",
+          href: "/ecosistema/vendita-edile",
+        },
+        { label: "Chi sono e da dove vengo", href: "/chi-sono" },
       ],
     },
   ],
   faq: [
     {
-      q: "Quanto devo investire per iniziare a trovare clienti online?",
-      a: "Meno di quanto pensi, ma con un patto: parti piccolo, misura, e reinvesti solo su ciò che porta richieste vere. Il budget non è il problema. Buttare soldi su campagne senza offerta chiara e senza richiamare i contatti, quello sì.",
+      q: "Quanto lavoro ti arrivava davvero dal passaparola?",
+      a: "Per i primi due anni praticamente tutto. Poi si è stabilizzato intorno alla metà, con l'altra metà che passava da due geometri. Sembrava solidità. Era dipendenza: quando uno dei due ha cambiato impresa, in due mesi mi mancava metà del fatturato.",
     },
     {
-      q: "Devo abbandonare il passaparola?",
-      a: "Mai. Il passaparola è oro: chi arriva raccomandato si fida già. L'obiettivo non è sostituirlo, è smettere di dipenderne al 100%. Aggiungi un canale che controlli tu, così quando il passaparola rallenta non ti fermi.",
+      q: "I volantini hanno funzionato?",
+      a: "Poco e una volta sola. Duemila volantini, centosettanta euro e due sabati miei: tre chiamate e un lavoro da novecento euro. Al secondo giro, zero chiamate. Il cartello in cantiere invece qualcosa portava sempre, perché la gente vede il lavoro in corso e non una promessa.",
     },
     {
-      q: "Come evito i lead spazzatura e i perditempo?",
-      a: "Si filtra a monte e a valle. A monte con un'offerta chiara che parla solo al cliente giusto. A valle con due o tre domande veloci prima del sopralluogo: che lavoro, per quando, che idea di budget. Tre domande ti risparmiano dieci sopralluoghi a vuoto al mese.",
+      q: "Perché la tua prima campagna online è andata male?",
+      a: "Seicento euro, ventidue contatti, un cliente. Ma la colpa non era della campagna. Dicevo di fare tutto per tutti, senza zona e senza tipo di lavoro. Così arrivava chiunque: fuori zona, altro mestiere, curiosi. Con un messaggio confuso paghi per parlare con le persone sbagliate.",
     },
     {
-      q: "Meglio Meta o Google per un'impresa edile?",
-      a: "Servono per cose diverse. Google intercetta chi ti sta già cercando adesso, ed è la richiesta più calda. Meta intercetta chi è nella tua zona e nella fase giusta ma non ti sta ancora cercando. Insieme coprono il presente e il futuro delle tue richieste.",
+      q: "Cosa cambieresti se tornassi indietro?",
+      a: "Tre cose. Non dipenderei mai da due professionisti per metà del fatturato. Non andrei a un sopralluogo senza aver chiesto prima tipo di lavoro, zona e tempi. E non aspetterei febbraio per muovermi: le richieste di febbraio si preparano a novembre, perché tra quello che semini e quello che raccogli passano sei o otto settimane.",
     },
   ],
 };

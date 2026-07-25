@@ -123,7 +123,7 @@ export const productPageEdiliziaInCloud: ProductPage = {
     },
   ],
   relatedArticles: [
-    "gestionale-impresa-edile-guida-completa",
+    "perche-ho-costruito-un-gestionale",
     "preventivo-edile-excel-perche-ho-smesso",
   ],
   relatedProducts: ["numeri-in-edilizia", "vendita-edile", "marketing-edile"],

@@ -119,7 +119,7 @@ export const productPageNumeriInEdilizia: ProductPage = {
     },
   ],
   relatedArticles: [
-    "controllo-di-gestione-impresa-edile-guida",
+    "anno-che-ho-rischiato-di-chiudere",
     "impresa-edile-problema-di-margine-non-di-lavoro",
   ],
   relatedProducts: ["edilizia-in-cloud", "vendita-edile", "marketing-edile"],

@@ -1,12 +1,17 @@
 import type { Article } from "./article-types";
+// Pezzi in prima persona (storia / opinione). Su questo dominio NON pubblichiamo
+// guide how-to: quelle vivono sui siti dei brand, altrimenti ci cannibalizziamo.
 import { articleEdiliziaInCloud } from "./articles/edilizia-in-cloud";
 import { articleMarketingEdile } from "./articles/marketing-edile";
 import { articleVenditaEdile } from "./articles/vendita-edile";
 import { articleNumeriInEdilizia } from "./articles/numeri-in-edilizia";
+import { articleComeHoIniziato } from "./articles/come-ho-iniziato";
+import { articlePercheSetteBrand } from "./articles/perche-sette-brand";
+import { articlePercheNonSiDigitalizzano } from "./articles/perche-non-si-digitalizzano";
+import { articleAiInCantiere } from "./articles/ai-in-cantiere";
 
 export type { Article, Block } from "./article-types";
 
-// Articoli "brevi" storici + 4 articoli SEO lunghi (uno per prodotto).
 const baseArticles: Article[] = [
   {
     slug: "preventivo-edile-excel-perche-ho-smesso",
@@ -135,70 +140,17 @@ const baseArticles: Article[] = [
       },
     ],
   },
-  {
-    slug: "impresa-edile-trovare-clienti-2026",
-    title: "Il passaparola non basta più: come l'impresa edile trova clienti nel 2026",
-    excerpt:
-      "Il passaparola è un ottimo canale. Ma è un canale che non controlli. Ecco come costruire un flusso di richieste prevedibile senza svilire il tuo lavoro.",
-    date: "2026-07-02",
-    readingTime: "6 min",
-    category: "Marketing",
-    relatedProject: "marketing-edile",
-    body: [
-      {
-        type: "p",
-        text: "\"Io i clienti li ho sempre presi col passaparola\". Verissimo. E il passaparola è oro: chi arriva raccomandato si fida già. Il problema è un altro: non lo controlli. Va bene per due mesi, poi si ferma, e tu resti con gli operai in cassa e nessun cantiere all'orizzonte.",
-      },
-      {
-        type: "p",
-        text: "Un'impresa che dipende solo dal passaparola non ha un canale di acquisizione. Ha la fortuna. E la fortuna, come strategia, è terribile.",
-      },
-      { type: "h2", text: "Il problema non è farti trovare. È farti scegliere" },
-      {
-        type: "p",
-        text: "Oggi chi deve ristrutturare o costruire cerca online prima ancora di chiedere in giro. Guarda, confronta, si fa un'idea. Se tu online non ci sei — o ci sei con una pagina Facebook ferma al 2019 — hai già perso il confronto prima di parlargli.",
-      },
-      {
-        type: "quote",
-        text: "Non ti serve piacere a tutti. Ti serve farti trovare dalle poche persone della tua zona che, in questo momento, hanno un lavoro da farti fare.",
-      },
-      { type: "h2", text: "I tre pezzi di un sistema di acquisizione che funziona" },
-      {
-        type: "ul",
-        items: [
-          "Un'offerta chiara: cosa fai, per chi, e perché con te invece che con l'impresa a due paesi di distanza.",
-          "Un modo per farti trovare: campagne locali su Meta e Google, non post a caso sperando nel like.",
-          "Un modo per raccogliere e richiamare i contatti: una landing e un CRM, non i messaggi persi tra WhatsApp e le mail.",
-        ],
-      },
-      { type: "h2", text: "Attenzione: più richieste ≠ più lavoro buono" },
-      {
-        type: "p",
-        text: "Qui casca l'imprenditore. Fa due campagne, arrivano venti richieste, ma sono tutte gente che vuole \"solo un preventivo gratis\" o lavori da 300 euro. Il marketing senza filtro ti riempie l'agenda di perditempo. Serve qualificare: parlare solo a chi ha il lavoro e il budget che vuoi tu.",
-      },
-      {
-        type: "p",
-        text: "È il motivo per cui ho creato Marketing Edile: portare all'impresa edile richieste di clienti reali e in target, non numeri di vanità. Perché venti lead spazzatura non valgono un solo cliente giusto. E soprattutto: un flusso di richieste che decidi tu, non che ti capita.",
-      },
-    ],
-    faq: [
-      {
-        q: "Quanto devo investire per iniziare?",
-        a: "Meno di quanto pensi, ma con un patto: parti piccolo, misura, e reinvesti solo su ciò che porta richieste vere. Il budget non è il problema — buttare soldi su campagne senza offerta chiara e senza qualificare i contatti, quello sì.",
-      },
-      {
-        q: "Il passaparola va abbandonato?",
-        a: "Mai. Va tenuto e potenziato. L'obiettivo non è sostituirlo, è smettere di dipenderne al 100%: aggiungere un canale che controlli tu, così quando il passaparola rallenta non ti fermi.",
-      },
-    ],
-  },
 ];
 
-// Articoli lunghi SEO (uno per prodotto) + storici, ordinati per data (più recenti prima).
+// Tutti gli articoli, ordinati per data (più recenti prima).
 export const articles: Article[] = [
+  articleAiInCantiere,
+  articlePercheSetteBrand,
+  articlePercheNonSiDigitalizzano,
+  articleComeHoIniziato,
   articleEdiliziaInCloud,
-  articleMarketingEdile,
   articleVenditaEdile,
+  articleMarketingEdile,
   articleNumeriInEdilizia,
   ...baseArticles,
 ].sort((a, b) => (a.date < b.date ? 1 : -1));

@@ -1,188 +1,219 @@
 import type { Article } from "../article-types";
 
 export const articleEdiliziaInCloud: Article = {
-  slug: "gestionale-impresa-edile-guida-completa",
-  title:
-    "Gestionale per impresa edile: la guida completa (dal preventivo alla fattura)",
+  slug: "perche-ho-costruito-un-gestionale",
+  title: "Perché ho costruito un gestionale invece di comprarne uno",
   excerpt:
-    "Un software gestionale per l'edilizia non è un lusso da grande impresa. È lo strumento che ti dice, prima di firmare, se su quel cantiere ci guadagni. Ecco cosa deve fare davvero e come sceglierlo.",
+    "Ho provato Excel, i gestionali generici e i software pensati per i contabili. Nessuno sapeva dirmi se su quel cantiere ci stavo guadagnando. Così ho smesso di cercare e ho iniziato a costruire.",
   date: "2026-07-19",
-  readingTime: "11 min",
-  category: "Gestione",
+  readingTime: "8 min",
+  category: "Storia",
   relatedProject: "edilizia-in-cloud",
   body: [
     {
       type: "p",
-      text: "Te lo dico da imprenditore edile, non da venditore. Per anni ho mandato avanti la mia impresa con Excel, WhatsApp e un blocco note in furgone. Funzionava. Fino a quando non ha smesso di funzionare.",
+      text: "Non volevo fare software. Volevo fare cantieri. Per anni ho mandato avanti l'impresa con Excel, WhatsApp e un blocco note nel furgone. Ha funzionato finché ha funzionato.",
     },
     {
       type: "p",
-      text: "Il problema non era il lavoro. Il lavoro c'era. Il problema era che non sapevo mai davvero come andavano i conti. Ho costruito [EdiliziaInCloud](https://www.ediliziaincloud.com/) proprio per uscire da lì. Questa guida ti spiega cosa deve fare un gestionale per un'impresa edile, e come sceglierlo senza buttare soldi.",
-    },
-    { type: "h2", text: "Perché a un'impresa edile serve un gestionale unico" },
-    {
-      type: "p",
-      text: "Il venerdì sera. Il cliente aspetta il preventivo per lunedì. Tu apri il file Excel del mese prima, cambi due numeri e speri di aver fatto bene i conti. Il listino del fornitore è cambiato tre volte da allora. Tu non lo sai.",
+      text: "Poi i cantieri aperti sono diventati sette. E io ho smesso di sapere come andavano i conti. Sapevo quanto incassavo. Non sapevo quanto mi restava.",
     },
     {
       type: "p",
-      text: "Questo è il metodo Excel piu WhatsApp piu carta. Non e un metodo. E un mucchio di isole scollegate. Il preventivo sta in un file. I materiali su un messaggio. Il DDT dell'ultima consegna e finito nel cruscotto del furgone. La fattura la fa il commercialista un mese dopo, quando ormai il cantiere e chiuso.",
+      text: "Questa è la storia di come sono finito a costruirmi il gestionale da solo. Se non sai chi sono, parto da qui: [la mia storia](/chi-sono) è quella di un impresario edile, non di un informatico. E questo cambia tutto quello che leggerai sotto.",
+    },
+    { type: "h2", text: "Il venerdì sera che non passava mai" },
+    {
+      type: "p",
+      text: "Il ricordo più preciso che ho è un venerdì di novembre. Ore 20. Tre preventivi da consegnare entro lunedì.",
     },
     {
       type: "p",
-      text: "Il costo vero non lo vedi. Non e il tempo che perdi la sera. E il margine che ti scappa senza che te ne accorga. Perche se le informazioni vivono in dieci posti diversi, tu non hai mai il quadro. E se non hai il quadro, non decidi: tiri a indovinare.",
-    },
-    {
-      type: "quote",
-      text: "Un gestionale non serve a farti sembrare ordinato. Serve a farti sapere, prima di firmare, se su quel lavoro ci guadagni o ci rimetti.",
+      text: "Aprivo il file del mese prima. Cambiavo le quantità. Speravo che i prezzi fossero ancora buoni. Il fornitore aveva ritoccato il listino due volte, io lo scoprivo solo alla consegna.",
     },
     {
       type: "p",
-      text: "Un [software gestionale per l'edilizia](/ecosistema/edilizia-in-cloud) fatto bene tiene tutto in un posto solo. Il preventivo diventa commessa. La commessa tira dentro materiali, ore, DDT e fatture. E tu, in ogni momento, vedi quanto ti resta in tasca.",
+      text: "Ogni venerdì sera passavo circa 3 ore a rifare preventivi. Dodici ore al mese. Centoquaranta ore all'anno buttate a copiare celle. Il tempo però non era il danno peggiore.",
     },
-    { type: "h2", text: "Cosa deve fare davvero un software gestionale per l'edilizia" },
     {
       type: "p",
-      text: "Un gestionale per impresa edile non e un programma di contabilita con la vernice nuova. Deve partire da come lavori tu in cantiere, non da come ragiona un ragioniere. Ecco le cose che deve fare per davvero.",
+      text: "Il danno peggiore era che firmavo lavori senza sapere il margine. Su un cantiere da 90.000 euro scoprii a fine anno di aver guadagnato meno che su uno da 40.000. Nessuno me l'aveva detto prima. Nemmeno io.",
     },
-    { type: "h3", text: "Preventivi che partono da prezzi veri" },
+    { type: "h2", text: "Cosa avevo provato prima di costruire" },
     {
       type: "p",
-      text: "Il preventivo e la prima leva del margine. Deve partire da un listino aggiornato, con materiali e manodopera reali. Non a occhio. Se sbagli qui, sbagli tutto il cantiere. Ne ho scritto in dettaglio in [perche ho smesso di fare il preventivo su Excel](/blog/preventivo-edile-excel-perche-ho-smesso).",
+      text: "Prima di scrivere una riga di codice ho comprato. Tanto. Ho provato tre strade e sono tornato indietro da tutte e tre.",
     },
-    { type: "h3", text: "Gestione commesse edili collegata al preventivo" },
+    { type: "h3", text: "Excel, il primo amore che ti frega" },
     {
       type: "p",
-      text: "Quando il cliente firma, il preventivo deve diventare una commessa viva. Da li vedi avanzamento, costi preventivati contro costi veri, SAL, incassi. La gestione delle commesse edili e il cuore di tutto: e li che scopri, in tempo reale, se il cantiere sta marginando o ti sta mangiando i soldi.",
+      text: "Excel non ti tradisce mai apertamente. Ti tradisce piano. Un file per i preventivi, uno per le ore, uno per i fornitori.",
     },
-    { type: "h3", text: "Gestione cantieri sul telefono" },
     {
       type: "p",
-      text: "La gestione dei cantieri deve stare in tasca, non in ufficio. Ore degli operai, foto dei lavori, rapportini, avanzamento fasi: tutto dal telefono, mentre sei sul posto con gli stivali infangati. Se devi tornare in ufficio la sera per aggiornare tutto, non lo farai mai.",
+      text: "Poi arriva la versione «definitivo_2_ok». Poi quella sul portatile di mia moglie. Poi la formula che qualcuno ha rotto senza accorgersene. A quel punto i numeri li hai, ma non ti puoi più fidare.",
     },
-    { type: "h3", text: "DDT e magazzino che non si perdono" },
+    { type: "h3", text: "I gestionali generici" },
     {
       type: "p",
-      text: "Ogni DDT perso e un costo che non addebiti. La merce arriva, la scarichi, e il documento sparisce. A fine cantiere non sai piu cosa hai consumato. Un gestionale registra il DDT dalla foto, aggiorna il magazzino e lega il materiale alla commessa giusta. Cosi il costo lo ritrovi, e lo fatturi.",
+      text: "Ne ho provati diversi. Belli, puliti, pieni di grafici colorati. Fatti per chi vende scatole o ore d'ufficio.",
     },
-    { type: "h3", text: "Fatturazione elettronica integrata" },
     {
       type: "p",
-      text: "La fattura non deve essere un mondo a parte. Deve nascere dalla commessa che hai gia chiuso, andare allo SDI e tornare con lo stato di consegna. Meno passaggi a mano, meno errori, meno telefonate al commercialista.",
+      text: "Nessuno sapeva cosa fosse un SAL. Nessuno capiva la ritenuta a garanzia. La parola commessa non esisteva nel menu. Dovevo piegare il mio mestiere alla forma del programma.",
     },
-    { type: "h3", text: "CRM per non perdere i clienti" },
+    { type: "h3", text: "I software fatti per i contabili" },
     {
       type: "p",
-      text: "Il preventivo mandato e mai piu ricontattato e il buco piu grande di ogni impresa edile. Un CRM semplice ti dice a chi devi richiamare, quali preventivi sono in sospeso e da dove arrivano i tuoi lavori migliori. Non serve un CRM da multinazionale. Serve uno che ti ricordi di chiudere le trattative.",
+      text: "Qui è andata peggio. Erano software bravissimi a raccontare il passato. Ti dicevano com'era andata sei mesi dopo, a cantiere chiuso e soldi spesi.",
+    },
+    {
+      type: "p",
+      text: "A me serviva il presente. Serviva sapere martedì mattina, con la gru ancora in piedi, se quel lavoro stava marginando o mi stava mangiando i soldi.",
     },
     {
       type: "ul",
       items: [
-        "Preventivi da listino aggiornato con materiali e manodopera reali.",
-        "Gestione commesse edili con costi veri contro preventivati e SAL.",
-        "Gestione cantieri da telefono: ore, foto, rapportini, avanzamento.",
-        "DDT e magazzino legati alla commessa, senza documenti persi.",
-        "Fatturazione elettronica collegata allo SDI, senza doppio lavoro.",
-        "CRM per richiamare i preventivi in sospeso e chiudere le trattative.",
+        "Excel: veloce da iniziare, impossibile da tenere in ordine in tre persone.",
+        "Gestionali generici: non conoscevano commesse, SAL, DDT e subappalti.",
+        "Software per contabili: raccontavano il passato, non il cantiere aperto.",
+        "Tutti quanti: nessuno li avrebbe aperti un capocantiere dal telefono.",
       ],
     },
-    { type: "h2", text: "Come scegliere il gestionale giusto per la tua impresa" },
     {
-      type: "p",
-      text: "Non tutti i gestionali sono uguali. Molti sono nati per lo studio del commercialista e poi adattati all'edilizia. Si vede. Ecco cosa guardo io prima di dire a un collega quale prendere.",
+      type: "quote",
+      text: "Il problema non era che quei programmi fossero brutti. Era che erano stati pensati da qualcuno che in cantiere non ci aveva mai messo piede.",
     },
-    { type: "h3", text: "Parte dal cantiere, non dalla contabilita" },
+    { type: "h2", text: "Il giorno in cui ho deciso" },
     {
       type: "p",
-      text: "La domanda giusta e: un capocantiere di 55 anni riesce a usarlo dal telefono senza corso? Se la risposta e no, quel software non lo usera nessuno. E un gestionale che nessuno usa e soldi buttati.",
+      text: "La decisione non è arrivata davanti a un computer. È arrivata su un cantiere, sotto la pioggia, con un DDT bagnato in mano.",
     },
-    { type: "h3", text: "Tiene insieme preventivo, cantiere e fattura" },
     {
       type: "p",
-      text: "Se il preventivo non parla con la commessa, e la commessa non parla con la fattura, hai comprato tre programmi, non un gestionale. Il valore vero e la catena unica: preventivo, gestione commessa, cantiere, DDT, fattura, incasso. Tutto collegato.",
+      text: "Era il terzo documento perso in un mese. Materiale consegnato, scaricato, montato. E mai addebitato al cliente, perché il foglio era finito nel cruscotto del furgone.",
     },
-    { type: "h3", text: "E in cloud, non su un solo computer" },
     {
       type: "p",
-      text: "Il tuo lavoro non sta in ufficio. Sta sui cantieri, sparso su mezza provincia. Un gestionale in cloud lo apri da telefono, tablet e computer, con gli stessi dati aggiornati. Il gestionale installato sul fisso dell'ufficio e gia vecchio il giorno che lo compri.",
+      text: "Quel giorno ho fatto due conti in cabina. Tra DDT persi, ore non registrate e preventivi fatti a memoria, stavo regalando margine ogni mese. Non per pigrizia. Per mancanza di strumenti.",
     },
-    { type: "h3", text: "Ti dice quanto guadagni, non solo quanto spendi" },
     {
       type: "p",
-      text: "Registrare i costi lo fanno tutti. Il gestionale che vale ti dice il margine, cantiere per cantiere, mentre il lavoro e ancora aperto. Se vuoi spingere sul controllo di gestione vero, guarda anche [Numeri in Edilizia](/ecosistema/numeri-in-edilizia): nasce apposta per leggere i numeri dell'impresa edile.",
+      text: "La sera ho scritto su un foglio a quadretti cosa mi serviva davvero. Non funzionalità: domande. Quanto ci guadagno su questo cantiere? Chi mi deve dei soldi adesso? Quale preventivo devo richiamare domani?",
     },
-    { type: "h2", text: "Gli errori piu comuni quando si passa a un gestionale" },
     {
       type: "p",
-      text: "Ho visto colleghi comprare il gestionale giusto e usarlo male. Il software non fa miracoli se ci porti dentro le vecchie abitudini. Questi sono gli errori che vedo piu spesso.",
+      text: "Nessun software che avevo provato rispondeva a quelle tre domande insieme. Così ho smesso di cercarne uno e ho iniziato a costruire [EdiliziaInCloud](/ecosistema/edilizia-in-cloud).",
+    },
+    { type: "h2", text: "Cosa ho imparato costruendolo" },
+    {
+      type: "p",
+      text: "Costruire un gestionale mi ha insegnato più sulla mia impresa che dieci anni di cantieri. Perché per far funzionare il software devi prima capire come lavori davvero.",
+    },
+    {
+      type: "p",
+      text: "E scopri cose scomode. Scopri che il processo che credevi solido è pieno di buchi. Che due operai fanno la stessa cosa in due modi diversi. Che il prezzo del listino te lo eri inventato tre anni fa.",
     },
     {
       type: "ul",
       items: [
-        "Comprare per moduli che non usi. Ti serve la catena preventivo-cantiere-fattura, non cento funzioni che non aprirai mai.",
-        "Non caricare il listino vero. Se parti con prezzi vecchi, il gestionale ti mente con la faccia pulita.",
-        "Tenere Excel in parallelo per sicurezza. Cosi non usi ne l'uno ne l'altro e resti nel caos.",
-        "Farlo usare solo in ufficio. Se gli operai non registrano ore e materiali dal cantiere, i dati restano falsi.",
-        "Guardare solo il prezzo del canone. Un gestionale che ti recupera un margine perso a cantiere si e gia ripagato.",
+        "Se una cosa non si registra dal telefono in cantiere, non verrà mai registrata.",
+        "Il dato che arriva tardi non è un dato: è un ricordo. E i ricordi non fanno decidere.",
+        "Ogni campo obbligatorio in più è una persona in meno che userà il programma.",
+        "Il margine vero si costruisce nel preventivo, non si recupera alla fattura.",
+        "Un software che nessuno apre costa più di uno che non hai mai comprato.",
       ],
     },
-    { type: "h2", text: "Da caos a controllo: come si fa il passaggio" },
     {
       type: "p",
-      text: "Non devi ribaltare tutto in un giorno. Il salto si fa in tre passi, e il primo e piu piccolo di quanto pensi.",
+      text: "La lezione più dura è stata sull'abitudine. Il codice si cambia in un giorno. Le abitudini di una squadra no. Ho dovuto riscrivere schermate intere solo perché i miei operai non le aprivano.",
+    },
+    { type: "h2", text: "Cosa è cambiato per me" },
+    {
+      type: "p",
+      text: "Non ti vendo il lieto fine perfetto. Ti dico cosa è cambiato in concreto, con i numeri che ho.",
     },
     {
       type: "p",
-      text: "Primo: porti dentro il listino vero, con materiali e manodopera aggiornati. Secondo: fai il prossimo preventivo dal gestionale e lo trasformi in commessa quando il cliente firma. Terzo: fai registrare ore, foto e DDT dal cantiere, cosi i numeri diventano reali. Da li in poi, ogni cantiere ti lascia dati che il prossimo preventivo usera per essere piu preciso.",
+      text: "I venerdì sera li ho ripresi. Un preventivo che mi portava via un'ora adesso esce in venti minuti, perché parte da un listino vero e non dalla memoria.",
+    },
+    {
+      type: "p",
+      text: "I DDT non li perdo più: si registrano dalla foto, in cantiere, prima che il camion riparta. E quando un cliente discute la fattura, ho il documento, la data e la firma.",
+    },
+    {
+      type: "p",
+      text: "Ma la cosa più importante è un'altra. Oggi so dire di no. Se un lavoro non margina, lo capisco prima di firmare, non a fine anno dal commercialista.",
     },
     {
       type: "quote",
-      text: "Non ti sto dicendo di comprare un software. Ti sto dicendo di smettere di lavorare al buio. Il salto e passare dal foglio che ti dice quanto costa al sistema che ti dice quanto ci guadagni.",
+      text: "Non ho costruito un gestionale per essere più ordinato. L'ho costruito per smettere di lavorare al buio e scoprire i disastri a cantiere chiuso.",
+    },
+    { type: "h2", text: "Cosa direi oggi a un imprenditore edile" },
+    {
+      type: "p",
+      text: "Se stai valutando un gestionale, non ti serve la mia storia. Ti serve una decisione. Ecco cosa direi a un collega davanti a un caffè.",
     },
     {
       type: "p",
-      text: "Che tu lo faccia con [EdiliziaInCloud](https://www.ediliziaincloud.com/) o in un altro modo, il principio non cambia. Un'impresa edile che sa il suo margine cantiere per cantiere decide meglio, prezza meglio e cresce senza paura. Se vuoi vedere come l'ho messo insieme, dai un occhio a [tutto l'ecosistema AEDIX](/ecosistema) o scrivimi due righe dai [contatti](/contatti).",
+      text: "Primo: non costruirtelo. Io l'ho fatto perché nel 2019 non trovavo niente di adatto, e perché il problema mi bruciava abbastanza da starci dentro per anni. Non è una scelta furba, è stata una scelta obbligata.",
+    },
+    {
+      type: "p",
+      text: "Secondo: prima di guardare i programmi, scrivi le tue tre domande. Le mie erano margine, incassi e preventivi da richiamare. Le tue possono essere altre. Ma se non le hai scritte, comprerai la brochure più bella.",
+    },
+    {
+      type: "p",
+      text: "Terzo: fai la prova del capocantiere. Dai il telefono al tuo uomo più bravo e meno tecnologico. Se in cinque minuti non registra un'ora e una foto, quel software in cantiere non entrerà mai.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Scrivi le tre domande a cui il software deve rispondere ogni settimana.",
+        "Prova il programma su un cantiere vero, non sulla demo del venditore.",
+        "Guarda se parla di commesse, SAL, DDT e subappalti con le tue parole.",
+        "Chiedi chi lo ha progettato: un tecnico o qualcuno che ha fatto cantieri.",
+        "Conta il tempo che ti restituisce, non solo il canone che ti costa.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Se poi vuoi vedere com'è venuto fuori il mio, è tutto qui: [EdiliziaInCloud](https://www.ediliziaincloud.com/). Ma il punto non è il mio prodotto. Il punto è che nessuno dovrebbe firmare un lavoro senza sapere se ci guadagna.",
+    },
+    {
+      type: "p",
+      text: "Io ci ho messo un DDT bagnato e centoquaranta ore l'anno per capirlo. Tu magari puoi cavartela con un caffè e tre domande scritte su un foglio a quadretti.",
     },
     {
       type: "links",
-      title: "Approfondisci",
+      title: "Continua a leggere",
       items: [
         {
-          label: "EdiliziaInCloud, il gestionale per imprese edili",
-          href: "https://www.ediliziaincloud.com/",
-        },
-        {
-          label: "La pagina prodotto di EdiliziaInCloud",
+          label: "EdiliziaInCloud: come l'ho messo insieme",
           href: "/ecosistema/edilizia-in-cloud",
         },
-        {
-          label: "Numeri in Edilizia, il controllo di gestione",
-          href: "/ecosistema/numeri-in-edilizia",
-        },
-        {
-          label: "Perche ho smesso di fare il preventivo su Excel",
-          href: "/blog/preventivo-edile-excel-perche-ho-smesso",
-        },
-        { label: "Parliamone: contatti", href: "/contatti" },
+        { label: "Chi sono e da dove vengo", href: "/chi-sono" },
+        { label: "Tutti i progetti che porto avanti", href: "/ecosistema" },
+        { label: "Scrivimi due righe", href: "/contatti" },
       ],
     },
   ],
   faq: [
     {
-      q: "Serve un gestionale se ho una piccola impresa edile?",
-      a: "Si, e forse ancora di piu. La piccola impresa non ha l'ufficio amministrativo che rattoppa gli errori. Se ti sfugge un margine o perdi un DDT, lo paghi tu di tasca tua. Un gestionale ti protegge proprio quando sei da solo a tenere tutto in piedi.",
+      q: "Consiglieresti a tutti di costruirsi il software?",
+      a: "No, e lo dico con convinzione. Costruire costa anni, soldi e nervi. Io l'ho fatto perché non trovavo niente che parlasse la lingua del cantiere e perché quel problema mi teneva sveglio la notte. Se oggi trovi un programma che risponde alle tue tre domande, compralo e torna a fare cantieri.",
     },
     {
-      q: "Quanto tempo ci vuole per iniziare a usarlo davvero?",
-      a: "Il primo preventivo lo fai lo stesso giorno. Il valore vero arriva dopo due o tre cantieri, quando il gestionale inizia a mostrarti i costi reali contro i preventivati. Non e questione di corsi: e questione di usarlo su un cantiere vero fin da subito.",
+      q: "Quanto ci hai messo prima di avere qualcosa di usabile?",
+      a: "La prima versione usabile in azienda è arrivata dopo mesi, non dopo settimane. E la usavo solo io. Il vero collaudo è stato farla accettare alla squadra: lì ho buttato via e rifatto intere schermate, perché un capocantiere non apre due volte un programma che gli chiede dieci campi.",
     },
     {
-      q: "Che differenza c'e tra un gestionale generico e uno per l'edilizia?",
-      a: "Il gestionale generico gestisce fatture e clienti. Quello per l'edilizia parte dalla commessa: preventivo, cantiere, SAL, DDT, subappalti, avanzamento fasi. Se il software non conosce la parola commessa, non e fatto per te.",
+      q: "Non è un conflitto di interessi che tu venda il software che usi?",
+      a: "È il contrario, secondo me. Lo uso ogni giorno sulla mia impresa, quindi i difetti li pago per primo. Quando qualcosa non funziona in cantiere lo scopro io, sotto la pioggia, non da un ticket. È la garanzia più onesta che posso darti.",
     },
     {
-      q: "Il gestionale sostituisce il commercialista?",
-      a: "No, lavora con lui. Il gestionale tiene ordinati preventivi, commesse, DDT e fatture, cosi al commercialista arrivano dati puliti e in tempo. Tu smetti di rincorrere documenti e lui smette di rincorrere te.",
+      q: "Da dove parte un imprenditore edile che oggi è ancora su Excel?",
+      a: "Non dal software. Parte dal listino: prezzi veri di materiali e manodopera, aggiornati. Con quello in mano, il primo preventivo fatto in modo serio ti dice già se stavi lavorando sotto costo. Poi scegli lo strumento, e non prima.",
     },
   ],
 };

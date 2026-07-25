@@ -1,209 +1,237 @@
 import type { Article } from "../article-types";
 
 export const articleVenditaEdile: Article = {
-  slug: "vendere-preventivi-edili-guida",
-  title:
-    "Come vendere i preventivi edili: la guida per chiudere senza svendere",
+  slug: "tre-preventivi-persi",
+  title: "I 3 preventivi che ho perso e cosa mi hanno insegnato",
   excerpt:
-    "Fai tanti preventivi e ne chiudi pochi. Ecco come qualificare il cliente, presentare il valore e chiudere la trattativa senza tagliare il prezzo.",
-  date: "2026-07-17",
-  readingTime: "11 min",
-  category: "Vendita",
+    "Tre lavori che credevo miei. Li ho persi tutti e tre. Uno per 800 euro, uno per uno sconto dato di fretta, uno per una mail mai richiamata. Ecco cosa ho sbagliato.",
+  date: "2026-07-18",
+  readingTime: "8 min",
+  category: "Storia",
   relatedProject: "vendita-edile",
   body: [
     {
       type: "p",
-      text: "Fai preventivi tutto il giorno. Ne chiudi pochi. Conosci la sensazione. Passi la sera a fare i conti. Mandi il PDF. Poi silenzio. Il cliente dice \"ci penso\". E non ti richiama più. Non è colpa tua. Nessuno ti ha insegnato a vendere. Hai imparato a costruire, non a chiudere. Ho creato [Vendita Edile](https://www.venditaedile.it/) proprio per questo. Per darti un metodo. In questa guida ti spiego come vendere i preventivi edili senza svendere.",
+      text: "Ho perso tre lavori che consideravo già miei. Non anni fa, in un passato comodo da raccontare. Tre firme mancate che mi bruciano ancora. Li ricordo per nome, per indirizzo, per importo. E ricordo la faccia che avevo dopo ogni telefonata andata male.",
+    },
+    {
+      type: "p",
+      text: "Non sono un venditore di nascita. Vengo dal cantiere e dai numeri delle imprese. Se non sai [chi sono](/chi-sono), ti basta questo: ho imparato a vendere sbagliando, non leggendo. Ogni cosa che scrivo qui l'ho pagata di tasca mia.",
+    },
+    {
+      type: "p",
+      text: "Questa non è una guida. Non ci sono tecniche da ripetere a memoria. Ci sono tre miei errori, raccontati come sono andati. Se ti riconosci in uno solo, hai già guadagnato la giornata.",
     },
     {
       type: "h2",
-      text: "Perché fai tanti preventivi e ne chiudi pochi",
+      text: "Il primo: quello che ho perso per 800 euro",
     },
     {
       type: "p",
-      text: "Il problema non è il prezzo. Il problema è a monte. Preventivi a chiunque ti chiama. Non filtri. Corri dietro a tutti. Così bruci giornate su clienti che non compreranno mai. Il preventivo diventa un lavoro gratis. Lo fai, lo mandi, speri. Sperare non è vendere.",
+      text: "Ristrutturazione completa di un appartamento. Preventivo da 46.000 euro. Il cliente era una coppia sulla cinquantina, casa di famiglia da rimettere a nuovo. Avevo fatto tre sopralluoghi. Avevo misurato tutto. Sapevo dove passavano i vecchi scarichi.",
     },
     {
       type: "p",
-      text: "Poi c'è il secondo errore. Presenti il prezzo, non il valore. Il cliente vede solo il numero in fondo al foglio. Non capisce cosa compra. Non sa perché costi così. E quando uno guarda solo il numero, sceglie il più basso. Perde chi lavora bene. Vince chi svende.",
-    },
-    {
-      type: "quote",
-      text: "Un preventivo mandato e mai richiamato non è un no. È un lavoro fatto a metà. Manca la parte più importante: la vendita.",
-    },
-    {
-      type: "h2",
-      text: "Il primo contatto decide tutto",
+      text: "Il concorrente stava a 45.200. Ottocento euro sotto di me. Su un lavoro da sei mesi di cantiere. Ottocento euro sono niente. Sono un pavimento in più, un imprevisto sotto l'intonaco. Eppure hanno scelto lui.",
     },
     {
       type: "p",
-      text: "La trattativa non inizia col preventivo. Inizia alla prima telefonata. Lì il cliente si fa un'idea di te. Se rispondi di fretta, sembri uno che ha bisogno. Se rispondi con calma e fai domande, sembri un professionista. La differenza pesa sul prezzo finale.",
-    },
-    {
-      type: "p",
-      text: "Al primo contatto non parlare di soldi. Fai domande. Cosa vuole davvero. Perché lo vuole adesso. Chi decide in famiglia. Che budget ha in testa. Sembra scomodo chiedere il budget. Non lo è. Ti fa risparmiare ore. E fa capire al cliente che lavori con metodo.",
+      text: "Il giorno dopo ho chiamato la signora. Volevo capire. Mi ha risposto una frase che uso ancora oggi con i miei clienti: «Alla fine facevate la stessa cosa, quindi abbiamo guardato il numero». La stessa cosa. Sei mesi di cantiere ridotti a una riga di Excel.",
     },
     {
       type: "h3",
-      text: "Le domande che cambiano la trattativa",
+      text: "Dove avevo sbagliato",
+    },
+    {
+      type: "p",
+      text: "Il mio preventivo era un elenco. Voci, quantità, prezzi. Pulito, ordinato, muto. Non diceva una parola su come lavoro. Non diceva chi veniva in cantiere. Non diceva cosa succede se piove per due settimane. Avevo lasciato al cliente un solo criterio per scegliere: il totale in fondo.",
     },
     {
       type: "ul",
       items: [
-        "Cosa la spinge a fare questo lavoro proprio adesso?",
-        "Ha già chiesto altri preventivi? A quanti?",
-        "Che cifra aveva messo in conto per questo intervento?",
-        "Chi decide insieme a lei su questa spesa?",
-        "Per quando le serve finito?",
+        "Non avevo scritto quali marche di materiali usavo.",
+        "Non avevo messo una data di fine lavori, solo «circa 5 mesi».",
+        "Non avevo spiegato chi sarebbe stato il referente in cantiere.",
+        "Non avevo allegato nemmeno una foto di un lavoro simile.",
+        "Non avevo detto cosa NON era compreso, lasciando spazio ai dubbi.",
       ],
     },
     {
-      type: "p",
-      text: "Queste domande non sono un interrogatorio. Sono un filtro. Ti dicono se il cliente è serio. Ti dicono se il budget regge. Ti dicono se stai parlando con chi decide. Se qualcosa non torna, lo sai prima. Prima di sprecare una giornata sul preventivo.",
-    },
-    {
-      type: "h2",
-      text: "Qualificare il cliente prima di fare il preventivo",
-    },
-    {
-      type: "p",
-      text: "Non tutti i clienti meritano un preventivo. Suona duro. È la verità. C'è chi chiama solo per il prezzo. Vuole un numero da confrontare con altri cinque. Non comprerà da te. Comprerà dal più basso. Su quello non puoi competere. E non devi.",
-    },
-    {
-      type: "p",
-      text: "Qualificare vuol dire capire chi hai davanti. Tre cose contano. Il bisogno è reale e urgente. Il budget è in linea. Chi parla può decidere. Se manca una di queste, alza la guardia. Non buttarti a capofitto. Un preventivo fatto bene costa tempo. Il tempo è il tuo margine.",
-    },
-    {
-      type: "p",
-      text: "Un cliente qualificato chiude molto più spesso. Meno preventivi, più contratti. È questo che sposta il tuo tasso di chiusura. Non fare di più. Fare meglio. Vendere nel settore edile è prima di tutto scegliere con chi lavorare.",
-    },
-    {
-      type: "h2",
-      text: "Presentare il preventivo vendendo il valore",
-    },
-    {
-      type: "p",
-      text: "Il preventivo non si manda. Si presenta. Grosso errore mandare il PDF via WhatsApp e aspettare. Il numero da solo non vende. Devi essere lì. Al telefono o di persona. Devi spiegare cosa c'è dietro quel prezzo.",
-    },
-    {
-      type: "p",
-      text: "Racconta il lavoro. I materiali che usi e perché. Come lavori tu rispetto a chi taglia gli angoli. Le garanzie che dai. I tempi che rispetti. Il cliente non compra metri quadri. Compra la tranquillità di non avere problemi. Vendi quella. Il prezzo diventa un dettaglio.",
-    },
-    {
       type: "quote",
-      text: "Il cliente non ti paga per posare le piastrelle. Ti paga per non doverci pensare mai più. Vendi il sonno tranquillo, non il materiale.",
+      text: "Se due preventivi sembrano uguali, il cliente sceglie il più basso. Non è avaro. È che non gli hai dato altro modo per decidere.",
     },
     {
       type: "p",
-      text: "Metti sempre a confronto. Il lavoro fatto male costa poco oggi. Costa caro domani. Rifacimenti, infiltrazioni, litigi. Il tuo prezzo più alto è un'assicurazione. Fallo capire con esempi veri. Il cantiere del vicino rifatto due volte. La casa con la muffa dopo un anno. Storie concrete, non slogan.",
+      text: "La lezione l'ho imparata tardi. Non ho perso per 800 euro. Ho perso perché il mio foglio non raccontava niente. Il prezzo era l'unica cosa che si vedeva, quindi è stata l'unica cosa che hanno guardato.",
+    },
+    {
+      type: "h2",
+      text: "Il secondo: lo sconto che ho dato per paura",
+    },
+    {
+      type: "p",
+      text: "Cappotto termico su una palazzina. 78.000 euro. Un lavoro che mi teneva la squadra occupata fino a fine stagione. Ne avevo bisogno. E si sentiva.",
+    },
+    {
+      type: "p",
+      text: "Il geometra dell'amministratore mi guarda e dice una cosa sola: «Eh, però siamo alti». Non ha detto costa troppo. Non ha fatto un confronto. Ha buttato lì quattro parole. Io ho risposto in due secondi: «Posso fare 72».",
+    },
+    {
+      type: "p",
+      text: "Sei mila euro regalati prima ancora di sapere se erano un problema. Non me li aveva chiesti nessuno. Li ho messi sul tavolo io, per paura del silenzio.",
+    },
+    {
+      type: "p",
+      text: "Il risultato non è stato quello che speravo. Il geometra ha capito una cosa sola: che il mio primo prezzo era gonfiato. Se scendo di sei mila in due secondi, quanto altro c'è sotto? È tornato una settimana dopo chiedendo 68. Ho detto di no. Il lavoro l'ha preso un altro, a 71.500.",
     },
     {
       type: "h3",
-      text: "Come strutturare il preventivo scritto",
+      text: "Cosa avrei dovuto fare",
+    },
+    {
+      type: "p",
+      text: "Stare zitto. Bastava stare zitto e fare una domanda. Alti rispetto a chi? Rispetto a quale altro preventivo? Cosa comprendeva quello? Tre domande da venti secondi. Invece ho riempito il silenzio con i miei soldi.",
     },
     {
       type: "ul",
       items: [
-        "Poche voci chiare, niente muro di numeri illeggibile.",
-        "Una riga che spiega cosa include ogni lavorazione.",
-        "Le tue garanzie scritte nero su bianco.",
-        "Tempi di consegna precisi, con una data.",
-        "Una sola opzione consigliata, più eventuali extra.",
+        "Uno sconto dato senza motivo dice che il prezzo era finto.",
+        "Chi ottiene il primo ribasso facile torna sempre a chiedere il secondo.",
+        "Il margine tagliato di fretta te lo porti dietro per tutto il cantiere.",
+        "La paura di perdere il lavoro si sente nella voce, e il cliente la sente.",
       ],
     },
     {
+      type: "p",
+      text: "Oggi so che quel silenzio non era un attacco. Era solo una pausa. Il geometra stava pensando, non trattando. Io ho letto una minaccia dove non c'era.",
+    },
+    {
       type: "h2",
-      text: "Gestire le obiezioni senza cedere sul prezzo",
+      text: "Il terzo: il preventivo mandato via mail e mai richiamato",
     },
     {
       type: "p",
-      text: "\"Costa troppo.\" La senti ogni giorno. Non è un no. È una domanda. Vuol dire: convincimi che vali questa cifra. Se rispondi con uno sconto, hai già perso. Dici al cliente che il primo prezzo era gonfiato. E che puoi scendere ancora. Non farlo mai al primo colpo.",
+      text: "Questo è il più stupido dei tre. Villetta singola, rifacimento tetto e lattoneria. 23.400 euro. Sopralluogo andato benissimo. Il cliente mi ha offerto il caffè. Mi ha presentato la moglie. Mi ha detto: «Con lei mi trovo bene».",
     },
     {
       type: "p",
-      text: "Quando senti \"è caro\", non abbassare. Chiedi. Rispetto a cosa è caro. Rispetto a quale altro preventivo. Cosa includeva quello. Spesso scopri che l'altro non aveva le stesse lavorazioni. O usava materiali scadenti. Fai emergere la differenza. Il prezzo torna giustificato.",
+      text: "Sono tornato in ufficio contento. Ho preparato il preventivo il giorno dopo. L'ho allegato a una mail di quattro righe. Ho scritto: «Resto a disposizione per qualsiasi chiarimento». Ho premuto invio. E ho aspettato.",
     },
     {
       type: "p",
-      text: "Lo sconto dato per paura è il veleno del tuo margine. Lo dai perché temi di perdere il cliente. Ma un cliente preso col ribasso ti tratterà sempre così. Vorrà sconti su tutto. Ti rispetterà poco. Meglio perderlo che lavorarci in perdita.",
+      text: "Ho aspettato tre settimane. Poi ho aspettato un mese. Non l'ho mai richiamato. Mi sembrava di disturbare. Mi ero detto: se gli interessa, mi chiama lui.",
+    },
+    {
+      type: "p",
+      text: "Il tetto l'ha rifatto un'altra impresa a settembre. L'ho visto passandoci davanti. Ponteggio montato, teli blu, il camion di un concorrente. Mi si è chiuso lo stomaco.",
+    },
+    {
+      type: "quote",
+      text: "Resto a disposizione vuol dire: adesso il lavoro è tuo, arrangiati. Ho perso un tetto da 23.400 euro per non aver fatto una telefonata da due minuti.",
     },
     {
       type: "h3",
-      text: "Le obiezioni più comuni e cosa fare",
+      text: "La verità sul «ci penso»",
+    },
+    {
+      type: "p",
+      text: "Il cliente non mi aveva scartato. Si era distratto. Aveva la sua vita, il lavoro, i figli, altre dieci cose davanti al mio PDF. Poi è arrivato uno che ha richiamato. E si è preso il cantiere che era mio.",
+    },
+    {
+      type: "p",
+      text: "Non ho perso per il prezzo. Non ho perso per il preventivo. Ho perso per il silenzio dopo. È l'errore che vedo fare più spesso alle imprese con cui lavoro oggi.",
+    },
+    {
+      type: "h2",
+      text: "Le tre lezioni messe in fila",
+    },
+    {
+      type: "p",
+      text: "Rimessi uno accanto all'altro, i tre errori sono lo stesso errore. In tutti e tre i casi ho lasciato decidere il cliente da solo, senza di me. Nel primo gli ho dato solo un numero. Nel secondo gli ho tolto fiducia nel numero. Nel terzo l'ho lasciato con il numero in mano e sono sparito.",
     },
     {
       type: "ul",
       items: [
-        "\"Ci devo pensare\": chiedi cosa manca per decidere, non mollare la presa.",
-        "\"Ho un preventivo più basso\": confronta le lavorazioni, non i numeri.",
-        "\"Non ho tutto il budget\": proponi fasi di lavoro, non uno sconto.",
-        "\"Mi fido poco\": mostra lavori fatti e clienti soddisfatti.",
+        "Un preventivo che non racconta il lavoro è solo un prezzo.",
+        "Uno sconto non richiesto è una confessione, non un favore.",
+        "Un preventivo mandato e non seguito è un lavoro fatto a metà.",
       ],
     },
     {
-      type: "h2",
-      text: "Il follow-up che non ti fa perdere il cliente",
-    },
-    {
       type: "p",
-      text: "\"Ci penso\" non è la fine. È l'inizio della seconda parte. Qui si gioca metà delle vendite. Il cliente esce dalla trattativa carico. Poi la vita entra in mezzo. Dimentica. Si distrae. Un altro lo richiama prima di te. E lo perdi. Non perché costavi troppo. Perché sei sparito.",
-    },
-    {
-      type: "p",
-      text: "Concorda sempre il passo dopo. Non lasciare in sospeso. \"La richiamo giovedì mattina, va bene?\" Metti una data. Fissa un motivo per risentirvi. Così il follow-up non è insistenza. È un appuntamento preso insieme. Cambia tutto nel tono.",
-    },
-    {
-      type: "p",
-      text: "Richiama davvero. La maggior parte non lo fa. Ha paura di disturbare. Intanto perde il lavoro. Due o tre contatti dopo il preventivo sono normali. Chi segue chiude. Chi aspetta il telefono che squilla, resta fermo. La costanza nel follow-up alza il tuo tasso di chiusura più di ogni sconto.",
-    },
-    {
-      type: "quote",
-      text: "La vendita non muore col preventivo. Muore col silenzio dopo. Chi richiama con metodo vince i lavori che gli altri hanno già mollato.",
+      text: "Queste tre cose mi sono costate, sommate, oltre 140.000 euro di lavori. Non di margine, di fatturato. Ma il conto vero non è quello. Il conto vero sono i mesi in cui la squadra è rimasta ferma.",
     },
     {
       type: "h2",
-      text: "Perché ho creato Vendita Edile",
+      text: "Cosa faccio diversamente oggi",
     },
     {
       type: "p",
-      text: "Ho visto troppi bravi artigiani lavorare in perdita. Costruiscono benissimo. Poi svendono. Regalano il margine per paura del no. Ho creato [Vendita Edile](/ecosistema/vendita-edile) per dare loro un metodo di vendita fatto su misura per il cantiere. Non teoria da corso motivazionale. Copioni veri, per il primo contatto, la trattativa, le obiezioni e il follow-up.",
+      text: "Non ho imparato tecniche. Ho cambiato tre abitudini. Sono banali. Funzionano perché le faccio sempre, non perché siano furbe.",
+    },
+    {
+      type: "h3",
+      text: "Il preventivo lo consegno, non lo mando",
     },
     {
       type: "p",
-      text: "La vendita è una delle leve del tuo lavoro. Ma è dentro un quadro più grande. Devi anche trovare i clienti giusti con [Marketing Edile](/ecosistema/marketing-edile). E gestire cantieri, preventivi e incassi con [Edilizia in Cloud](/ecosistema/edilizia-in-cloud). Tutto questo fa parte dei brand che ho messo insieme dentro [AEDIX](/ecosistema). Trovare, chiudere, gestire. Le tre gambe della stessa impresa.",
+      text: "Il PDF non parte più da solo. Fisso mezz'ora, anche al telefono. Apro il documento insieme al cliente. Gli spiego voce per voce cosa sto facendo e perché. Il prezzo lo legge dopo aver capito il resto.",
+    },
+    {
+      type: "h3",
+      text: "Quando sento «siamo alti», non parlo",
     },
     {
       type: "p",
-      text: "Se chiudi anche solo un lavoro in più al mese al prezzo giusto, hai cambiato l'anno. Non serve fare più preventivi. Serve farne meno e chiuderne di più. Se vuoi partire, parliamone dalla pagina [contatti](/contatti). Ti dico dove stai perdendo margine e come recuperarlo.",
+      text: "Conto fino a tre e faccio una domanda. Alti rispetto a cosa. Nove volte su dieci il confronto è con un preventivo che non include gli stessi lavori. Il numero non lo tocco. Se proprio devo, tolgo qualcosa dal lavoro. Prezzo diverso a parità di lavoro non esiste più.",
+    },
+    {
+      type: "h3",
+      text: "La data del richiamo la fisso prima",
+    },
+    {
+      type: "p",
+      text: "Prima di salutarci decidiamo insieme quando ci risentiamo. «Giovedì mattina la chiamo, le va bene?». Così giovedì non sto disturbando. Sto rispettando un appuntamento. Cambia tutto, per me e per lui.",
+    },
+    {
+      type: "p",
+      text: "Da questi errori è nato il lavoro che porto avanti con [Vendita Edile](/ecosistema/vendita-edile). Non è un corso motivazionale. Sono le cose che avrei voluto sapere prima di perdere quei tre cantieri, messe in ordine per chi sta in cantiere.",
+    },
+    {
+      type: "p",
+      text: "Se vuoi vedere come lo raccontiamo alle imprese, il progetto vive su [venditaedile.it](https://www.venditaedile.it/). Ma la parte utile di questo articolo l'hai già letta sopra. Sono i miei tre errori, e ti costano meno leggerli che rifarli.",
+    },
+    {
+      type: "p",
+      text: "Una cosa sola ti chiedo. Prendi l'ultimo preventivo che hai mandato e non hai più richiamato. Fallo oggi. Molte volte il lavoro è ancora lì, fermo, che aspetta qualcuno che si faccia vivo.",
     },
     {
       type: "links",
-      title: "Approfondisci",
+      title: "Continua a leggere",
       items: [
-        { label: "Vendita Edile — il sito", href: "https://www.venditaedile.it/" },
-        { label: "Vendita Edile nell'ecosistema", href: "/ecosistema/vendita-edile" },
-        { label: "Marketing Edile — trova i clienti giusti", href: "/ecosistema/marketing-edile" },
-        { label: "Edilizia in Cloud — gestisci il lavoro", href: "/ecosistema/edilizia-in-cloud" },
+        { label: "Chi sono e da dove vengo", href: "/chi-sono" },
+        { label: "Vendita Edile", href: "/ecosistema/vendita-edile" },
+        { label: "Numeri in Edilizia", href: "/ecosistema/numeri-in-edilizia" },
         { label: "Parliamone: contatti", href: "/contatti" },
       ],
     },
   ],
   faq: [
     {
-      q: "Come faccio a chiudere più preventivi edili?",
-      a: "Qualifica il cliente prima di preventivare, presenta il valore e non solo il prezzo, gestisci le obiezioni senza cedere subito sullo sconto e fai un follow-up costante. Fare meno preventivi ma su clienti seri alza il tasso di chiusura.",
+      q: "Quanto ti sono costati davvero questi tre preventivi persi?",
+      a: "Sommati fanno oltre 140.000 euro di lavori: 46.000 di ristrutturazione, 78.000 di cappotto, 23.400 di tetto. Ma il danno vero sono stati i mesi con la squadra ferma e la testa occupata a rifare i conti invece che a cercare il lavoro dopo.",
     },
     {
-      q: "Cosa dico quando il cliente dice che costa troppo?",
-      a: "Non abbassare il prezzo di riflesso. Chiedi rispetto a cosa è caro e a quale altro preventivo. Spesso l'alternativa ha meno lavorazioni o materiali peggiori. Fai emergere la differenza e il tuo prezzo torna giustificato.",
+      q: "Perché dici che lo sconto dato subito è stato l'errore peggiore?",
+      a: "Perché nessuno me lo aveva chiesto. Ho tolto 6.000 euro per riempire un silenzio. Il geometra ha capito che il primo prezzo era gonfiato e ha chiesto ancora. Un ribasso dato senza motivo non chiude la trattativa, la riapre.",
     },
     {
-      q: "Devo dare lo sconto per chiudere la trattativa?",
-      a: "No, non per paura. Lo sconto dato per timore di perdere il cliente svaluta il tuo lavoro e attira clienti che vorranno sempre ribassi. Meglio difendere il valore e, se serve, proporre fasi di lavoro invece di tagliare il prezzo.",
+      q: "Come fai a richiamare senza sembrare uno che insiste?",
+      a: "Fisso la data prima di salutarci. Dico al cliente quando lo richiamo e aspetto il suo sì. Quando poi chiamo non sto disturbando, sto rispettando un appuntamento preso insieme. È l'abitudine che mi ha cambiato più risultati di ogni altra.",
     },
     {
-      q: "Quando devo richiamare dopo aver mandato il preventivo?",
-      a: "Concorda una data già durante la trattativa, così il follow-up è un appuntamento e non un'insistenza. Due o tre contatti dopo il preventivo sono normali: chi segue con costanza chiude i lavori che gli altri hanno già abbandonato.",
+      q: "Se rifacessi tutto, cosa cambieresti per primo?",
+      a: "Smetterei di mandare i preventivi via mail e basta. Mezz'ora insieme al cliente, con il documento aperto davanti, vale più di dieci pagine scritte bene. Il foglio da solo non spiega come lavori: quello puoi farlo solo tu.",
     },
   ],
 };

@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { Portrait } from "@/components/Portrait";
 import { SectionHeading, CtaBand } from "@/components/ui";
 import { IconCheck, IconQuote, IconSpark } from "@/components/Icons";
+import { JsonLd, profilePageSchema } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -31,6 +32,8 @@ const values = [
 export default function ChiSonoPage() {
   return (
     <>
+      {/* ProfilePage: lega questa pagina all'entità Person (stesso @id) */}
+      <JsonLd data={profilePageSchema} />
       <PageHero
         eyebrow="Chi sono"
         crumb="Chi sono"

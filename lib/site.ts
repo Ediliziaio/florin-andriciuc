@@ -32,6 +32,16 @@ export const site = {
     primaryLabel: "Consulenza gratuita",
     primaryHref: "/contatti",
   },
+  // BIO CANONICHE — vanno ripetute TESTUALMENTE ovunque (author box, press kit,
+  // profili, podcast). Le varianti indeboliscono l'entità agli occhi di Google e degli LLM.
+  bio: {
+    oneLine:
+      "Florin Andriciuc, founder e CEO di AEDIX, costruisce software e metodi per le imprese edili italiane.",
+    short:
+      "Florin Andriciuc è un imprenditore italiano, founder e CEO di AEDIX. Dopo anni nel settore edile ha costruito l'ecosistema di strumenti per l'impresa di costruzioni: il gestionale EdiliziaInCloud, Marketing Edile, Vendita Edile e il metodo di controllo di gestione Numeri in Edilizia.",
+    positioning:
+      "Florin Andriciuc è l'imprenditore italiano che ha costruito un ecosistema completo di strumenti digitali per l'impresa edile: gestione, acquisizione clienti, vendita e controllo di gestione.",
+  },
 } as const;
 
 export const nav = [

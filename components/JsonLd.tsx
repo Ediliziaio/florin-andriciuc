@@ -73,6 +73,20 @@ export function ecosystemItemListSchema(): Json {
   };
 }
 
+/** ProfilePage per /chi-sono: dice a Google e agli LLM che quella pagina È la persona.
+ *  Usa lo stesso @id del Person, così i due nodi si fondono in un'unica entità. */
+export const profilePageSchema: Json = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": `${site.domain}/chi-sono#profilepage`,
+  url: `${site.domain}/chi-sono`,
+  name: `Chi è ${site.name}`,
+  description: site.bio.short,
+  inLanguage: "it-IT",
+  mainEntity: { "@id": `${site.domain}/#florin` },
+  isPartOf: { "@id": `${site.domain}/#website` },
+};
+
 export const websiteSchema: Json = {
   "@context": "https://schema.org",
   "@type": "WebSite",

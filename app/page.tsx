@@ -94,7 +94,7 @@ function Hero() {
 
               {/* Chip fluttuante: ecosistema */}
               <div className="floaty absolute -right-3 top-6 rounded-2xl border border-line bg-white px-4 py-3 shadow-card sm:-right-5" style={{ animationDelay: "1.5s" }}>
-                <p className="stat-num text-2xl leading-none">6</p>
+                <p className="stat-num text-2xl leading-none">7</p>
                 <p className="mt-1 text-[0.7rem] font-semibold uppercase tracking-wide text-muted">brand · 1 missione</p>
               </div>
             </div>

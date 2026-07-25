@@ -1,253 +1,270 @@
 import type { Article } from "../article-types";
 
 export const articleNumeriInEdilizia: Article = {
-  slug: "controllo-di-gestione-impresa-edile-guida",
-  title:
-    "Controllo di gestione per l'impresa edile: la guida per far restare l'utile",
+  slug: "anno-che-ho-rischiato-di-chiudere",
+  title: "Ho fatturato di più l'anno che ho rischiato di chiudere",
   excerpt:
-    "Fatturare tanto non basta. Ecco i numeri che ogni imprenditore edile deve conoscere per capire se una commessa guadagna davvero, senza fare il ragioniere.",
+    "L'anno del record ho fatturato come mai prima. In banca non era rimasto niente. Ti racconto come ci sono arrivato, il giorno in cui ho capito, e perché prendere altro lavoro era la mossa sbagliata.",
   date: "2026-07-16",
-  readingTime: "9 min",
-  category: "Numeri",
+  readingTime: "8 min",
+  category: "Storia",
   relatedProject: "numeri-in-edilizia",
   body: [
     {
       type: "p",
-      text: "Chiudi l'anno con più fatturato dell'anno prima. Sei contento. Poi guardi il conto in banca ed è fermo. A volte è più basso. Ti chiedi dove sono finiti i soldi.",
+      text: "Quell'anno ho chiuso con il fatturato più alto di sempre. Ero convinto di avercela fatta. Poi ho aperto il conto e mi si è chiuso lo stomaco.",
     },
     {
       type: "p",
-      text: "Se ti è capitato, non sei l'unico. È il motivo per cui ho creato [Numeri in Edilizia](https://numerinedilizia.com/). Il controllo di gestione per l'impresa edile non è roba da grandi aziende. È l'unico modo per sapere se stai lavorando o se stai regalando lavoro.",
+      text: "Il saldo era quasi identico a dodici mesi prima. Anzi, un filo più basso. Avevo lavorato come un mulo per restare fermo.",
+    },
+    {
+      type: "p",
+      text: "Io faccio l'imprenditore edile, non il consulente: [chi sono](/chi-sono) lo trovi scritto senza giri di parole. Eppure quell'anno ho scoperto che della mia azienda non sapevo niente.",
     },
     {
       type: "h2",
-      text: "Perché fatturare tanto non ti dice niente",
+      text: "Come ci sono arrivato: dicendo sempre sì",
     },
     {
       type: "p",
-      text: "Il fatturato è quanto incassi. Non è quanto ti resta. Sono due cose diverse. Un cantiere da 200.000 euro può lasciarti 30.000 euro in tasca oppure toglierti soldi. Dipende dai costi.",
+      text: "Non è successo in un giorno. È successo con calma, in due anni buoni. Ogni volta che squillava il telefono io dicevo sì.",
     },
     {
       type: "p",
-      text: "Molti imprenditori edili guardano solo il numero grosso. Firmano contratti, aprono cantieri, corrono. A fine anno il commercialista dice quanto devono pagare. E la sorpresa è brutta.",
+      text: "Sì al condominio con l'amministratore che tira sul prezzo. Sì al privato che voleva iniziare la settimana dopo. Sì al collega che mi passava il lavoro che a lui non tornava.",
     },
     {
       type: "p",
-      text: "Il problema quasi mai è il lavoro. Il lavoro c'è. Il problema è il margine. L'ho scritto qui: [il tuo non è un problema di lavoro, è un problema di margine](/blog/impresa-edile-problema-di-margine-non-di-lavoro).",
+      text: "Nella mia testa il ragionamento era semplice. Più cantieri apro, più fatturo. Più fatturo, più cresco. Sembrava logica pura.",
+    },
+    {
+      type: "p",
+      text: "Così sono passato da quattro cantieri aperti a undici. Ho preso altri due operai. Ho comprato un furgone nuovo. Mi sentivo grande.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Nessun lavoro rifiutato per due anni di fila",
+        "Prezzi fatti a occhio, la sera, per non perdere il cliente",
+        "Varianti in corso d'opera regalate per non litigare",
+        "Un cantiere aperto per tenere occupata la squadra, non per guadagnarci",
+      ],
+    },
+    {
+      type: "p",
+      text: "Ogni singola scelta, presa da sola, sembrava giusta. Messe insieme mi stavano portando a sbattere.",
+    },
+    {
+      type: "h2",
+      text: "Quello che vedevo: cantieri ovunque, utile da nessuna parte",
+    },
+    {
+      type: "p",
+      text: "Dall'esterno ero l'esempio dell'impresa che va forte. Furgoni in giro, ponteggi montati, squadre su tre paesi diversi.",
+    },
+    {
+      type: "p",
+      text: "I colleghi al bar mi dicevano bravo. Il commercialista mi mandava numeri che non leggevo. Io correvo dalle sei del mattino alle nove di sera.",
+    },
+    {
+      type: "p",
+      text: "Ma dentro succedeva un'altra cosa. Pagavo i fornitori in ritardo. Anticipavo materiali con i soldi degli acconti del cantiere dopo.",
+    },
+    {
+      type: "p",
+      text: "Ogni mese chiudevo i buchi spostando soldi da una parte all'altra. Non era gestione. Era tappare falle con le mani.",
     },
     {
       type: "quote",
-      text: "Non conta quanto fatturi. Conta quanto ti resta quando il cantiere chiude e spegni le luci.",
+      text: "Sembravo l'impresa che tira. In realtà stavo solo girando più veloce dentro la stessa ruota.",
     },
     {
       type: "h2",
-      text: "I numeri che devi conoscere davvero",
+      text: "Il giorno in cui ho capito",
     },
     {
       type: "p",
-      text: "Non ti servono venti indicatori. Te ne bastano pochi. Ma devi conoscerli per ogni commessa e per l'azienda intera. Vediamoli uno per uno, in lingua da cantiere.",
-    },
-    {
-      type: "h3",
-      text: "1. Il margine di commessa",
+      text: "Un martedì di novembre il fornitore mi ha bloccato la fornitura. Avevo 14.000 euro di fatture scadute. Niente ferro, niente cemento, cantiere fermo.",
     },
     {
       type: "p",
-      text: "Il margine di commessa è quello che resta di un cantiere dopo aver tolto tutti i costi diretti. Materiali, manodopera, noli, subappalti, trasporti. Tutto quello che spendi per fare quel lavoro.",
+      text: "Sono rimasto in macchina davanti al magazzino per venti minuti. Avevo appena chiuso l'anno migliore della mia vita. E non riuscivo a pagare 14.000 euro.",
     },
     {
       type: "p",
-      text: "Esempio semplice. Incassi 100.000 euro. Spendi 78.000 euro tra materiali, operai e subappalti. Il margine di commessa è 22.000 euro. Questo numero lo devi sapere prima di firmare, non a lavori finiti.",
-    },
-    {
-      type: "h3",
-      text: "2. I costi di cantiere",
+      text: "Lì mi è caduta la maschera. Il problema non era il fornitore. Il problema non era il cliente che pagava tardi. Il problema ero io, che non guardavo i numeri.",
     },
     {
       type: "p",
-      text: "I costi di cantiere sono i soldi che escono per far girare quel lavoro. Non solo il ferro e il cemento. Anche il gasolio del muletto, il nolo della gru, la trasferta degli operai, lo smaltimento.",
+      text: "Quella sera non sono andato al cantiere. Ho preso il quaderno delle commesse e mi sono seduto al tavolo di cucina.",
+    },
+    {
+      type: "h2",
+      text: "Cosa ho scoperto guardando i numeri veri",
+    },
+    {
+      type: "p",
+      text: "Ci ho messo tre settimane a mettere in fila i conti di undici cantieri. Nessuna magia. Solo carta, fatture e pazienza.",
+    },
+    {
+      type: "p",
+      text: "Quando ho finito, mi è venuto da ridere per non piangere. Il quadro era chiarissimo e nessuno me l'aveva mai mostrato.",
     },
     {
       type: "ul",
       items: [
-        "Materiali comprati per la commessa",
-        "Ore di manodopera dei tuoi operai su quel cantiere",
-        "Subappalti e prestazioni di terzi",
-        "Noli, trasporti, gasolio, smaltimento",
-        "Sicurezza e attrezzatura specifica del lavoro",
+        "Tre cantieri su undici tenevano in piedi tutta l'azienda",
+        "Quattro andavano più o meno in pari, tanto lavoro per niente",
+        "Uno solo mi aveva bruciato 22.000 euro, ed era quello di cui andavo più fiero",
+        "Gli altri stavano appesi alle varianti che avevo regalato",
       ],
     },
     {
       type: "p",
-      text: "Se non li tieni divisi per cantiere, non saprai mai quale lavoro ti fa guadagnare e quale ti prosciuga. Butti tutto in un calderone e alla fine vedi solo il totale.",
-    },
-    {
-      type: "h3",
-      text: "3. I costi di struttura",
+      text: "Il cantiere che mi prosciugava era il più grosso. Il più bello da raccontare. Quello con la foto sul profilo.",
     },
     {
       type: "p",
-      text: "I costi di struttura sono le spese che paghi anche a cantieri fermi. L'affitto del capannone, la segretaria, il commercialista, l'assicurazione, il leasing del furgone, le utenze.",
+      text: "Non ti spiego qui come si mettono in ordine questi conti. Quella parte l'ho messa tutta dentro [Numeri in Edilizia](/ecosistema/numeri-in-edilizia), che è nato esattamente da quel tavolo di cucina.",
     },
     {
       type: "p",
-      text: "Questi costi non spariscono ad agosto. Ci sono sempre. Ecco perché ogni commessa deve coprire la sua parte di struttura. Il margine di commessa serve prima di tutto a pagare questi costi fissi.",
-    },
-    {
-      type: "h3",
-      text: "4. Il punto di pareggio",
-    },
-    {
-      type: "p",
-      text: "Il punto di pareggio è quanto devi fatturare per non perderci. È il livello dove i ricavi coprono esatti tutti i costi. Sotto quella riga ci rimetti. Sopra quella riga inizi a guadagnare.",
-    },
-    {
-      type: "p",
-      text: "Sapere il tuo punto di pareggio cambia tutto. Sai quanti cantieri ti servono per stare in piedi. Sai fino a dove puoi scendere con un prezzo senza andare in perdita. Smetti di tirare a indovinare.",
-    },
-    {
-      type: "h3",
-      text: "5. Il costo orario della manodopera",
-    },
-    {
-      type: "p",
-      text: "Quanto ti costa davvero un operaio all'ora? Non la paga in busta. Il costo vero. Contributi, tredicesima, ferie, malattia, ore perse, trasferte. Spesso è il doppio di quello che pensi.",
-    },
-    {
-      type: "p",
-      text: "Se fai i preventivi con il costo orario sbagliato, perdi soldi su ogni ora lavorata. E non te ne accorgi. Il preventivo sembra giusto ma la commessa nasce già in perdita.",
+      text: "Qui ti resta la cosa che conta. Per due anni avevo deciso tutto senza sapere quale lavoro mi dava da mangiare e quale mi mangiava.",
     },
     {
       type: "h2",
-      text: "Come leggere questi numeri senza essere ragioniere",
+      text: "Il fatturato è vanità, conta quanto resta",
     },
     {
       type: "p",
-      text: "La buona notizia è che non ti serve la partita doppia. Non devi diventare un contabile. Ti serve un metodo semplice e costante. Il [controllo di gestione per l'impresa edile](/ecosistema/numeri-in-edilizia) è fatto per chi sta in cantiere, non in ufficio.",
+      text: "Il fatturato è il numero che dici agli altri. L'utile è il numero con cui ci mangi. Non sono parenti.",
     },
     {
       type: "p",
-      text: "La regola è una. Ogni euro che esce deve avere un nome e un cantiere. Compri il ferro per il cantiere Rossi? Lo segni sul cantiere Rossi. Paghi il subappalto per il cantiere Bianchi? Lo segni lì.",
+      text: "Noi in edilizia siamo fissati con il primo. Chiedi a un collega come va e ti risponde con il fatturato. Mai con quanto gli è rimasto.",
     },
     {
       type: "p",
-      text: "Così, alla fine del mese, non vedi un totale confuso. Vedi cantiere per cantiere. Vedi dove guadagni e dove no. Questo è tutto il segreto del budget dell'impresa edile.",
+      text: "Io ero il primo a farlo. Dicevo la cifra grossa e mi sentivo qualcuno. Intanto in banca non entrava un euro in più.",
+    },
+    {
+      type: "p",
+      text: "Un fatturato che cresce senza margine non è crescita. È solo più rischio, più fornitori da pagare, più operai da coprire a fine mese.",
     },
     {
       type: "quote",
-      text: "Ogni euro che esce deve avere un nome e un cantiere. Se non sai dove va, non sai perché sparisce.",
+      text: "Il fatturato lo dici al bar. L'utile lo porti a casa. Se cresce solo il primo, stai lavorando per gli altri.",
     },
     {
       type: "h2",
-      text: "Da dove partire: una commessa, non tutta l'azienda",
+      text: "Perché prendere altro lavoro è la mossa sbagliata",
     },
     {
       type: "p",
-      text: "Non provare a mettere in ordine dieci anni di numeri. Ti blocchi e molli. Parti da una commessa sola. La prossima che apri. Su quella tieni i conti come si deve.",
+      text: "Quando i conti non tornano, il primo istinto di ogni imprenditore edile è uno solo. Prendere un altro cantiere.",
+    },
+    {
+      type: "p",
+      text: "Lo capisco perché l'ho fatto. Sembra la cura. Nuovo acconto, cassa che respira, la sensazione di essere tornati in corsa.",
+    },
+    {
+      type: "h3",
+      text: "Cosa succede davvero",
+    },
+    {
+      type: "p",
+      text: "L'acconto nuovo copre i buchi vecchi. I buchi nuovi arrivano tra sessanta giorni. E arrivano più grossi di prima.",
+    },
+    {
+      type: "p",
+      text: "Se una commessa perde soldi, farne due uguali non ti salva. Perdi il doppio, solo più in fretta e con più gente da gestire.",
     },
     {
       type: "ul",
       items: [
-        "Scrivi il prezzo di vendita concordato col cliente",
-        "Segna ogni costo appena esce, con la data e il cantiere",
-        "A metà lavori confronta i costi con il preventivo",
-        "A fine lavori calcola il margine reale, non quello sperato",
+        "Più cantieri aperti significa più materiale anticipato",
+        "Più squadre in giro significa meno controllo su ognuna",
+        "Più corsa significa preventivi fatti peggio, quindi margini peggiori",
+        "E più acconti incassati significa più soldi che non sono tuoi",
       ],
     },
     {
       type: "p",
-      text: "Quando chiudi quella commessa saprai una cosa che prima non sapevi. Se ci hai guadagnato e quanto. Con quel numero in mano puoi decidere sul serio se quel tipo di lavoro ti conviene.",
-    },
-    {
-      type: "p",
-      text: "Poi ripeti sulla commessa dopo. E su quella dopo ancora. In pochi mesi hai il controllo dell'intera azienda. Un cantiere alla volta, senza impazzire.",
+      text: "Prendere altro lavoro non è una cura. È un anestetico. Ti toglie il dolore adesso e ti nasconde la malattia.",
     },
     {
       type: "h2",
-      text: "Gli errori tipici che ti mangiano l'utile",
+      text: "Cosa direi oggi a chi si trova nella stessa situazione",
     },
     {
       type: "p",
-      text: "Vedo sempre gli stessi sbagli. Non sono errori di gente incapace. Sono errori di gente che corre e non ha tempo di fermarsi a contare. Eccoli, così li riconosci prima.",
+      text: "Se ti riconosci in questa storia, fermati un attimo. Non serve un piano da manuale. Serve smettere di correre al buio.",
+    },
+    {
+      type: "p",
+      text: "Non provare a sistemare dieci anni di conti. Ti blocchi e molli dopo tre giorni. L'ho provato e non funziona.",
     },
     {
       type: "ul",
       items: [
-        "Fare il preventivo a occhio, senza il costo orario vero",
-        "Non contare le ore perse, i rifacimenti, i tempi morti",
-        "Dimenticare i costi di struttura quando fissi il prezzo",
-        "Non tracciare le varianti in corso d'opera e regalarle",
-        "Guardare solo l'incasso e mai il margine che resta",
-        "Confrontare i cantieri tra loro solo a naso, senza numeri",
+        "Prendi un cantiere solo, quello chiuso da poco, e guarda quanto ti è rimasto davvero",
+        "Poi guarda quello che stai per firmare e chiediti se somiglia al primo o al secondo",
+        "Impara a dire no al lavoro che non paga la struttura, anche se è bello da raccontare",
+        "Smetti di misurarti col fatturato davanti agli altri, misurati con quello che resta",
       ],
     },
     {
       type: "p",
-      text: "Ognuno di questi errori, da solo, ti toglie qualche punto di margine. Messi insieme ti spiegano perché fatturi tanto e in banca non resta niente. La redditività dell'impresa di costruzioni si costruisce togliendo questi buchi uno alla volta.",
-    },
-    {
-      type: "h2",
-      text: "Il risultato: decidi con i numeri, non con la pancia",
+      text: "Il metodo con cui ho rimesso in ordine i miei conti l'ho scritto tutto su [Numeri in Edilizia](https://numerinedilizia.com/). Lì trovi la parte pratica, i conti e gli esempi.",
     },
     {
       type: "p",
-      text: "Quando conosci i tuoi numeri cambia il modo in cui lavori. Non firmi più un contratto perché ti serve tenere gli operai occupati. Lo firmi perché sai che ci guadagni. E se non ci guadagni, lo lasci andare.",
+      text: "Qui volevo lasciarti solo la storia. Perché la parte difficile non sono i calcoli. È ammettere che stai andando forte nella direzione sbagliata.",
     },
     {
       type: "p",
-      text: "Alzi i prezzi dove devi, con dati alla mano. Tagli i lavori che ti fanno perdere. Investi dove il margine è alto. Dormi meglio perché sai come sta l'azienda, non lo speri.",
-    },
-    {
-      type: "p",
-      text: "Questo è il senso di [Numeri in Edilizia](/ecosistema/numeri-in-edilizia): darti il controllo dei soldi senza trasformarti in un contabile. Fa parte del mio [ecosistema di strumenti per l'impresa edile](/ecosistema), insieme a [Edilizia in Cloud](/ecosistema/edilizia-in-cloud) per la gestione dei cantieri.",
-    },
-    {
-      type: "p",
-      text: "Se vuoi capire dove stai perdendo margine sulle tue commesse, scrivimi. Partiamo da un cantiere e vediamo i numeri veri. [Contattami qui](/contatti).",
+      text: "Io ci ho messo due anni e un fornitore che mi ha chiuso il rubinetto. Se questo racconto ti risparmia uno di quei due anni, ha fatto il suo lavoro. Se vuoi parlarne, [scrivimi](/contatti).",
     },
     {
       type: "links",
-      title: "Approfondisci",
+      title: "Continua a leggere",
       items: [
-        {
-          label: "Numeri in Edilizia — controllo di gestione per imprese edili",
-          href: "https://numerinedilizia.com/",
-        },
-        {
-          label: "Numeri in Edilizia nell'ecosistema",
-          href: "/ecosistema/numeri-in-edilizia",
-        },
-        {
-          label: "Edilizia in Cloud — gestione cantieri",
-          href: "/ecosistema/edilizia-in-cloud",
-        },
         {
           label: "Non è un problema di lavoro, è un problema di margine",
           href: "/blog/impresa-edile-problema-di-margine-non-di-lavoro",
         },
         {
-          label: "Parliamo dei tuoi numeri",
-          href: "/contatti",
+          label: "Perché ho smesso di fare i preventivi su Excel",
+          href: "/blog/preventivo-edile-excel-perche-ho-smesso",
+        },
+        {
+          label: "Numeri in Edilizia: il progetto nato da questa storia",
+          href: "/ecosistema/numeri-in-edilizia",
+        },
+        {
+          label: "Chi sono e cosa ho costruito",
+          href: "/chi-sono",
         },
       ],
     },
   ],
   faq: [
     {
-      q: "Cos'è il controllo di gestione per un'impresa edile?",
-      a: "È il metodo per sapere, cantiere per cantiere, quanto incassi e quanto spendi davvero. Serve a capire se una commessa guadagna prima di firmarla e quanto utile resta a lavori finiti, senza aspettare il commercialista a fine anno.",
+      q: "Com'è possibile fatturare di più e avere meno soldi in banca?",
+      a: "A me è successo così: sono passato da quattro a undici cantieri dicendo sì a tutto. I costi sono cresciuti insieme al fatturato, in certi casi più in fretta. Il numero grosso saliva, quello che restava scendeva. Un anno record sulla carta e 14.000 euro di fatture che non riuscivo a pagare.",
     },
     {
-      q: "Cos'è il margine di commessa?",
-      a: "È quello che resta di un cantiere dopo aver tolto tutti i costi diretti: materiali, manodopera, noli, subappalti e trasporti. Se incassi 100.000 euro e ne spendi 78.000, il margine di commessa è 22.000 euro. È il numero da conoscere prima di iniziare.",
+      q: "Qual è stato il segnale che stavo per andare a sbattere?",
+      a: "Il fornitore che mi ha bloccato la fornitura un martedì di novembre. Ma i segnali c'erano da mesi: pagavo in ritardo, coprivo i buchi con gli acconti del cantiere dopo, non rifiutavo mai un lavoro. Se ogni mese sposti soldi da una parte all'altra per arrivare in fondo, quello è già il segnale.",
     },
     {
-      q: "Devo essere bravo con i numeri per iniziare?",
-      a: "No. Non serve la contabilità. Serve un metodo semplice e costante: ogni euro che esce deve avere un nome e un cantiere. Parti da una sola commessa, tieni i conti su quella, e in pochi mesi hai il controllo di tutta l'azienda.",
+      q: "Perché non conviene prendere un altro cantiere per uscirne?",
+      a: "Perché l'acconto nuovo copre il buco vecchio e ne crea uno più grande tra sessanta giorni. Se una commessa perde soldi, farne due uguali fa perdere il doppio più in fretta. Non è una cura, è un anestetico: toglie il dolore e nasconde la malattia.",
     },
     {
-      q: "Perché fatturo di più ma non mi resta niente in banca?",
-      a: "Perché il fatturato non è l'utile. Se i costi di cantiere e di struttura salgono insieme al fatturato, il margine si mangia i soldi. Quasi mai è un problema di lavoro: è un problema di margine e di preventivi fatti con il costo orario sbagliato.",
+      q: "Da dove hai ricominciato dopo esserti accorto del problema?",
+      a: "Da un quaderno e dal tavolo di cucina, tre settimane a rimettere in fila undici cantieri. Ho scoperto che tre tenevano in piedi tutto e uno solo mi aveva bruciato 22.000 euro. Da lì ho preso l'abitudine di guardare un cantiere alla volta, appena chiuso, e di confrontarlo con quello che sto per firmare.",
     },
   ],
 };
