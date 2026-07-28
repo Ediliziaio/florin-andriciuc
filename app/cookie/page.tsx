@@ -5,7 +5,6 @@ import { CookiePrefsButton } from "@/components/CookiePrefsButton";
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: "Informativa estesa sui cookie utilizzati dal sito di Florin Andriciuc.",
-  robots: { index: false, follow: true },
   alternates: { canonical: "/cookie" },
 };
 

@@ -14,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/contatti`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${base}/media`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    // Pagine legali: indicizzabili di proposito. Per un personal brand sono un
+    // segnale di trasparenza (E-E-A-T), non pagine da nascondere.
+    { url: `${base}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/cookie`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const productRoutes: MetadataRoute.Sitemap = productSlugs.map((slug) => ({

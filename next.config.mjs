@@ -4,6 +4,19 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
 
+  // Gli asset statici (font, chunk JS/CSS) non sono pagine: se Google li scopre finiscono
+  // in "scansionata ma non indicizzata", che sporca i report e brucia crawl budget.
+  // X-Robots-Tag: noindex li esclude dall'indice SENZA bloccarne il crawl, così il
+  // rendering della pagina resta intatto (bloccarli da robots.txt sarebbe un errore).
+  async headers() {
+    return [
+      {
+        source: "/_next/static/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+    ];
+  },
+
   // 301 dai vecchi slug del blog (guide how-to) verso i nuovi pezzi in prima persona.
   // Servono a non perdere l'indicizzazione già acquisita: quegli URL erano in sitemap
   // e già inviati a IndexNow.

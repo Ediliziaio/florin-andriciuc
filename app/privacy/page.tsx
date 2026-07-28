@@ -5,7 +5,6 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Informativa sul trattamento dei dati personali del sito di Florin Andriciuc.",
-  robots: { index: false, follow: true },
   alternates: { canonical: "/privacy" },
 };
 
