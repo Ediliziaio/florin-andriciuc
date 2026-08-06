@@ -5,6 +5,9 @@ export const articleMarketingEdile: Article = {
   title: "Come trovavo i clienti quando avevo l'impresa (e cosa non rifarei)",
   excerpt:
     "Undici giorni di febbraio senza una chiamata. Gli operai fermi, i mezzi in cortile, le fatture uguali. Ti racconto come trovavo davvero i clienti ai tempi dell'impresa: passaparola, volantini, il cartello in cantiere, le prime campagne. E cosa oggi non rifarei.",
+  seoTitle: "Come trovavo i clienti quando avevo l'impresa edile",
+  seoDescription:
+    "Undici giorni di febbraio senza una chiamata. Passaparola, volantini, cartelli e prime campagne: come trovavo i clienti davvero, e cosa non rifarei.",
   date: "2026-07-17",
   readingTime: "8 min",
   category: "Storia",

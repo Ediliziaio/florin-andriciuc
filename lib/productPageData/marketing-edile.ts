@@ -4,7 +4,7 @@ export const productPageMarketingEdile: ProductPage = {
   slug: "marketing-edile",
   seoTitle: "Marketing Edile — più clienti per l'impresa edile",
   seoDescription:
-    "Marketing Edile: il metodo e i servizi per portare all'impresa edile richieste reali di clienti che vogliono ristrutturare o costruire. Meno passaparola a caso, più lavoro che scegli tu.",
+    "Marketing Edile: richieste reali di clienti che vogliono ristrutturare o costruire. Meno passaparola a caso, più lavoro che scegli tu.",
   keywords: [
     "marketing per imprese edili",
     "trovare clienti impresa edile",

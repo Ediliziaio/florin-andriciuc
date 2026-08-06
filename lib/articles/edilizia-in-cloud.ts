@@ -5,6 +5,8 @@ export const articleEdiliziaInCloud: Article = {
   title: "Perché ho costruito un gestionale invece di comprarne uno",
   excerpt:
     "Ho provato Excel, i gestionali generici e i software pensati per i contabili. Nessuno sapeva dirmi se su quel cantiere ci stavo guadagnando. Così ho smesso di cercare e ho iniziato a costruire.",
+  seoDescription:
+    "Excel, gestionali generici, software per contabili: nessuno mi diceva se sul cantiere ci guadagnavo. Così ho iniziato a costruire EdiliziaInCloud.",
   date: "2026-07-19",
   readingTime: "8 min",
   category: "Storia",

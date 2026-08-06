@@ -5,6 +5,8 @@ export const articleVendereSenzaSvendere: Article = {
   title: "Vendere in edilizia senza svendere: la lezione dello sconto",
   excerpt:
     "Per anni ho creduto che in edilizia vincesse il preventivo più basso. Poi ho fatto i conti su quanto mi costava ogni sconto «per chiudere» e ho cambiato modo di vendere. Ecco cosa ho capito.",
+  seoDescription:
+    "Credevo che in edilizia vincesse il preventivo più basso. Poi ho calcolato quanto mi costava ogni sconto «per chiudere». Ecco cosa ho capito.",
   date: "2026-08-01",
   readingTime: "6 min",
   category: "Vendita",

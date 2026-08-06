@@ -9,7 +9,11 @@ export type Block =
 export type Article = {
   slug: string;
   title: string;
+  // Override per la SERP quando il titolo editoriale supera i 60 caratteri.
+  seoTitle?: string;
   excerpt: string;
+  // Override per la meta description quando l'excerpt supera i 155 caratteri.
+  seoDescription?: string;
   date: string; // ISO
   // Data di ultima modifica sostanziale (ISO). Se assente, vale la data di pubblicazione.
   updated?: string;

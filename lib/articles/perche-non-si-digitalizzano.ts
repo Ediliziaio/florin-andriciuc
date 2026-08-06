@@ -6,6 +6,9 @@ export const articlePercheNonSiDigitalizzano: Article = {
     "Perché le imprese edili italiane non si digitalizzano (e non è colpa della tecnologia)",
   excerpt:
     "Non è l'età dei titolari. Non è la paura del computer. Le imprese edili non cambiano software perché il software non è mai stato scritto per loro: è stato scritto per chi le controlla. Finché non cambia questo, non cambia niente.",
+  seoTitle: "Perché le imprese edili non si digitalizzano",
+  seoDescription:
+    "Non è l'età dei titolari né la paura del computer: il software non è mai stato scritto per chi costruisce. È stato scritto per chi controlla.",
   date: "2026-07-21",
   readingTime: "9 min",
   category: "Opinione",

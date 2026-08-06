@@ -5,6 +5,8 @@ export const articleDaQualeLevaPartire: Article = {
   title: "Da dove parto quando guardo un'impresa edile bloccata",
   excerpt:
     "Gestione, clienti, vendita o numeri: quando un imprenditore edile mi chiede una consulenza, la prima domanda non è mai «che strumento compro». È «dove sto perdendo di più». Ecco come ragiono.",
+  seoDescription:
+    "Gestione, clienti, vendita o numeri: come capisco da quale leva far partire un'impresa edile bloccata. Le 4 domande che faccio in ogni consulenza.",
   date: "2026-08-06",
   readingTime: "7 min",
   category: "Metodo",

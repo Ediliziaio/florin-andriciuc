@@ -21,6 +21,7 @@ const baseArticles: Article[] = [
     title: "Perché ho smesso di fare il preventivo su Excel (e cosa uso oggi)",
     excerpt:
       "Per anni ho preventivato di notte su fogli Excel che si rompevano da soli. Ecco cosa mi è costato davvero e come ho risolto il problema alla radice.",
+    seoTitle: "Perché ho smesso di fare i preventivi su Excel",
     date: "2026-07-14",
     updated: "2026-08-06",
     readingTime: "6 min",
@@ -88,6 +89,9 @@ const baseArticles: Article[] = [
     title: "L'impresa edile non ha un problema di lavoro. Ha un problema di margine",
     excerpt:
       "Fatturi tanto ma a fine anno non resta niente? Non ti serve più lavoro. Ti serve capire dove si perde l'utile. Ecco come guardo i numeri di un'impresa edile.",
+    seoTitle: "L'impresa edile ha un problema di margine, non di lavoro",
+    seoDescription:
+      "Fatturi tanto ma a fine anno non resta niente? Non ti serve più lavoro: ti serve capire dove si perde l'utile. Come guardo i numeri di un'impresa edile.",
     date: "2026-07-09",
     updated: "2026-08-06",
     readingTime: "7 min",

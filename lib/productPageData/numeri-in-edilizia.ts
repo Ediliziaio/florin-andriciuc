@@ -4,7 +4,7 @@ export const productPageNumeriInEdilizia: ProductPage = {
   slug: "numeri-in-edilizia",
   seoTitle: "Numeri in Edilizia — controllo di gestione per imprese edili",
   seoDescription:
-    "Numeri in Edilizia: il metodo pratico per leggere margini, costi e commesse e trasformare il fatturato in utile. Controllo di gestione per l'imprenditore edile, senza fare il ragioniere.",
+    "Numeri in Edilizia: il metodo per leggere margini, costi e commesse e trasformare il fatturato in utile. Senza dover fare il ragioniere.",
   keywords: [
     "controllo di gestione impresa edile",
     "margine di commessa",

@@ -23,8 +23,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = getArticle(slug);
   if (!a) return { title: "Articolo non trovato" };
   return {
-    title: a.title,
-    description: a.excerpt,
+    // Titolo assoluto (senza suffisso "— Florin Andriciuc"): i titoli editoriali
+    // sono già lunghi e il suffisso li porterebbe sempre oltre i 60 char della SERP.
+    title: { absolute: a.seoTitle ?? a.title },
+    description: a.seoDescription ?? a.excerpt,
     alternates: { canonical: `/blog/${a.slug}` },
     openGraph: {
       type: "article",

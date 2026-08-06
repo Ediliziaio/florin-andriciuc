@@ -5,6 +5,8 @@ export const articlePercheSetteBrand: Article = {
   title: "Perché ho diviso tutto in sette brand invece di farne uno",
   excerpt:
     "Potevo mettere tutto sotto un nome solo e lavorare la metà. Ho scelto sette brand distinti. Ti racconto il ragionamento, quanto mi è costato e cosa rifarei davvero.",
+  seoDescription:
+    "Potevo mettere tutto sotto un nome solo e lavorare la metà. Perché ho scelto sette brand distinti, quanto mi è costato e cosa rifarei.",
   date: "2026-07-23",
   readingTime: "10 min",
   category: "Storia",

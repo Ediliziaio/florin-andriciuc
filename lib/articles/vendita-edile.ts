@@ -5,6 +5,8 @@ export const articleVenditaEdile: Article = {
   title: "I 3 preventivi che ho perso e cosa mi hanno insegnato",
   excerpt:
     "Tre lavori che credevo miei. Li ho persi tutti e tre. Uno per 800 euro, uno per uno sconto dato di fretta, uno per una mail mai richiamata. Ecco cosa ho sbagliato.",
+  seoDescription:
+    "Tre lavori che credevo miei, persi: per 800 euro, per uno sconto di fretta, per una mail mai richiamata. Ecco cosa ho sbagliato.",
   date: "2026-07-18",
   readingTime: "8 min",
   category: "Storia",

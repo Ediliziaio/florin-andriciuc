@@ -5,6 +5,8 @@ export const articleNumeriInEdilizia: Article = {
   title: "Ho fatturato di più l'anno che ho rischiato di chiudere",
   excerpt:
     "L'anno del record ho fatturato come mai prima. In banca non era rimasto niente. Ti racconto come ci sono arrivato, il giorno in cui ho capito, e perché prendere altro lavoro era la mossa sbagliata.",
+  seoDescription:
+    "L'anno del record ho fatturato come mai prima, ma in banca non restava niente. Come ci sono arrivato e perché altro lavoro era la mossa sbagliata.",
   date: "2026-07-16",
   readingTime: "8 min",
   category: "Storia",

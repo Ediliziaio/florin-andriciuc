@@ -37,7 +37,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = productPages[slug];
   if (!p) return { title: "Prodotto non trovato" };
   return {
-    title: p.seoTitle,
+    // Titolo assoluto: i seoTitle dei prodotti contengono già il brand e col
+    // suffisso "— Florin Andriciuc" supererebbero i 60 char della SERP.
+    title: { absolute: p.seoTitle },
     description: p.seoDescription,
     keywords: p.keywords,
     alternates: { canonical: `/ecosistema/${slug}` },

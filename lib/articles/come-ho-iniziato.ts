@@ -6,6 +6,9 @@ export const articleComeHoIniziato: Article = {
     "Come ho iniziato: gli anni in cantiere prima di scrivere una riga di codice",
   excerpt:
     "Non sono arrivato al software dall'università. Ci sono arrivato dal cantiere, dopo troppe sere passate a rifare preventivi che avevo già fatto. Questa è la parte della mia storia che di solito non racconto.",
+  seoTitle: "Come ho iniziato: dal cantiere al software per l'edilizia",
+  seoDescription:
+    "Non sono arrivato al software dall'università ma dal cantiere, dopo troppe sere sui preventivi. La parte della mia storia che di solito non racconto.",
   date: "2026-07-20",
   readingTime: "8 min",
   category: "Storia",

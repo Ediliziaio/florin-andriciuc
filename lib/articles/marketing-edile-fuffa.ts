@@ -5,6 +5,9 @@ export const articleMarketingEdileFuffa: Article = {
   title: "Marketing per l'edilizia: come riconosco la fuffa in 5 minuti",
   excerpt:
     "Ho buttato soldi in agenzie che non sapevano cos'è un ponteggio. Oggi il marketing per imprese edili lo faccio io, e so esattamente quali domande smascherano chi ti vende fumo. Eccole.",
+  seoTitle: "Marketing edile: come riconosco la fuffa in 5 minuti",
+  seoDescription:
+    "Ho pagato agenzie che non sapevano cos'è un ponteggio. Le 5 domande che smascherano chi vende fumo alle imprese edili.",
   date: "2026-08-03",
   readingTime: "7 min",
   category: "Marketing",

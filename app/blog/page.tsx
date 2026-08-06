@@ -6,6 +6,31 @@ import { Pill, CtaBand } from "@/components/ui";
 import { IconArrow } from "@/components/Icons";
 import { ArticleIllustration, kindFromProject } from "@/components/ArticleIllustration";
 import { articles } from "@/lib/articles";
+import { JsonLd } from "@/components/JsonLd";
+import { site } from "@/lib/site";
+
+// Blog schema con l'elenco completo dei post: aiuta Google e gli LLM a
+// capire il perimetro editoriale del sito in una sola lettura.
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": `${site.domain}/blog#blog`,
+  url: `${site.domain}/blog`,
+  name: `Blog di ${site.name}`,
+  description:
+    "Idee pratiche per l'impresa edile: gestione, marketing, vendita e controllo di gestione, scritte in prima persona da Florin Andriciuc.",
+  inLanguage: "it-IT",
+  author: { "@id": `${site.domain}/#florin` },
+  isPartOf: { "@id": `${site.domain}/#website` },
+  blogPost: articles.map((a) => ({
+    "@type": "BlogPosting",
+    headline: a.title,
+    url: `${site.domain}/blog/${a.slug}`,
+    datePublished: a.date,
+    ...(a.updated ? { dateModified: a.updated } : {}),
+    author: { "@id": `${site.domain}/#florin` },
+  })),
+};
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -22,6 +47,7 @@ export default function BlogPage() {
   const [featured, ...rest] = articles;
   return (
     <>
+      <JsonLd data={blogSchema} />
       <PageHero
         eyebrow="Il blog"
         crumb="Blog"

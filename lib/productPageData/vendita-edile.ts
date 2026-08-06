@@ -4,7 +4,7 @@ export const productPageVenditaEdile: ProductPage = {
   slug: "vendita-edile",
   seoTitle: "Vendita Edile — chiudi i preventivi senza svendere",
   seoDescription:
-    "Vendita Edile: il sistema per trasformare i preventivi in contratti firmati. Come gestire il primo contatto, presentare il preventivo e chiudere senza abbassare il prezzo.",
+    "Vendita Edile: il sistema per trasformare i preventivi in contratti firmati, senza abbassare il prezzo per chiudere.",
   keywords: [
     "vendere preventivi edili",
     "chiudere preventivi",

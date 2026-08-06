@@ -5,6 +5,8 @@ export const articleAiInCantiere: Article = {
   title: "L'AI in cantiere nel 2026: cosa serve davvero e cosa è fuffa",
   excerpt:
     "L'intelligenza artificiale utile all'impresa edile non è quella che vedi in fiera. Serve se ti toglie un lavoro che fai ogni settimana. Se te ne aggiunge uno, è fuffa.",
+  seoDescription:
+    "L'AI utile all'impresa edile non è quella delle fiere: serve se ti toglie un lavoro che fai ogni settimana. Se te ne aggiunge uno, è fuffa.",
   date: "2026-07-22",
   readingTime: "8 min",
   category: "Opinione",

@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ecosistema",
   description:
-    "L'ecosistema di Florin Andriciuc per l'impresa edile: EdiliziaInCloud (gestionale), Marketing Edile, Vendita Edile e Numeri in Edilizia. Quattro leve, una crescita.",
+    "L'ecosistema di Florin Andriciuc per l'impresa edile: EdiliziaInCloud, Marketing Edile, Vendita Edile e Numeri in Edilizia. Quattro leve, una crescita.",
   alternates: { canonical: "/ecosistema" },
 };
 

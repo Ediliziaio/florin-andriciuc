@@ -4,7 +4,7 @@ export const productPageEdiliziaInCloud: ProductPage = {
   slug: "edilizia-in-cloud",
   seoTitle: "EdiliziaInCloud — il gestionale per l'impresa edile",
   seoDescription:
-    "EdiliziaInCloud: il gestionale cloud che tiene insieme preventivi, commesse, cantieri, DDT, magazzino e fatturazione elettronica. Pensato per chi costruisce, non per i contabili.",
+    "EdiliziaInCloud: il gestionale cloud per preventivi, commesse, cantieri, DDT e fatturazione. Pensato per chi costruisce, non per i contabili.",
   keywords: [
     "gestionale impresa edile",
     "software gestionale edilizia",
