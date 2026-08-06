@@ -62,7 +62,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <TrackView event="ViewContent" name={a.title} category={a.category} />
       <JsonLd
         data={[
-          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, wordCount: countWords(a) }),
+          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, dateModified: a.updated, wordCount: countWords(a) }),
           breadcrumbSchema([
             { name: "Home", url: site.domain },
             { name: "Blog", url: `${site.domain}/blog` },

@@ -25,6 +25,7 @@ export const personSchema: Json = {
   "@id": `${site.domain}/#florin`,
   name: site.name,
   url: site.domain,
+  image: `${site.domain}/florin.jpg`,
   jobTitle: "Imprenditore · Founder & CEO di AEDIX",
   description: site.description,
   knowsAbout: [
@@ -46,6 +47,7 @@ export const organizationSchema: Json = {
   "@id": `${AEDIX.url}#organization`,
   name: "AEDIX",
   url: AEDIX.url,
+  logo: `${site.domain}/brands/aedix.png`,
   description: AEDIX.description,
   founder: { "@id": `${site.domain}/#florin` },
   areaServed: "IT",

@@ -424,6 +424,10 @@ const homeFaq = [
     a: "Il focus è l'impresa edile italiana: dall'artigiano strutturato alla società di costruzioni. Se costruisci, ristrutturi o installi, gli strumenti sono pensati per te.",
   },
   {
+    q: "Offri consulenza alle imprese edili?",
+    a: "Sì. La consulenza parte dalla situazione reale dell'impresa — gestione, clienti, vendita o margini — e individua la leva da cui partire. La prima chiamata è gratuita: i dettagli sono nella pagina consulenza del sito.",
+  },
+  {
     q: "Come iniziamo a lavorare insieme?",
     a: "Scrivimi dalla pagina contatti e raccontami dove sei bloccato. Ti rispondo io e capiamo insieme da quale leva partire, senza impegno.",
   },

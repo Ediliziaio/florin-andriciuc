@@ -11,6 +11,8 @@ export type Article = {
   title: string;
   excerpt: string;
   date: string; // ISO
+  // Data di ultima modifica sostanziale (ISO). Se assente, vale la data di pubblicazione.
+  updated?: string;
   readingTime: string;
   category: string;
   // Brand dell'ecosistema a cui l'articolo rimanda (slug in lib/projects.ts)

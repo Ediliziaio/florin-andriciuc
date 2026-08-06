@@ -22,6 +22,7 @@ const baseArticles: Article[] = [
     excerpt:
       "Per anni ho preventivato di notte su fogli Excel che si rompevano da soli. Ecco cosa mi è costato davvero e come ho risolto il problema alla radice.",
     date: "2026-07-14",
+    updated: "2026-08-06",
     readingTime: "6 min",
     category: "Gestione",
     relatedProject: "edilizia-in-cloud",
@@ -88,6 +89,7 @@ const baseArticles: Article[] = [
     excerpt:
       "Fatturi tanto ma a fine anno non resta niente? Non ti serve più lavoro. Ti serve capire dove si perde l'utile. Ecco come guardo i numeri di un'impresa edile.",
     date: "2026-07-09",
+    updated: "2026-08-06",
     readingTime: "7 min",
     category: "Numeri",
     relatedProject: "numeri-in-edilizia",
