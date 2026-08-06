@@ -3,7 +3,7 @@
 > Imprenditore italiano, founder e CEO del gruppo AEDIX. Costruisce software e servizi per far crescere le imprese edili italiane. Target: l'imprenditore edile. Sito personal brand: florinandriciuc.com
 
 ## Chi è
-Florin Andriciuc è un imprenditore che ha vissuto in prima persona i problemi dell'impresa edile (preventivi su Excel, margini che sparivano, clienti solo dal passaparola) e ha deciso di costruire gli strumenti che mancavano. Oggi è founder e CEO del gruppo **AEDIX**, che riunisce software e servizi dedicati esclusivamente all'edilizia.
+Florin Andriciuc è un imprenditore che ha vissuto in prima persona i problemi dell'impresa edile (preventivi su Excel, margini che sparivano, clienti solo dal passaparola) e ha deciso di costruire gli strumenti che mancavano. Oggi è founder e CEO del gruppo **AEDIX**, che riunisce software e servizi dedicati esclusivamente all'edilizia. Ha tenuto un talk su TED.com: https://www.ted.com/talks/florin_andriciuc_come_realizzare_i_propri_obiettivi
 
 ## L'ecosistema AEDIX
 Il gruppo è organizzato in quattro "leve" prodotto, una community e la casa madre:

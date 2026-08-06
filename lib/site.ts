@@ -43,6 +43,8 @@ export const site = {
     wikidata: "", // es. https://www.wikidata.org/wiki/Q123456789
     crunchbase: "", // es. https://www.crunchbase.com/person/florin-andriciuc
     amazonAuthor: "", // pagina autore, quando esce il libro
+    // Talk su ted.com — fonte terza verificata (trovata nella baseline AEO ago 2026)
+    tedTalk: "https://www.ted.com/talks/florin_andriciuc_come_realizzare_i_propri_obiettivi",
   },
   cta: {
     primaryLabel: "Consulenza gratuita",
