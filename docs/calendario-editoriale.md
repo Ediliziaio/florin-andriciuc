@@ -31,6 +31,15 @@ Regole editoriali (vedi anche il commento in `lib/articles.ts`):
 | 2026-08-31 | come-far-crescere-impresa-edile | Metodo | programmato — LUNGO, kw "come far crescere un'impresa edile" |
 | 2026-09-02 | quanto-guadagna-impresa-edile | Numeri | programmato — LUNGO, kw "quanto guadagna un'impresa edile" |
 | 2026-09-04 | digitalizzare-impresa-edile-da-dove-iniziare | Gestione | programmato — LUNGO, kw "digitalizzare impresa edile" |
+| 2026-09-07 | quanto-spendevo-in-pubblicita | Marketing | programmato — ponte → Marketing Edile |
+| 2026-09-09 | follow-up-che-non-facevo | Vendita | programmato — ponte → Vendita Edile |
+| 2026-09-11 | incassare-non-e-guadagnare | Numeri | programmato — ponte → Numeri in Edilizia |
+| 2026-09-14 | errore-di-marketing-imprese-edili | Marketing | programmato — ponte → Marketing Edile |
+| 2026-09-16 | cantiere-perso-di-vista | Gestione | programmato — ponte → EdiliziaInCloud |
+| 2026-09-18 | foto-dei-cantieri | Marketing | programmato — ponte → Marketing Edile |
+| 2026-09-21 | subappalto-patti-chiari | Storia | programmato — ponte → EdiliziaInCloud |
+| 2026-09-23 | burocrazia-edile-e-ai | AI | programmato — ponte → edilizia.io |
+| 2026-09-25 | perche-dico-di-no | Metodo | programmato — CTA /consulenza |
 
 ## Come aggiungere la prossima infornata
 

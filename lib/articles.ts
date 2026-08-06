@@ -27,6 +27,17 @@ import { articleCosaGuardoPrimaDellaCrescita } from "./articles/cosa-guardo-prim
 import { articleComeFarCrescere } from "./articles/come-far-crescere-impresa-edile";
 import { articleQuantoGuadagna } from "./articles/quanto-guadagna-impresa-edile";
 import { articleDigitalizzareImpresa } from "./articles/digitalizzare-impresa-edile";
+// Infornata settembre (7-25 set): angoli marketing/vendita in prima persona
+// che rimandano ai brand per la parte operativa (anti-cannibalizzazione).
+import { articleQuantoSpendevoInPubblicita } from "./articles/quanto-spendevo-in-pubblicita";
+import { articleFollowUpCheNonFacevo } from "./articles/follow-up-che-non-facevo";
+import { articleIncassareNonEGuadagnare } from "./articles/incassare-non-e-guadagnare";
+import { articleErroreDiMarketing } from "./articles/errore-di-marketing-imprese-edili";
+import { articleCantierePersoDiVista } from "./articles/cantiere-perso-di-vista";
+import { articleFotoDeiCantieri } from "./articles/foto-dei-cantieri";
+import { articleSubappaltoPattiChiari } from "./articles/subappalto-patti-chiari";
+import { articleBurocraziaEdileEAi } from "./articles/burocrazia-edile-e-ai";
+import { articlePercheDicoDiNo } from "./articles/perche-dico-di-no";
 
 export type { Article, Block } from "./article-types";
 
@@ -168,6 +179,15 @@ const baseArticles: Article[] = [
 
 // Tutti gli articoli (anche quelli programmati nel futuro), ordinati per data.
 export const articles: Article[] = [
+  articleQuantoSpendevoInPubblicita,
+  articleFollowUpCheNonFacevo,
+  articleIncassareNonEGuadagnare,
+  articleErroreDiMarketing,
+  articleCantierePersoDiVista,
+  articleFotoDeiCantieri,
+  articleSubappaltoPattiChiari,
+  articleBurocraziaEdileEAi,
+  articlePercheDicoDiNo,
   articleComeFarCrescere,
   articleQuantoGuadagna,
   articleDigitalizzareImpresa,
