@@ -9,6 +9,9 @@ import { articleComeHoIniziato } from "./articles/come-ho-iniziato";
 import { articlePercheSetteBrand } from "./articles/perche-sette-brand";
 import { articlePercheNonSiDigitalizzano } from "./articles/perche-non-si-digitalizzano";
 import { articleAiInCantiere } from "./articles/ai-in-cantiere";
+import { articleDaQualeLevaPartire } from "./articles/da-quale-leva-partire";
+import { articleMarketingEdileFuffa } from "./articles/marketing-edile-fuffa";
+import { articleVendereSenzaSvendere } from "./articles/vendere-senza-svendere";
 
 export type { Article, Block } from "./article-types";
 
@@ -56,7 +59,7 @@ const baseArticles: Article[] = [
       },
       {
         type: "p",
-        text: "Quando ho smesso di rattoppare e ho deciso di costruire un sistema unico, è nato EdiliziaInCloud. Non perché mancasse \"un altro gestionale\", ma perché quelli che c'erano erano fatti per i contabili, non per chi la mattina è in cantiere con gli stivali infangati.",
+        text: "Quando ho smesso di rattoppare e ho deciso di costruire un sistema unico, è nato [EdiliziaInCloud](/ecosistema/edilizia-in-cloud). Non perché mancasse \"un altro gestionale\", ma perché quelli che c'erano erano fatti per i contabili, non per chi la mattina è in cantiere con gli stivali infangati.",
       },
       { type: "h2", text: "Cosa uso oggi (e cosa cambia)" },
       {
@@ -65,7 +68,7 @@ const baseArticles: Article[] = [
       },
       {
         type: "p",
-        text: "Non ti sto dicendo di comprare un software. Ti sto dicendo di smettere di lavorare al buio. Che tu lo faccia con EdiliziaInCloud o in un altro modo, il salto è quello: passare dal foglio che ti dice \"quanto costa\" al sistema che ti dice \"quanto ci guadagni\".",
+        text: "Non ti sto dicendo di comprare un software. Ti sto dicendo di smettere di lavorare al buio. Che tu lo faccia con EdiliziaInCloud o in un altro modo, il salto è quello: passare dal foglio che ti dice \"quanto costa\" al sistema che ti dice \"quanto ci guadagni\". E se il tuo problema non è il preventivo ma il margine, ne ho scritto qui: [l'impresa edile non ha un problema di lavoro, ha un problema di margine](/blog/impresa-edile-problema-di-margine-non-di-lavoro).",
       },
     ],
     faq: [
@@ -126,7 +129,7 @@ const baseArticles: Article[] = [
       },
       {
         type: "p",
-        text: "È per questo che ho costruito Numeri in Edilizia: per dare all'imprenditore edile un metodo pratico — non un corso di ragioneria — per leggere i propri numeri e trasformare il lavoro in utile. Perché lavorare tanto lo sai già fare. Il problema è farlo rendere.",
+        text: "È per questo che ho costruito [Numeri in Edilizia](/ecosistema/numeri-in-edilizia): per dare all'imprenditore edile un metodo pratico — non un corso di ragioneria — per leggere i propri numeri e trasformare il lavoro in utile. Perché lavorare tanto lo sai già fare. Il problema è farlo rendere. E se non sai da dove cominciare, [scrivimi](/consulenza): capiamo insieme da quale numero partire.",
       },
     ],
     faq: [
@@ -144,6 +147,9 @@ const baseArticles: Article[] = [
 
 // Tutti gli articoli, ordinati per data (più recenti prima).
 export const articles: Article[] = [
+  articleDaQualeLevaPartire,
+  articleMarketingEdileFuffa,
+  articleVendereSenzaSvendere,
   articleAiInCantiere,
   articlePercheSetteBrand,
   articlePercheNonSiDigitalizzano,

@@ -130,6 +130,7 @@ export function articleSchema(opts: {
   url: string;
   datePublished: string;
   dateModified?: string;
+  wordCount?: number;
 }): Json {
   return {
     "@context": "https://schema.org",
@@ -137,11 +138,16 @@ export function articleSchema(opts: {
     headline: opts.headline,
     description: opts.description,
     url: opts.url,
+    image: `${site.domain}/opengraph-image`,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
     inLanguage: "it-IT",
     author: { "@id": `${site.domain}/#florin` },
-    publisher: { "@id": `${site.domain}/#organization` },
+    // L'@id deve coincidere con quello dichiarato in organizationSchema (AEDIX),
+    // altrimenti il publisher resta un nodo vuoto per Google e gli LLM.
+    publisher: { "@id": `${AEDIX.url}#organization` },
+    isPartOf: { "@id": `${site.domain}/#website` },
     mainEntityOfPage: opts.url,
+    ...(opts.wordCount ? { wordCount: opts.wordCount } : {}),
   };
 }

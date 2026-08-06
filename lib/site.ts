@@ -7,6 +7,13 @@ export const site = {
   tagline: "Costruisco gli strumenti che mancano all'impresa edile",
   description:
     "Sono Florin Andriciuc: imprenditore che ha costruito software e metodi per far crescere le imprese edili. Gestionale, marketing, vendita e controllo di gestione — pensati per chi il cantiere lo vive davvero.",
+  // Meta compatti per la SERP: title ≤60 char, description ≤155 char.
+  // Google tronca oltre questi limiti — non allungarli.
+  seo: {
+    title: "Florin Andriciuc — Strumenti per l'impresa edile",
+    description:
+      "Florin Andriciuc, founder e CEO di AEDIX: gestionale, marketing, vendita e controllo di gestione per far crescere le imprese edili italiane.",
+  },
   founder: {
     name: "Florin Andriciuc",
     role: "Imprenditore, founder di EdiliziaInCloud e dell'ecosistema AEDIX",
@@ -56,6 +63,7 @@ export const site = {
 export const nav = [
   { label: "Chi sono", href: "/chi-sono" },
   { label: "Ecosistema", href: "/ecosistema" },
+  { label: "Consulenza", href: "/consulenza" },
   { label: "Blog", href: "/blog" },
   { label: "Contatti", href: "/contatti" },
 ] as const;

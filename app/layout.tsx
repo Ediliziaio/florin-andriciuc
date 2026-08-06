@@ -42,10 +42,10 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: site.seo.title,
     template: `%s — ${site.name}`,
   },
-  description: site.description,
+  description: site.seo.description,
   applicationName: site.name,
   keywords: [
     "Florin Andriciuc",
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
     locale: "it_IT",
     url: site.domain,
     siteName: site.name,
-    title: `${site.name} — ${site.tagline}`,
-    description: site.description,
+    title: site.seo.title,
+    description: site.seo.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
-    description: site.description,
+    title: site.seo.title,
+    description: site.seo.description,
   },
   robots: {
     index: true,

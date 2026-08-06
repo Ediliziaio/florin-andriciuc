@@ -40,6 +40,13 @@ function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" });
 }
 
+function countWords(a: NonNullable<ReturnType<typeof getArticle>>) {
+  const text = a.body
+    .map((b) => ("text" in b ? b.text : b.type === "ul" ? b.items.join(" ") : ""))
+    .join(" ");
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const a = getArticle(slug);
@@ -55,7 +62,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <TrackView event="ViewContent" name={a.title} category={a.category} />
       <JsonLd
         data={[
-          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date }),
+          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, wordCount: countWords(a) }),
           breadcrumbSchema([
             { name: "Home", url: site.domain },
             { name: "Blog", url: `${site.domain}/blog` },
