@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { articles } from "@/lib/articles";
+import { publishedArticles } from "@/lib/articles";
 import { productSlugs } from "@/lib/productPageData";
+
+// ISR: la sitemap si rigenera da sola e include i nuovi articoli alla loro data.
+export const revalidate = 3600;
 
 // Date di ultima modifica REALI per pagina: vanno aggiornate a mano quando
 // il contenuto cambia davvero. Usare "new Date()" qui direbbe a Google che
@@ -42,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const articleRoutes: MetadataRoute.Sitemap = articles.map((a) => ({
+  const articleRoutes: MetadataRoute.Sitemap = publishedArticles().map((a) => ({
     url: `${base}/blog/${a.slug}`,
     lastModified: new Date(a.updated ?? a.date),
     changeFrequency: "yearly",

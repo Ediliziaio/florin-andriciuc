@@ -12,6 +12,17 @@ import { articleAiInCantiere } from "./articles/ai-in-cantiere";
 import { articleDaQualeLevaPartire } from "./articles/da-quale-leva-partire";
 import { articleMarketingEdileFuffa } from "./articles/marketing-edile-fuffa";
 import { articleVendereSenzaSvendere } from "./articles/vendere-senza-svendere";
+// Articoli PROGRAMMATI (escono da soli alla loro data, 3 a settimana —
+// vedi docs/calendario-editoriale.md e publishedArticles() qui sotto).
+import { articlePrezzoGiusto } from "./articles/prezzo-giusto-in-edilizia";
+import { articleImpresaCheDependeDaTe } from "./articles/impresa-che-dipende-da-te";
+import { articleScegliereIClienti } from "./articles/scegliere-i-clienti";
+import { articleSopralluogoEVendita } from "./articles/sopralluogo-e-vendita";
+import { articleCosaNonFareiFareAllAi } from "./articles/cosa-non-farei-fare-all-ai";
+import { articleQuantoCostaUnOra } from "./articles/quanto-costa-un-ora-di-squadra";
+import { articlePrimoDipendente } from "./articles/primo-dipendente";
+import { articlePassaparolaNonStrategia } from "./articles/passaparola-non-strategia";
+import { articleCosaGuardoPrimaDellaCrescita } from "./articles/cosa-guardo-prima-della-crescita";
 
 export type { Article, Block } from "./article-types";
 
@@ -151,8 +162,17 @@ const baseArticles: Article[] = [
   },
 ];
 
-// Tutti gli articoli, ordinati per data (più recenti prima).
+// Tutti gli articoli (anche quelli programmati nel futuro), ordinati per data.
 export const articles: Article[] = [
+  articlePrezzoGiusto,
+  articleImpresaCheDependeDaTe,
+  articleScegliereIClienti,
+  articleSopralluogoEVendita,
+  articleCosaNonFareiFareAllAi,
+  articleQuantoCostaUnOra,
+  articlePrimoDipendente,
+  articlePassaparolaNonStrategia,
+  articleCosaGuardoPrimaDellaCrescita,
   articleDaQualeLevaPartire,
   articleMarketingEdileFuffa,
   articleVendereSenzaSvendere,
@@ -166,6 +186,19 @@ export const articles: Article[] = [
   articleNumeriInEdilizia,
   ...baseArticles,
 ].sort((a, b) => (a.date < b.date ? 1 : -1));
+
+export function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+/** Solo gli articoli già usciti. Le pagine che listano il blog DEVONO usare
+ *  questa funzione (chiamata a render time, con ISR attivo): così gli articoli
+ *  con data futura restano invisibili e compaiono da soli alla loro data,
+ *  senza bisogno di un nuovo deploy. */
+export function publishedArticles(): Article[] {
+  const today = todayISO();
+  return articles.filter((a) => a.date <= today);
+}
 
 export function getArticle(slug: string) {
   return articles.find((a) => a.slug === slug);

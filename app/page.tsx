@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { projects, products, extraBrands } from "@/lib/projects";
-import { articles } from "@/lib/articles";
+import { publishedArticles } from "@/lib/articles";
+
+// ISR: la home si rigenera da sola, così i nuovi articoli programmati
+// compaiono in "Dal blog" alla loro data senza deploy manuale.
+export const revalidate = 3600;
 import { Reveal } from "@/components/Reveal";
 import { Portrait } from "@/components/Portrait";
 import { SectionHeading, StatRow, CtaBand, FaqSection, ProcessSteps, Pill } from "@/components/ui";
@@ -372,7 +376,7 @@ function Method() {
 
 /* ---------------- LATEST ARTICLES ---------------- */
 function LatestArticles() {
-  const latest = articles.slice(0, 3);
+  const latest = publishedArticles().slice(0, 3);
   return (
     <section className="container-fa py-20 sm:py-28">
       <div className="flex flex-wrap items-end justify-between gap-4">

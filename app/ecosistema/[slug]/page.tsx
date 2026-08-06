@@ -3,7 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { productPages, productSlugs } from "@/lib/productPageData";
 import { projects } from "@/lib/projects";
-import { articles } from "@/lib/articles";
+import { publishedArticles } from "@/lib/articles";
+
+// ISR: i box "Approfondisci sul blog" si aggiornano quando escono nuovi articoli.
+export const revalidate = 3600;
 import { site } from "@/lib/site";
 import { Reveal } from "@/components/Reveal";
 import { TrackView } from "@/components/TrackView";
@@ -57,10 +60,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const Icon = brandIcon[slug];
   const url = `${site.domain}/ecosistema/${slug}`;
 
+  const published = publishedArticles();
   const related = page.relatedArticles
-    .map((s) => articles.find((art) => art.slug === s))
+    .map((s) => published.find((art) => art.slug === s))
     .filter(Boolean)
-    .slice(0, 3) as NonNullable<ReturnType<typeof articles.find>>[];
+    .slice(0, 3) as NonNullable<ReturnType<typeof published.find>>[];
   const relatedProds = page.relatedProducts
     .map((s) => projects.find((b) => b.slug === s))
     .filter(Boolean)

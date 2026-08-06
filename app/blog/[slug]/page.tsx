@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { articles, getArticle } from "@/lib/articles";
+import { getArticle, publishedArticles, todayISO } from "@/lib/articles";
+
+// ISR: un articolo con data futura risponde 404 fino alla sua data, poi
+// alla prima rigenerazione dopo la mezzanotte diventa visibile da solo.
+export const revalidate = 3600;
 import { projects } from "@/lib/projects";
 import { ArticleBody } from "@/components/ArticleBody";
 import { ArticleIllustration, kindFromProject } from "@/components/ArticleIllustration";
@@ -15,13 +19,15 @@ import { IconArrow, IconExternal } from "@/components/Icons";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
-  return articles.map((a) => ({ slug: a.slug }));
+  // Al build vengono prerenderizzati solo gli articoli già usciti; quelli
+  // programmati vengono renderizzati on-demand alla loro data (dynamicParams).
+  return publishedArticles().map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const a = getArticle(slug);
-  if (!a) return { title: "Articolo non trovato" };
+  if (!a || a.date > todayISO()) return { title: "Articolo non trovato" };
   return {
     // Titolo assoluto (senza suffisso "— Florin Andriciuc"): i titoli editoriali
     // sono già lunghi e il suffisso li porterebbe sempre oltre i 60 char della SERP.
@@ -52,10 +58,10 @@ function countWords(a: NonNullable<ReturnType<typeof getArticle>>) {
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const a = getArticle(slug);
-  if (!a) notFound();
+  if (!a || a.date > todayISO()) notFound();
 
   const related = a.relatedProject ? projects.find((p) => p.slug === a.relatedProject) : undefined;
-  const more = articles.filter((x) => x.slug !== a.slug).slice(0, 2);
+  const more = publishedArticles().filter((x) => x.slug !== a.slug).slice(0, 2);
   const url = `${site.domain}/blog/${a.slug}`;
 
   return (
