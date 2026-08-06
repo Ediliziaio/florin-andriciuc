@@ -28,6 +28,9 @@ Regole editoriali (vedi anche il commento in `lib/articles.ts`):
 | 2026-08-24 | primo-dipendente | Storia | programmato |
 | 2026-08-26 | passaparola-non-strategia | Marketing | programmato |
 | 2026-08-28 | cosa-guardo-prima-della-crescita | Metodo | programmato |
+| 2026-08-31 | come-far-crescere-impresa-edile | Metodo | programmato — LUNGO, kw "come far crescere un'impresa edile" |
+| 2026-09-02 | quanto-guadagna-impresa-edile | Numeri | programmato — LUNGO, kw "quanto guadagna un'impresa edile" |
+| 2026-09-04 | digitalizzare-impresa-edile-da-dove-iniziare | Gestione | programmato — LUNGO, kw "digitalizzare impresa edile" |
 
 ## Come aggiungere la prossima infornata
 

@@ -23,6 +23,10 @@ import { articleQuantoCostaUnOra } from "./articles/quanto-costa-un-ora-di-squad
 import { articlePrimoDipendente } from "./articles/primo-dipendente";
 import { articlePassaparolaNonStrategia } from "./articles/passaparola-non-strategia";
 import { articleCosaGuardoPrimaDellaCrescita } from "./articles/cosa-guardo-prima-della-crescita";
+// Articoli lunghi keyword-driven (ricerca keyword: docs/keyword-research-2026-08.md)
+import { articleComeFarCrescere } from "./articles/come-far-crescere-impresa-edile";
+import { articleQuantoGuadagna } from "./articles/quanto-guadagna-impresa-edile";
+import { articleDigitalizzareImpresa } from "./articles/digitalizzare-impresa-edile";
 
 export type { Article, Block } from "./article-types";
 
@@ -164,6 +168,9 @@ const baseArticles: Article[] = [
 
 // Tutti gli articoli (anche quelli programmati nel futuro), ordinati per data.
 export const articles: Article[] = [
+  articleComeFarCrescere,
+  articleQuantoGuadagna,
+  articleDigitalizzareImpresa,
   articlePrezzoGiusto,
   articleImpresaCheDependeDaTe,
   articleScegliereIClienti,
