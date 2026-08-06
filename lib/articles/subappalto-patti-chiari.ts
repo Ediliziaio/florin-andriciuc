@@ -6,7 +6,7 @@ export const articleSubappaltoPattiChiari: Article = {
   excerpt:
     "Un accordo a voce con una squadra «di fiducia», un cantiere consegnato in ritardo e una penale pagata di tasca mia. La storia del subappalto che mi ha convinto che i patti chiari non offendono nessuno — proteggono tutti.",
   seoDescription:
-    "Un accordo a voce con una squadra di fiducia, un ritardo e una penale pagata di tasca mia: il subappalto che mi ha insegnato a mettere i patti per iscritto.",
+    "Un accordo a voce con una squadra di fiducia, un ritardo e una penale pagata di tasca mia: il subappalto che mi ha insegnato a scrivere i patti chiari.",
   date: "2026-09-21",
   readingTime: "7 min",
   category: "Storia",

@@ -3,10 +3,11 @@ import type { Article } from "../article-types";
 export const articleFollowUpCheNonFacevo: Article = {
   slug: "follow-up-che-non-facevo",
   title: "Il follow-up che non facevo: i lavori che muoiono nel silenzio",
+  seoTitle: "Il follow-up che non facevo: lavori persi nel silenzio",
   excerpt:
     "Mandavo il preventivo e aspettavo. Se non rispondevano, «evidentemente hanno scelto un altro». Poi ho scoperto quanti di quei silenzi erano lavori ancora aperti — che ha firmato chi ha richiamato.",
   seoDescription:
-    "Mandavo il preventivo e aspettavo: se non rispondevano, «hanno scelto un altro». Poi ho scoperto quanti silenzi erano lavori aperti, firmati da chi richiama.",
+    "Mandavo il preventivo e aspettavo: se non rispondevano, «hanno scelto un altro». Poi ho scoperto quanti silenzi erano lavori ancora aperti.",
   date: "2026-09-09",
   readingTime: "6 min",
   category: "Vendita",

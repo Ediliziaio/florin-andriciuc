@@ -6,7 +6,7 @@ export const articleIncassareNonEGuadagnare: Article = {
   excerpt:
     "Il conto era pieno a inizio mese e vuoto alla fine, e io non capivo dove finissero i soldi. Poi ho imparato la differenza tra incassi, ricavi e utile — e perché un'impresa edile può morire di sete con l'agenda piena.",
   seoDescription:
-    "Il conto pieno a inizio mese, vuoto alla fine: dove finivano i soldi? La differenza tra incassi, ricavi e utile — e perché si può fallire con l'agenda piena.",
+    "Conto pieno a inizio mese, vuoto alla fine: dove finivano i soldi? La differenza tra incassi, ricavi e utile — e perché si fallisce con l'agenda piena.",
   date: "2026-09-11",
   readingTime: "7 min",
   category: "Numeri",
