@@ -37,6 +37,11 @@ export function Portrait({
         <img
           src={src}
           alt={alt}
+          width={1200}
+          height={1500}
+          // La foto è l'elemento LCP dell'hero: va scaricata subito, non in coda.
+          fetchPriority="high"
+          decoding="async"
           onError={() => setOk(false)}
           className="absolute inset-0 h-full w-full object-cover"
         />

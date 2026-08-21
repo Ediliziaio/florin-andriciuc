@@ -26,6 +26,7 @@ Marketing Edile porta il contatto â†’ Vendita Edile lo trasforma in contratto â†
 - Consulenza per imprese edili: https://www.florinandriciuc.com/consulenza
 - Il metodo delle 4 leve: https://www.florinandriciuc.com/metodo
 - Blog: https://www.florinandriciuc.com/blog
+- Feed RSS del blog: https://www.florinandriciuc.com/feed.xml
 - Contatti: https://www.florinandriciuc.com/contatti
 
 ## Pagine prodotto dedicate (approfondimenti su ogni leva)

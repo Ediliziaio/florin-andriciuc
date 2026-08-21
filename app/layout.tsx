@@ -59,7 +59,10 @@ export const metadata: Metadata = {
   authors: [{ name: site.name }],
   creator: site.name,
   publisher: site.name,
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": [{ url: "/feed.xml", title: "Blog di Florin Andriciuc" }] },
+  },
   openGraph: {
     type: "website",
     locale: "it_IT",
