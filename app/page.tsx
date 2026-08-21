@@ -370,6 +370,12 @@ function Method() {
           ]}
         />
       </div>
+      <div className="mt-10">
+        <Link href="/metodo" className="btn btn-ghost">
+          Il metodo delle 4 leve, per intero
+          <IconArrow className="arrow h-4 w-4" />
+        </Link>
+      </div>
     </section>
   );
 }

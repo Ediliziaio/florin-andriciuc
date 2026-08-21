@@ -61,7 +61,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!a || a.date > todayISO()) notFound();
 
   const related = a.relatedProject ? projects.find((p) => p.slug === a.relatedProject) : undefined;
-  const more = publishedArticles().filter((x) => x.slug !== a.slug).slice(0, 2);
+  // "Continua a leggere": prima gli articoli della stessa leva/categoria,
+  // poi i più recenti — link interni tematici, non casuali.
+  const others = publishedArticles().filter((x) => x.slug !== a.slug);
+  const sameTopic = others.filter(
+    (x) => (a.relatedProject && x.relatedProject === a.relatedProject) || x.category === a.category,
+  );
+  const more = [...sameTopic, ...others.filter((x) => !sameTopic.includes(x))].slice(0, 2);
   const url = `${site.domain}/blog/${a.slug}`;
 
   return (

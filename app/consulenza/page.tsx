@@ -152,7 +152,13 @@ export default function ConsulenzaPage() {
         <SectionHeading
           eyebrow="Le leve su cui lavoriamo"
           title="Quattro aree, un solo obiettivo: farti guadagnare di più"
-          intro="Ogni consulenza tocca una o più di queste leve. Per ognuna esiste uno strumento dedicato dell'ecosistema AEDIX."
+          intro={
+            <>
+              Ogni consulenza tocca una o più di queste leve. Per ognuna esiste uno strumento dedicato
+              dell&apos;ecosistema AEDIX — e il quadro completo è nella pagina{" "}
+              <Link href="/metodo" className="font-semibold text-brand-600 link-u">il metodo delle 4 leve</Link>.
+            </>
+          }
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           {products.map((p, i) => {

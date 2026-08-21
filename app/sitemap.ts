@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/chi-sono`, lastModified: new Date(updated.chiSono), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/ecosistema`, lastModified: new Date(updated.ecosistema), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/consulenza`, lastModified: new Date(updated.consulenza), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/metodo`, lastModified: new Date(updated.consulenza), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/blog`, lastModified: new Date(updated.blog), changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/contatti`, lastModified: new Date(updated.contatti), changeFrequency: "yearly", priority: 0.7 },
     { url: `${base}/media`, lastModified: new Date(updated.media), changeFrequency: "monthly", priority: 0.7 },

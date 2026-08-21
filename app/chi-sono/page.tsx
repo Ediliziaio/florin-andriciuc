@@ -87,6 +87,18 @@ export default function ChiSonoPage() {
                 Oggi il mio lavoro è uno: mettere nelle mani dell&apos;imprenditore edile gli strumenti che a me,
                 ai miei tempi, nessuno aveva dato.
               </p>
+              <p>
+                Di obiettivi e di come si raggiungono ho parlato anche fuori dal cantiere: su TED.com trovi
+                il mio talk{" "}
+                <a
+                  href="https://www.ted.com/talks/florin_andriciuc_come_realizzare_i_propri_obiettivi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  «Come realizzare i propri obiettivi»
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>
@@ -95,7 +107,7 @@ export default function ChiSonoPage() {
       {/* Timeline */}
       <section className="bg-bg-soft py-20 sm:py-28">
         <div className="container-fa">
-          <SectionHeading eyebrow="Il percorso" title="Come siamo arrivati fin qui" intro="Le tappe da confermare con date e dettagli reali." />
+          <SectionHeading eyebrow="Il percorso" title="Come siamo arrivati fin qui" intro="Dal cantiere all'ecosistema AEDIX: le quattro tappe del percorso." />
           <div className="mt-12 grid gap-4">
             {timeline.map((t, i) => (
               <Reveal key={i} delay={i * 80}>

@@ -219,6 +219,7 @@ export default function MediaPage() {
                   ["LinkedIn", site.social.linkedin],
                   ["Instagram", site.social.instagram],
                   ["YouTube", site.social.youtube],
+                  ["Talk su TED.com", site.externalProfiles.tedTalk],
                 ]
                   .filter(([, url]) => url.startsWith("http"))
                   .map(([label, url]) => (
