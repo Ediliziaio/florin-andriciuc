@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { TrackView } from "@/components/TrackView";
+import { EicLeadForm } from "@/components/EicLeadForm";
 import { IconMail, IconCheck, IconExternal } from "@/components/Icons";
 import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
@@ -28,13 +29,8 @@ export default function ContattiPage() {
       <section className="container-fa py-16 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <iframe
-              src="https://app.ediliziaincloud.com/f?slug=florinandriciuc&company_id=00000000-0000-0000-0000-000000000001"
-              title="Richiedi informazioni"
-              loading="lazy"
-              className="mx-auto block w-full max-w-[640px] rounded-[1.5rem]"
-              style={{ height: 640, border: 0 }}
-            />
+            {/* Porta al CRM la campagna di provenienza (UTM, gclid, fbclid). */}
+            <EicLeadForm slug="florinandriciuc" className="rounded-[1.5rem]" />
           </div>
 
           <div className="lg:pt-4">
