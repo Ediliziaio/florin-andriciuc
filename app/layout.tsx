@@ -26,9 +26,10 @@ const wixDisplay = Wix_Madefor_Display({
   variable: "--font-wix-display",
   display: "swap",
 });
+// The variable font avoids extensionless Google Fonts URLs rejected by Next 15.
 const wixText = Wix_Madefor_Text({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: "variable",
   variable: "--font-wix-text",
   display: "swap",
 });

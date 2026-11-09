@@ -22,6 +22,9 @@ const nextConfig = {
   // e già inviati a IndexNow.
   async redirects() {
     return [
+      {"source": "/ecosistema/edilizia-io", "destination": "/ecosistema#edilizia-io", "permanent": true},
+      {"source": "/ecosistema/imprenditore-edile", "destination": "/ecosistema#imprenditore-edile", "permanent": true},
+      {"source": "/ecosistema/aedix", "destination": "/ecosistema#aedix", "permanent": true},
       {
         source: "/blog/gestionale-impresa-edile-guida-completa",
         destination: "/blog/perche-ho-costruito-un-gestionale",

@@ -39,9 +39,9 @@ export const articlePercheSetteBrand: Article = {
         "[Marketing Edile](/ecosistema/marketing-edile) porta i clienti. Campagne, richieste di preventivo, contatti veri da chiamare.",
         "[Vendita Edile](/ecosistema/vendita-edile) chiude i preventivi. Metodo di trattativa, presentazione dell'offerta, firma.",
         "[Numeri in Edilizia](/ecosistema/numeri-in-edilizia) è il controllo di gestione. Margine di commessa, costi, quanto resta davvero.",
-        "[Imprenditore Edile](/ecosistema/imprenditore-edile) è la parte di contenuti e community. Il posto dove si parla, non dove si compra.",
-        "[edilizia.io](/ecosistema/edilizia-io) è l'intelligenza artificiale applicata al settore. Il pezzo che aiuta a fare più in fretta il lavoro noioso.",
-        "[AEDIX](/ecosistema/aedix) è il gruppo. La casa madre che tiene insieme tutto il resto.",
+        "[Imprenditore Edile](/ecosistema#imprenditore-edile) è la parte di contenuti e community. Il posto dove si parla, non dove si compra.",
+        "[edilizia.io](/ecosistema#edilizia-io) è l'intelligenza artificiale applicata al settore. Il pezzo che aiuta a fare più in fretta il lavoro noioso.",
+        "[AEDIX](/ecosistema#aedix) è il gruppo. La casa madre che tiene insieme tutto il resto.",
       ],
     },
     {

@@ -52,7 +52,7 @@ export const articleDigitalizzareImpresa: Article = {
     { type: "h2", text: "Tappa 4 — Automazione e AI (solo ora)" },
     {
       type: "p",
-      text: "Ultima tappa, non prima: l'automazione. Quando i dati sono in ordine e vivono in un sistema, l'AI diventa davvero utile — trascrive bolle, prepara bozze di preventivo dallo storico, riordina documenti, risponde alle domande ripetitive. Se invece i dati stanno sparsi tra Excel e chat, l'AI non ha niente su cui lavorare: è il motivo per cui dico sempre che [l'AI in cantiere serve solo se ti toglie lavoro](/blog/ai-in-cantiere-cosa-serve), e che ci sono [decisioni che non le farei mai prendere](/blog/cosa-non-farei-fare-all-ai). Con [edilizia.io](/ecosistema/edilizia-io) costruiamo esattamente questo pezzo — ma è il tetto della casa, non le fondamenta.",
+      text: "Ultima tappa, non prima: l'automazione. Quando i dati sono in ordine e vivono in un sistema, l'AI diventa davvero utile — trascrive bolle, prepara bozze di preventivo dallo storico, riordina documenti, risponde alle domande ripetitive. Se invece i dati stanno sparsi tra Excel e chat, l'AI non ha niente su cui lavorare: è il motivo per cui dico sempre che [l'AI in cantiere serve solo se ti toglie lavoro](/blog/ai-in-cantiere-cosa-serve), e che ci sono [decisioni che non le farei mai prendere](/blog/cosa-non-farei-fare-all-ai). Con [edilizia.io](/ecosistema#edilizia-io) costruiamo esattamente questo pezzo — ma è il tetto della casa, non le fondamenta.",
     },
     { type: "h2", text: "Gli errori che vedo più spesso" },
     {

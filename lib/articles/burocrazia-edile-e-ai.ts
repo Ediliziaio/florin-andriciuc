@@ -43,7 +43,7 @@ export const articleBurocraziaEdileEAi: Article = {
     { type: "h2", text: "Da dove partire: il censimento delle ore perse" },
     {
       type: "p",
-      text: "L'esercizio che consiglio è semplice: per una settimana, segna ogni attività burocratica che fai e quanto ci metti. Alla fine avrai la classifica delle tue ore perse — e quasi sempre in cima ci sono le stesse tre voci: documenti da ricopiare, scadenze da inseguire, comunicazioni da scrivere. Quella classifica è il tuo piano di automazione, già ordinato per priorità: si parte dalla voce più grossa e ripetitiva, si automatizza, si misura il tempo recuperato, si passa alla seconda. È l'approccio con cui costruiamo gli strumenti di [edilizia.io](/ecosistema/edilizia-io): l'AI al servizio del cantiere parte sempre da un'ora vera restituita a qualcuno, mai da una demo che stupisce.",
+      text: "L'esercizio che consiglio è semplice: per una settimana, segna ogni attività burocratica che fai e quanto ci metti. Alla fine avrai la classifica delle tue ore perse — e quasi sempre in cima ci sono le stesse tre voci: documenti da ricopiare, scadenze da inseguire, comunicazioni da scrivere. Quella classifica è il tuo piano di automazione, già ordinato per priorità: si parte dalla voce più grossa e ripetitiva, si automatizza, si misura il tempo recuperato, si passa alla seconda. È l'approccio con cui costruiamo gli strumenti di [edilizia.io](/ecosistema#edilizia-io): l'AI al servizio del cantiere parte sempre da un'ora vera restituita a qualcuno, mai da una demo che stupisce.",
     },
     {
       type: "p",

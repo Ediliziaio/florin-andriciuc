@@ -14,7 +14,7 @@ export const articleCosaNonFareiFareAllAi: Article = {
   body: [
     {
       type: "p",
-      text: "Chi costruisce strumenti di intelligenza artificiale di solito ti racconta cosa l'AI può fare. Io oggi voglio farti l'elenco opposto. Non perché sono diventato scettico — con [edilizia.io](/ecosistema/edilizia-io) l'AI la costruisco, e in [cosa serve davvero in cantiere](/blog/ai-in-cantiere-cosa-serve) ho già detto come la uso — ma perché il modo più veloce per bruciarsi con uno strumento è usarlo dove non deve stare.",
+      text: "Chi costruisce strumenti di intelligenza artificiale di solito ti racconta cosa l'AI può fare. Io oggi voglio farti l'elenco opposto. Non perché sono diventato scettico — con [edilizia.io](/ecosistema#edilizia-io) l'AI la costruisco, e in [cosa serve davvero in cantiere](/blog/ai-in-cantiere-cosa-serve) ho già detto come la uso — ma perché il modo più veloce per bruciarsi con uno strumento è usarlo dove non deve stare.",
     },
     { type: "h2", text: "Le tre cose che non le farei mai decidere" },
     {

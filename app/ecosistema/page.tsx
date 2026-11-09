@@ -73,7 +73,7 @@ export default function EcosistemaPage() {
               const a = accentMap[p.accent];
               return (
                 <Reveal key={p.slug} delay={i * 80}>
-                  <article className={`group card-lift flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-line bg-white ${a.ring}`}>
+                  <article id={p.slug} className={`scroll-mt-24 group card-lift flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-line bg-white ${a.ring}`}>
                     <div className={`h-1.5 w-full bg-gradient-to-r ${a.bar}`} />
                     <div className="flex flex-1 flex-col p-6 sm:p-8">
                       <div className="flex items-start gap-3">
