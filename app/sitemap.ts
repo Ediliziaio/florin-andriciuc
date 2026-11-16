@@ -23,14 +23,18 @@ const updated = {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.domain;
+  const published = publishedArticles();
+  const latestArticle = published.map(article => article.updated ?? article.date).sort().at(-1) ?? updated.blog;
+  const latestHome = [updated.home, latestArticle].sort().at(-1)!;
+  const latestBlog = [updated.blog, latestArticle].sort().at(-1)!;
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${base}/`, lastModified: new Date(updated.home), changeFrequency: "monthly", priority: 1 },
+    { url: `${base}/`, lastModified: new Date(latestHome), changeFrequency: "monthly", priority: 1 },
     { url: `${base}/chi-sono`, lastModified: new Date(updated.chiSono), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/ecosistema`, lastModified: new Date(updated.ecosistema), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/consulenza`, lastModified: new Date(updated.consulenza), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/metodo`, lastModified: new Date(updated.consulenza), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/blog`, lastModified: new Date(updated.blog), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/blog`, lastModified: new Date(latestBlog), changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/contatti`, lastModified: new Date(updated.contatti), changeFrequency: "yearly", priority: 0.7 },
     { url: `${base}/media`, lastModified: new Date(updated.media), changeFrequency: "monthly", priority: 0.7 },
     // Pagine legali: indicizzabili di proposito. Per un personal brand sono un
@@ -46,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const articleRoutes: MetadataRoute.Sitemap = publishedArticles().map((a) => ({
+  const articleRoutes: MetadataRoute.Sitemap = published.map((a) => ({
     url: `${base}/blog/${a.slug}`,
     lastModified: new Date(a.updated ?? a.date),
     changeFrequency: "yearly",

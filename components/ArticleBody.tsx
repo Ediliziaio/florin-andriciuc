@@ -1,3 +1,4 @@
+import { articleHeadings } from "@/lib/article-headings";
 import Link from "next/link";
 import type { Block } from "@/lib/article-types";
 import { IconQuote, IconArrow } from "./Icons";
@@ -38,9 +39,10 @@ export function ArticleBody({ blocks, projectSlug }: { blocks: Block[]; projectS
   const h2Indices = blocks.map((b, i) => (b.type === "h2" ? i : -1)).filter((i) => i >= 0);
   const figureAt = h2Indices.length >= 2 ? h2Indices[1] : -1;
   const kind = kindFromProject(projectSlug);
+  const headings = new Map(articleHeadings(blocks).map(heading => [heading.index, heading.id]));
 
   return (
-    <div className="prose-fa">
+    <div data-editorial-body className="prose-fa">
       {blocks.map((b, i) => {
         const figure =
           i === figureAt ? (
@@ -51,7 +53,7 @@ export function ArticleBody({ blocks, projectSlug }: { blocks: Block[]; projectS
             </figure>
           ) : null;
 
-        if (b.type === "h2") return [figure, <h2 key={i}>{b.text}</h2>];
+        if (b.type === "h2") return [figure, <h2 key={i} id={headings.get(i)} className="scroll-mt-28">{b.text}</h2>];
         if (b.type === "h3")
           return (
             <h3 key={i} className="mt-8 text-xl font-bold text-navy-900">

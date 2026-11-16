@@ -1,3 +1,4 @@
+import { articleHeadings } from "@/lib/article-headings";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -40,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: a.excerpt,
       url: `${site.domain}/blog/${a.slug}`,
       publishedTime: a.date,
+      modifiedTime: a.updated ?? a.date,
     },
   };
 }
@@ -69,6 +71,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   );
   const more = [...sameTopic, ...others.filter((x) => !sameTopic.includes(x))].slice(0, 2);
   const url = `${site.domain}/blog/${a.slug}`;
+  const headings = articleHeadings(a.body);
 
   return (
     <>
@@ -76,7 +79,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <TrackView event="ViewContent" name={a.title} category={a.category} />
       <JsonLd
         data={[
-          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, dateModified: a.updated, wordCount: countWords(a) }),
+          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, dateModified: a.updated, image: `${url}/opengraph-image`, wordCount: countWords(a) }),
           breadcrumbSchema([
             { name: "Home", url: site.domain },
             { name: "Blog", url: `${site.domain}/blog` },
@@ -133,6 +136,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {/* Corpo */}
       <article className="container-fa py-16 sm:py-20">
+        {headings.length >= 4 && (
+          <details className="prose-fa mb-10 rounded-2xl border border-line bg-bg-soft p-5">
+            <summary className="cursor-pointer font-display font-bold text-navy-900">Indice dell’articolo</summary>
+            <nav aria-label="Indice dell’articolo" className="mt-4">
+              <ol className="grid gap-2 text-sm text-brand-700">{headings.map(heading => <li key={heading.id}><a href={`#${heading.id}`} className="underline underline-offset-4">{heading.text}</a></li>)}</ol>
+            </nav>
+          </details>
+        )}
         <ArticleBody blocks={a.body} projectSlug={a.relatedProject} />
 
         {/* CTA brand collegato */}

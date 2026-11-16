@@ -1,3 +1,4 @@
+import { articleValutareProgettoAi } from "./articles/valutare-progetto-ai";
 import type { Article } from "./article-types";
 // Pezzi in prima persona (storia / opinione). Su questo dominio NON pubblichiamo
 // guide how-to: quelle vivono sui siti dei brand, altrimenti ci cannibalizziamo.
@@ -179,6 +180,7 @@ const baseArticles: Article[] = [
 
 // Tutti gli articoli (anche quelli programmati nel futuro), ordinati per data.
 export const articles: Article[] = [
+  articleValutareProgettoAi,
   articleQuantoSpendevoInPubblicita,
   articleFollowUpCheNonFacevo,
   articleIncassareNonEGuadagnare,

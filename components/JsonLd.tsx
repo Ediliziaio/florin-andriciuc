@@ -133,6 +133,7 @@ export function articleSchema(opts: {
   datePublished: string;
   dateModified?: string;
   wordCount?: number;
+  image?: string;
 }): Json {
   return {
     "@context": "https://schema.org",
@@ -140,7 +141,7 @@ export function articleSchema(opts: {
     headline: opts.headline,
     description: opts.description,
     url: opts.url,
-    image: `${site.domain}/opengraph-image`,
+    image: opts.image ?? `${site.domain}/opengraph-image`,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
     inLanguage: "it-IT",
