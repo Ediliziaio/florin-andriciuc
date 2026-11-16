@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -113,6 +114,7 @@ export default function BlogPage() {
         </div>
       </section>
 
+      <PriorityReading current="/blog" />
       <CtaBand secondary={{ label: "Scopri l'ecosistema", href: "/ecosistema" }} />
       <div className="h-4" />
     </>

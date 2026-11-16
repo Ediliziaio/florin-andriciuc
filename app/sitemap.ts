@@ -10,11 +10,11 @@ export const revalidate = 3600;
 // il contenuto cambia davvero. Usare "new Date()" qui direbbe a Google che
 // tutto cambia a ogni deploy — e Google impara a ignorare il segnale.
 const updated = {
-  home: "2026-08-06",
-  chiSono: "2026-08-06",
-  ecosistema: "2026-08-06",
-  consulenza: "2026-08-06",
-  blog: "2026-08-06",
+  home: "2026-11-16",
+  chiSono: "2026-11-16",
+  ecosistema: "2026-11-16",
+  consulenza: "2026-11-16",
+  blog: "2026-11-16",
   contatti: "2026-07-01",
   media: "2026-07-01",
   legal: "2026-07-01",

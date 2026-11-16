@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -241,6 +242,7 @@ export default function MetodoPage() {
         items={metodoFaq}
       />
 
+      <PriorityReading current="/metodo" />
       <CtaBand
         title="Vuoi sapere qual è la TUA leva?"
         text="Raccontami dove sei bloccato: in una chiamata gratuita facciamo la diagnosi e ti dico da quale leva partirei io, con onestà."

@@ -1,3 +1,4 @@
+import { growthArticles } from "./growth-articles";
 import { articleValutareProgettoAi } from "./articles/valutare-progetto-ai";
 import type { Article } from "./article-types";
 // Pezzi in prima persona (storia / opinione). Su questo dominio NON pubblichiamo
@@ -180,6 +181,7 @@ const baseArticles: Article[] = [
 
 // Tutti gli articoli (anche quelli programmati nel futuro), ordinati per data.
 export const articles: Article[] = [
+  ...growthArticles,
   articleValutareProgettoAi,
   articleQuantoSpendevoInPubblicita,
   articleFollowUpCheNonFacevo,

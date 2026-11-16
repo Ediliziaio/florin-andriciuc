@@ -21,6 +21,8 @@ export type Article = {
   category: string;
   // Brand dell'ecosistema a cui l'articolo rimanda (slug in lib/projects.ts)
   relatedProject?: string;
+  /** Original editorial cover; optional for legacy articles. */
+  cover?: string;
   body: Block[];
   faq?: { q: string; a: string }[];
 };

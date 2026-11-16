@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { PriorityReading } from "@/components/PriorityReading";
 import { articleHeadings } from "@/lib/article-headings";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -40,6 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: a.title,
       description: a.excerpt,
       url: `${site.domain}/blog/${a.slug}`,
+      images: a.cover ? [a.cover] : [`/blog/${a.slug}/opengraph-image`],
       publishedTime: a.date,
       modifiedTime: a.updated ?? a.date,
     },
@@ -79,7 +82,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <TrackView event="ViewContent" name={a.title} category={a.category} />
       <JsonLd
         data={[
-          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, dateModified: a.updated, image: `${url}/opengraph-image`, wordCount: countWords(a) }),
+          articleSchema({ headline: a.title, description: a.excerpt, url, datePublished: a.date, dateModified: a.updated, image: a.cover ? `${site.domain}${a.cover}` : `${url}/opengraph-image`, wordCount: countWords(a) }),
           breadcrumbSchema([
             { name: "Home", url: site.domain },
             { name: "Blog", url: `${site.domain}/blog` },
@@ -120,12 +123,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             </div>
 
-            {/* Cover illustrata */}
-            <div className="hidden lg:block">
+            {/* Copertina editoriale o illustrazione dei contenuti precedenti */}
+            <div className={a.cover ? "" : "hidden lg:block"}>
               <div className="relative overflow-hidden rounded-[1.75rem] border border-line bg-white p-6 shadow-card">
                 <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
                 <div className="relative">
-                  <ArticleIllustration kind={kindFromProject(a.relatedProject)} className="block h-auto w-full" />
+                  {a.cover ? <Image src={a.cover} alt={a.title} width={1200} height={630} sizes="(min-width: 1024px) 480px, 100vw" priority className="h-auto w-full rounded-xl" /> : <ArticleIllustration kind={kindFromProject(a.relatedProject)} className="block h-auto w-full" />}
                   <p className="mt-4 text-center text-xs font-semibold uppercase tracking-[0.15em] text-accent-600">{a.category}</p>
                 </div>
               </div>
@@ -145,6 +148,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </details>
         )}
         <ArticleBody blocks={a.body} projectSlug={a.relatedProject} />
+        <PriorityReading current={`/blog/${a.slug}`} />
 
         {/* CTA brand collegato */}
         {related && (

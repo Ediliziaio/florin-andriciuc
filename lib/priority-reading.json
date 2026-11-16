@@ -1,0 +1,118 @@
+{
+  "pages": [
+    "/",
+    "/blog",
+    "/metodo",
+    "/chi-sono",
+    "/ecosistema",
+    "/consulenza",
+    "/blog/digitalizzare-impresa-edile-da-dove-iniziare",
+    "/blog/valutare-progetto-ai-costo-eccezioni-2027",
+    "/blog/crescita-impresa-edile-complessita-organizzativa",
+    "/blog/cambiare-software-reversibilita-dati"
+  ],
+  "cards": [
+    {
+      "href": "/metodo",
+      "title": "Il metodo dietro le scelte",
+      "text": "Collegare informazioni, decisioni e strumenti nel percorso dell’impresa."
+    },
+    {
+      "href": "/blog/crescita-impresa-edile-complessita-organizzativa",
+      "title": "Crescita e complessità",
+      "text": "Leggere passaggi e responsabilità prima di estendere un servizio."
+    },
+    {
+      "href": "/blog/cambiare-software-reversibilita-dati",
+      "title": "Il valore della reversibilità",
+      "text": "Valutare dati e contesto anche pensando a un futuro cambiamento."
+    },
+    {
+      "href": "/blog/valutare-progetto-ai-costo-eccezioni-2027",
+      "title": "Valutare un progetto AI",
+      "text": "Guardare il lavoro richiesto dalle eccezioni oltre la dimostrazione iniziale."
+    },
+    {
+      "href": "/ecosistema",
+      "title": "I progetti dell’ecosistema",
+      "text": "Capire il perimetro dei progetti e il loro collegamento con il metodo."
+    },
+    {
+      "href": "/blog/digitalizzare-impresa-edile-da-dove-iniziare",
+      "title": "Il punto di vista sulla digitalizzazione",
+      "text": "Leggere il cambiamento organizzativo insieme alla scelta degli strumenti."
+    },
+    {
+      "href": "/chi-sono",
+      "title": "Il contesto personale e professionale",
+      "text": "La presentazione di Florin e dei progetti collegati al percorso."
+    },
+    {
+      "href": "/consulenza",
+      "title": "Portare una domanda concreta",
+      "text": "Descrivere il processo che vuoi discutere e il passaggio ancora aperto."
+    },
+    {
+      "href": "/blog",
+      "title": "Tutte le riflessioni",
+      "text": "L’archivio delle opinioni su impresa, tecnologia e crescita."
+    },
+    {
+      "href": "/",
+      "title": "Il quadro del percorso",
+      "text": "Ritrovare metodo, progetti e possibilità di confronto nel sito."
+    }
+  ],
+  "contexts": {
+    "/": [
+      "/metodo",
+      "/ecosistema",
+      "/blog/crescita-impresa-edile-complessita-organizzativa"
+    ],
+    "/blog": [
+      "/blog/crescita-impresa-edile-complessita-organizzativa",
+      "/blog/cambiare-software-reversibilita-dati",
+      "/blog/valutare-progetto-ai-costo-eccezioni-2027"
+    ],
+    "/metodo": [
+      "/blog/crescita-impresa-edile-complessita-organizzativa",
+      "/blog/digitalizzare-impresa-edile-da-dove-iniziare",
+      "/consulenza"
+    ],
+    "/chi-sono": [
+      "/metodo",
+      "/ecosistema",
+      "/consulenza"
+    ],
+    "/ecosistema": [
+      "/blog/cambiare-software-reversibilita-dati",
+      "/blog/digitalizzare-impresa-edile-da-dove-iniziare",
+      "/blog/valutare-progetto-ai-costo-eccezioni-2027"
+    ],
+    "/consulenza": [
+      "/metodo",
+      "/blog/crescita-impresa-edile-complessita-organizzativa",
+      "/blog/cambiare-software-reversibilita-dati"
+    ],
+    "/blog/digitalizzare-impresa-edile-da-dove-iniziare": [
+      "/blog/cambiare-software-reversibilita-dati",
+      "/ecosistema",
+      "/blog/valutare-progetto-ai-costo-eccezioni-2027"
+    ],
+    "/blog/valutare-progetto-ai-costo-eccezioni-2027": [
+      "/blog/cambiare-software-reversibilita-dati",
+      "/blog/crescita-impresa-edile-complessita-organizzativa",
+      "/metodo"
+    ],
+    "/blog/crescita-impresa-edile-complessita-organizzativa": [
+      "/metodo",
+      "/blog/digitalizzare-impresa-edile-da-dove-iniziare",
+      "/consulenza"
+    ],
+    "/blog/cambiare-software-reversibilita-dati": [
+      "/blog/valutare-progetto-ai-costo-eccezioni-2027",
+      "/ecosistema",
+      "/consulenza"
+    ]
+  }
+}

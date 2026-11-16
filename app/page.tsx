@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { projects, products, extraBrands } from "@/lib/projects";
@@ -43,6 +44,7 @@ export default function HomePage() {
       <Method />
       <LatestArticles />
       <FaqSection items={homeFaq} />
+      <PriorityReading current="/" />
       <CtaBand secondary={{ label: "Scopri l'ecosistema", href: "/ecosistema" }} />
       <div className="h-4" />
     </>

@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
@@ -159,7 +160,8 @@ export default function EcosistemaPage() {
       </section>
 
       <div className="pt-20 sm:pt-28">
-        <CtaBand
+        <PriorityReading current="/ecosistema" />
+      <CtaBand
           title="Non sai da quale partire?"
           text="Normale: dipende da dove sei bloccato adesso. Scrivimi e ti dico io qual è la prima leva da tirare."
           secondary={{ label: "Leggi il blog", href: "/blog" }}

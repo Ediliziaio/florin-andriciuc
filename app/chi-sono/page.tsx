@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -149,6 +150,7 @@ export default function ChiSonoPage() {
         </div>
       </section>
 
+      <PriorityReading current="/chi-sono" />
       <CtaBand
         title="Parliamo da imprenditore a imprenditore"
         text="Nessun copione da call center. Mi racconti la tua situazione e vediamo insieme da dove partire."

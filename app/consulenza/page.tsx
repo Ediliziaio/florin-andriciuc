@@ -1,3 +1,4 @@
+import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -192,6 +193,7 @@ export default function ConsulenzaPage() {
         items={faq}
       />
 
+      <PriorityReading current="/consulenza" />
       <CtaBand
         title="Raccontami dove sei bloccato"
         text="Due righe sulla tua situazione bastano. Ti dico con onestà da quale leva partirei io — anche se la risposta non è un mio prodotto."
