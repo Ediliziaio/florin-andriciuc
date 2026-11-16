@@ -10,7 +10,9 @@ export const growthArticles: Article[] = [
     "readingTime": "11 min",
     "category": "Opinione",
     "relatedProject": "edilizia-in-cloud",
-    "cover": "/images/editorial/crescita-impresa-edile-complessita-organizzativa.jpg",
+    "cover": "/images/editorial/crescita-impresa-edile-complessita-organizzativa-editoriale.jpg",
+    "coverAlt": "Modello architettonico con volumi collegati attorno a una corte su un tavolo di lavoro.",
+    "coverCaption": "Immagine illustrativa generata con AI.",
     "body": [
       {
         "type": "p",
@@ -218,7 +220,9 @@ export const growthArticles: Article[] = [
     "readingTime": "11 min",
     "category": "Opinione",
     "relatedProject": "edilizia-in-cloud",
-    "cover": "/images/editorial/cambiare-software-reversibilita-dati.jpg",
+    "cover": "/images/editorial/cambiare-software-reversibilita-dati-editoriale.jpg",
+    "coverAlt": "Due vassoi con documenti e schede collegati da un ponte color rame.",
+    "coverCaption": "Immagine illustrativa generata con AI.",
     "body": [
       {
         "type": "p",

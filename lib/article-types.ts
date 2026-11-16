@@ -23,6 +23,8 @@ export type Article = {
   relatedProject?: string;
   /** Original editorial cover; optional for legacy articles. */
   cover?: string;
+  coverAlt?: string;
+  coverCaption?: string;
   body: Block[];
   faq?: { q: string; a: string }[];
 };

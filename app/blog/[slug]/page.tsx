@@ -128,8 +128,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <div className="relative overflow-hidden rounded-[1.75rem] border border-line bg-white p-6 shadow-card">
                 <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
                 <div className="relative">
-                  {a.cover ? <Image src={a.cover} alt={a.title} width={1200} height={630} sizes="(min-width: 1024px) 480px, 100vw" priority className="h-auto w-full rounded-xl" /> : <ArticleIllustration kind={kindFromProject(a.relatedProject)} className="block h-auto w-full" />}
-                  <p className="mt-4 text-center text-xs font-semibold uppercase tracking-[0.15em] text-accent-600">{a.category}</p>
+                  {a.cover ? <Image src={a.cover} alt={a.coverAlt ?? a.title} width={1200} height={630} sizes="(min-width: 1024px) 480px, 100vw" priority className="h-auto w-full rounded-xl" /> : <ArticleIllustration kind={kindFromProject(a.relatedProject)} className="block h-auto w-full" />}
+                  {a.coverCaption ? <p className="mt-3 text-center text-xs leading-relaxed text-muted">{a.coverCaption}</p> : <p className="mt-4 text-center text-xs font-semibold uppercase tracking-[0.15em] text-accent-600">{a.category}</p>}
                 </div>
               </div>
             </div>
