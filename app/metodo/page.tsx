@@ -1,3 +1,4 @@
+import { MethodWorkbook } from "@/components/MethodWorkbook";
 import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -139,6 +140,8 @@ export default function MetodoPage() {
         title={<>Il metodo delle <span className="text-gradient">4 leve</span> per far crescere un&apos;impresa edile</>}
         intro="Un'impresa edile perde soldi in quattro posti: numeri, gestione, clienti e vendita. Il metodo delle 4 leve serve a capire dove stai perdendo di più e a sistemare le leve nell'ordine giusto — con uno strumento dedicato per ognuna."
       />
+
+      <MethodWorkbook />
 
       {/* Answer block */}
       <section className="container-fa py-16 sm:py-24">

@@ -1,3 +1,4 @@
+import { MethodWorkbook } from "@/components/MethodWorkbook";
 import { PriorityReading } from "@/components/PriorityReading";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -192,6 +193,8 @@ export default function ConsulenzaPage() {
         intro="Le risposte alle domande che mi fanno più spesso gli imprenditori edili prima di iniziare."
         items={faq}
       />
+
+      <MethodWorkbook />
 
       <PriorityReading current="/consulenza" />
       <CtaBand

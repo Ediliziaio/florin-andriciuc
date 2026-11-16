@@ -12,11 +12,10 @@ export function JsonLd({ data }: { data: Json | Json[] }) {
   );
 }
 
-// URL "sameAs" dell'entità Florin: social reali (esclusi i placeholder) + i brand di proprietà.
-// Collegare le proprietà possedute rafforza l'entità agli occhi di Google e delle AI (GEO).
+// sameAs identifica la stessa persona; progetti e interventi restano entità distinte.
 const socialSameAs = Object.values(site.social).filter((u) => u.startsWith("http"));
 // Fonti terze (Wikidata, Crunchbase, …): pesano più dei social perché non le controlli.
-const externalSameAs = Object.values(site.externalProfiles).filter((u) => u.startsWith("http"));
+const externalSameAs = Object.entries(site.externalProfiles).filter(([key, url]) => key !== "tedTalk" && url.startsWith("http")).map(([, url]) => url);
 const AEDIX = projects.find((p) => p.slug === "aedix")!;
 
 export const personSchema: Json = {
@@ -36,8 +35,9 @@ export const personSchema: Json = {
     "Digitalizzazione delle imprese di costruzioni",
   ],
   worksFor: { "@id": `${AEDIX.url}#organization` },
-  founder: projects.map((p) => ({ "@type": "Organization", name: p.name, url: p.url })),
-  sameAs: [...externalSameAs, ...socialSameAs, ...projects.map((p) => p.url)],
+  affiliation: projects.map((p) => ({ "@type": "Organization", name: p.name, url: p.url })),
+  sameAs: [...externalSameAs, ...socialSameAs],
+  subjectOf: { "@type": "CreativeWork", name: "Come Realizzare i Propri Obiettivi — TEDxCoriano", url: site.externalProfiles.tedTalk },
 };
 
 // Organizzazione principale: AEDIX (casa madre). I brand sono subOrganization/brand.
@@ -56,7 +56,7 @@ export const organizationSchema: Json = {
     .filter((p) => p.slug !== "aedix")
     .map((p) => ({ "@type": "Organization", name: p.name, url: p.url, description: p.tagline })),
   brand: projects.filter((p) => p.slug !== "aedix").map((p) => ({ "@type": "Brand", name: p.name, url: p.url })),
-  sameAs: socialSameAs,
+
 };
 
 // ItemList dei brand → aiuta i sitelink e la comprensione dell'ecosistema (GEO/AEO).

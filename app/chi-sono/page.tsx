@@ -10,7 +10,7 @@ import { JsonLd, profilePageSchema } from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Chi sono",
+  title: "Florin Andriciuc: biografia, metodo e progetti",
   description:
     "La storia di Florin Andriciuc: da imprenditore con i problemi di ogni impresa edile a founder di un ecosistema di software e metodi per farla crescere.",
   alternates: { canonical: "/chi-sono" },
@@ -39,7 +39,7 @@ export default function ChiSonoPage() {
         eyebrow="Chi sono"
         crumb="Chi sono"
         path="/chi-sono"
-        title={<>Ho vissuto i problemi dell&apos;impresa edile. Poi li ho <span className="text-gradient">risolti</span>.</>}
+        title={<>Florin Andriciuc: <span className="text-gradient">metodo e progetti</span> per l&apos;impresa edile</>}
         intro="Non sono un consulente che ha letto i libri. Sono un imprenditore che ha avuto gli stessi problemi tuoi — e ha deciso di costruire gli strumenti che mancavano."
       />
 
@@ -102,6 +102,18 @@ export default function ChiSonoPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="container-fa pb-16" aria-labelledby="riferimenti-percorso">
+        <div className="rounded-2xl border border-line bg-bg-soft p-6 sm:p-8">
+          <h2 id="riferimenti-percorso" className="text-2xl font-bold text-navy-900">Dove approfondire il mio percorso</h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted">Il sito personale raccoglie il mio punto di vista; le pagine dei progetti ne spiegano il perimetro. Su TED.com è disponibile l’intervento «Come Realizzare i Propri Obiettivi», presentato a TEDxCoriano nel settembre 2021.</p>
+          <ul className="mt-5 space-y-3 text-navy-900">
+            <li><a href={site.externalProfiles.tedTalk} className="underline underline-offset-4" target="_blank" rel="noopener noreferrer">La pagina dell’intervento su TED.com</a></li>
+            <li><Link href="/metodo" className="underline underline-offset-4">Il metodo delle quattro leve e la scheda di lavoro</Link></li>
+            <li><Link href="/ecosistema" className="underline underline-offset-4">I progetti e il problema affrontato da ciascuno</Link></li>
+          </ul>
         </div>
       </section>
 
