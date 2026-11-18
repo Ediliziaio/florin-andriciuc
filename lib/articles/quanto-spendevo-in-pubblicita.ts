@@ -8,7 +8,8 @@ export const articleQuantoSpendevoInPubblicita: Article = {
   seoDescription:
     "Volantini, giornalino, il primo sito, le campagne fatte male: quanto ho speso in pubblicità da imprenditore edile, cosa ha funzionato e cosa rifarei oggi.",
   date: "2026-09-07",
-  readingTime: "7 min",
+  updated: "2026-11-18",
+  readingTime: "6 min",
   category: "Marketing",
   relatedProject: "marketing-edile",
   body: [
@@ -58,19 +59,37 @@ export const articleQuantoSpendevoInPubblicita: Article = {
       type: "p",
       text: "Se stai decidendo se e quanto investire in pubblicità per la tua impresa, [scrivimi](/consulenza): prima guardiamo i margini, poi parliamo di budget. Nell'ordine giusto.",
     },
+    { type: "h2", text: "Dalla spesa al lavoro acquisito: che cosa annotare" },
+    {
+      type: "p",
+      text: "Per usare queste riflessioni nella tua impresa, parti da una spesa riconoscibile: canale, periodo e servizio promosso. Tieni distinti il costo pubblicitario e il lavoro necessario a preparare materiali e gestire le richieste. Se una telefonata non ha un’origine conosciuta, annotala come tale: attribuirla per intuizione alla campagna appena avviata rende il confronto poco utile.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Spesa: quale attività hai pagato, in quale periodo e per quale servizio.",
+        "Richiesta: che cosa ha chiesto il cliente e se l’origine è conosciuta o soltanto ipotizzata.",
+        "Passaggio commerciale: confronto, sopralluogo o proposta effettivamente svolti, distinguendoli dagli appuntamenti solo fissati.",
+        "Esito: lavoro acquisito, rifiutato o ancora aperto, senza trasformare tutti i preventivi in ricavi.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Questa scheda serve a ricostruire il percorso, non a stabilire una percentuale universale da investire. Una spesa può produrre richieste che non arrivano a un lavoro; un contratto può arrivare dopo il periodo in cui hai sostenuto il costo. Confronta dati omogenei e segnala ciò che manca. Per approfondire il rapporto con l’organizzazione, leggi [l’errore di marketing che vedo nelle imprese edili](/blog/errore-di-marketing-imprese-edili); la pagina di [Marketing Edile](/ecosistema/marketing-edile) descrive il progetto collegato a questo percorso.",
+    },
   ],
   faq: [
     {
       q: "Quanto dovrebbe spendere in pubblicità una piccola impresa edile?",
-      a: "Prima di parlare di cifre serve conoscere il margine per cantiere: la pubblicità si valuta sul costo per lavoro acquisito rispetto a quanto quel lavoro lascia. Come base: la parte gratuita (scheda Google, recensioni, foto) va fatta comunque; le campagne hanno senso da qualche centinaio di euro al mese in su, su un solo servizio e con una pagina dedicata.",
+      a: "Non c’è un importo universale. Servono servizio, territorio, capacità di seguire le richieste e margine dei lavori. Distingui spesa pubblicitaria, altri costi commerciali ed esiti osservati: un budget minimo isolato non dimostra che una campagna sia sostenibile.",
     },
     {
       q: "La pubblicità tradizionale (volantini, giornali locali) funziona ancora per l'edilizia?",
-      a: "Come acquisizione diretta raramente; come presenza locale può contribuire, ma va considerata reputazione, non marketing a risposta. Se l'obiettivo è riempire l'agenda, i canali misurabili — Google, Meta, recensioni, il cantiere stesso — danno risultati verificabili per ogni euro speso.",
+      a: "La valutazione dipende da obiettivo e riscontri. Il racconto distingue riconoscibilità e richieste attribuibili: senza sapere come è arrivato un contatto non si può assegnare con certezza un risultato a volantini, giornali o campagne online.",
     },
     {
       q: "Perché le mie campagne online non hanno funzionato?",
-      a: "Nove volte su dieci per il contorno, non per il canale: annuncio generico, traffico alla homepage, nessun filtro sui contatti, risposta lenta. La campagna è l'ultimo anello di una catena — offerta, pagina, processo di risposta — e rende quanto l'anello più debole.",
+      a: "Occorre ricostruire il percorso: annuncio, pagina, richieste, gestione ed esiti. Una richiesta poco pertinente, un problema nel contatto o un’offerta poco chiara sono ipotesi da verificare sui dati, non una diagnosi ricavabile dal solo risultato finale.",
     },
   ],
 };

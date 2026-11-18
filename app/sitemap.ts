@@ -11,7 +11,7 @@ export const revalidate = 3600;
 // tutto cambia a ogni deploy — e Google impara a ignorare il segnale.
 const updated = {
   home: "2026-11-16",
-  chiSono: "2026-11-16",
+  chiSono: "2026-11-18",
   ecosistema: "2026-11-16",
   consulenza: "2026-11-16",
   blog: "2026-11-16",

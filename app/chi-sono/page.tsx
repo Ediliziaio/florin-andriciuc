@@ -113,6 +113,7 @@ export default function ChiSonoPage() {
             <li><a href={site.externalProfiles.tedTalk} className="underline underline-offset-4" target="_blank" rel="noopener noreferrer">La pagina dell’intervento su TED.com</a></li>
             <li><Link href="/metodo" className="underline underline-offset-4">Il metodo delle quattro leve e la scheda di lavoro</Link></li>
             <li><Link href="/ecosistema" className="underline underline-offset-4">I progetti e il problema affrontato da ciascuno</Link></li>
+            <li><Link href="/blog/quanto-spendevo-in-pubblicita" className="underline underline-offset-4">Pubblicità nell’impresa: il racconto delle spese e delle lezioni apprese</Link></li>
           </ul>
         </div>
       </section>
