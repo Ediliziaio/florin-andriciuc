@@ -19,13 +19,15 @@ declare global {
     fbq?: (...args: unknown[]) => void;
     _fbq?: unknown;
     __faPixelReady?: boolean;
+    __faMarketingDenied?: boolean;
   }
 }
 
 export function hasMarketingConsent(): boolean {
   try {
+    if (window.__faMarketingDenied || window.location.protocol !== "https:" || !["florinandriciuc.com", "www.florinandriciuc.com"].includes(window.location.hostname)) return false;
     const c = JSON.parse(localStorage.getItem("fa_consent") || "null");
-    return !!(c && c.marketing);
+    return c?.marketing === true;
   } catch {
     return false;
   }
@@ -57,13 +59,23 @@ function loadPixelLibrary() {
 /** Inizializza il pixel (una sola volta) se c'è consenso marketing. */
 export function initMetaPixel() {
   if (!PIXEL_ID || typeof window === "undefined") return;
-  if (window.__faPixelReady) return;
   if (!hasMarketingConsent()) return;
+  window.fbq?.("consent", "grant");
+  if (window.__faPixelReady) return;
   loadPixelLibrary();
+  window.fbq?.("set", "autoConfig", false, PIXEL_ID);
+  window.fbq?.("consent", "grant");
   window.fbq?.("init", PIXEL_ID);
   window.__faPixelReady = true;
   // PageView standard + evento custom del sito (entrambi etichettati con la sorgente).
   mpPageView();
+}
+
+/** Revocation applies immediately even when a stored choice cannot be changed. */
+export function setMetaMarketingConsent(allowed: boolean) {
+  window.__faMarketingDenied = !allowed;
+  if (!allowed) window.fbq?.("consent", "revoke");
+  else initMetaPixel();
 }
 
 /** Traccia un evento standard, solo se il pixel è attivo (consenso dato).
@@ -71,14 +83,14 @@ export function initMetaPixel() {
  *  si distingue da quale sito è arrivato. */
 export function mpTrack(event: string, params?: Record<string, unknown>) {
   if (typeof window === "undefined") return;
-  if (!window.__faPixelReady || !window.fbq) return;
+  if (!hasMarketingConsent() || !window.__faPixelReady || !window.fbq) return;
   window.fbq("track", event, { ...SOURCE_PARAMS, ...(params || {}) });
 }
 
 /** Traccia un evento CUSTOM (fbq trackCustom), solo se il pixel è attivo. */
 export function mpTrackCustom(event: string, params?: Record<string, unknown>) {
   if (typeof window === "undefined") return;
-  if (!window.__faPixelReady || !window.fbq) return;
+  if (!hasMarketingConsent() || !window.__faPixelReady || !window.fbq) return;
   window.fbq("trackCustom", event, { ...SOURCE_PARAMS, ...(params || {}) });
 }
 
