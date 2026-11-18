@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-navy-900 text-white mt-24">
       <FooterBackgroundGradient />
-      <div className="container-fa relative z-10 py-16">
+      <div className="container-fa relative z-20 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr_1fr]">
           <div>
             <Logo variant="light" />
