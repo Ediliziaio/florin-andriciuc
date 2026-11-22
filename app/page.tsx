@@ -8,6 +8,7 @@ import { publishedArticles } from "@/lib/articles";
 // compaiono in "Dal blog" alla loro data senza deploy manuale.
 export const revalidate = 3600;
 import { Reveal } from "@/components/Reveal";
+import { FlussoVetrina } from "@/components/FlussoVetrina";
 import { Portrait } from "@/components/Portrait";
 import { SectionHeading, StatRow, CtaBand, FaqSection, ProcessSteps, Pill } from "@/components/ui";
 import { JsonLd, ecosystemItemListSchema } from "@/components/JsonLd";
@@ -41,6 +42,7 @@ export default function HomePage() {
       <Pains />
       <FounderNote />
       <Ecosystem />
+      <FlussoVetrina nome="ecosistema" />
       <Method />
       <LatestArticles />
       <FaqSection items={homeFaq} />

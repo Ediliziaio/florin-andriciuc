@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FlussoVetrina } from "@/components/FlussoVetrina";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { productPages, productSlugs } from "@/lib/productPageData";
@@ -166,6 +167,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           ))}
         </div>
       </section>
+
+      <FlussoVetrina nome={slug} sfondo="bg-bg-soft" />
 
       {/* FEATURES */}
       <section className="bg-bg-soft py-20 sm:py-28">
